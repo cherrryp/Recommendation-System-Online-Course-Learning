@@ -10,10 +10,15 @@
 ## Setup
 
 ### 1. Install dependencies
-
+```bash
+cd frontend
+npm install
+npm install axios
+```
 ```bash
 cd backend
 npm install
+npm install express-async-handler
 ```
 
 ### 2. Setup environment variables
