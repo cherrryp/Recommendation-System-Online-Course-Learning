@@ -1,0 +1,60 @@
+.content-1{
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+.in-content-1{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 25px;
+}
+.text-con1{
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.text-con1 h3{
+    font-size: 26px;
+}
+.text-con1 p{
+    font-size: 18px;
+}
+.button-con{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+.con1-btn{
+    padding: 10px 30px;
+}
+.start{
+    background-color: #7678ED;
+    color: white;
+    border:none ;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+.learn{
+    background-color: rgb(219, 237, 252);
+    border: none;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+.con1-btn.start:hover{
+    background-color: #6a6cf1;
+    outline: 2px solid #6a6cf1;    
+    outline-offset: 3px; 
+}
+.con1-btn.learn:hover{
+    background-color: rgb(196, 227, 252);
+    outline: 2px solid rgb(196, 227, 252);    
+    outline-offset: 3px; 
+}

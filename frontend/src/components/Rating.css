@@ -1,0 +1,18 @@
+.content-rating{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.rating{
+    display: flex;
+    width: 500px;
+    align-items: center;
+    justify-content:space-evenly ;
+}
+.rating-1 , .rating-2 , .rating-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}

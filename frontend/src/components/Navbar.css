@@ -1,0 +1,205 @@
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 0;
+}
+.menu-r{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.menu-ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: large;
+    gap: 10px;
+    padding: 0 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.logo-text{
+  text-decoration: none;
+}
+.menu-a{
+    cursor: pointer;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 1.0em;
+    transition: all 0.2s ease;
+}
+.menu-a:hover{
+    color: #7678ED;
+    transform: scale(1.05) translateY(-2px);
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.search-input {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #f4f2f2;
+  border: none;
+  color: #646464;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  width: 12em;
+  transition: all ease-in-out .5s;
+  margin-right: -2rem;
+}
+
+.search-input:hover, .search-input:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+
+.search-input:focus {
+  outline: none;
+  background-color: #f0eeee;
+}
+
+.search-input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: #ccc;
+}
+
+.search-input:focus + .search-btn {
+  background-color: #f0eeee;
+}
+
+.search-btn {
+  border: none;
+  background-color: #f4f2f2;
+  margin-top: .1em;
+}
+
+.search-btn:hover {
+  cursor: pointer;
+}
+
+.search-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: #b4b4b4;
+}
+.account-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100px;
+    gap: 5px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    background-color: #7678ED;
+    color: white;
+    border: none;
+    overflow: hidden;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.account-btn:hover{
+    box-shadow: 0 4px 12px rgba(118, 120, 237, 0.3);
+    color: white;
+    transform: translateY(-2px);
+}
+.btn-lr{
+  display: flex;
+  gap: 5px;
+}
+.account-btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100px;
+    gap: 5px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    background-color: white;
+    color: #7678ED;
+    border: none;
+    overflow: hidden;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.account-btn2:hover{
+    box-shadow: 0 4px 12px rgba(118, 120, 237, 0.3);
+    color: #7678ED;
+    transform: translateY(-2px);
+}
+
+.account-menu{
+  position: relative;
+}
+
+.account-btn3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7678ED;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  width: 150px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+}
+.active{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7678ED;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 150px;
+  border: none;
+  border-radius: 20px 20px 0px 0px;
+}
+.dropdown-menu{
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 150px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item{
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-item:hover{
+  background: #f2f2f2;
+}
+
+.logout{
+  color: red;
+}

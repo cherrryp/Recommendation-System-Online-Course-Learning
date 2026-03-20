@@ -1,0 +1,134 @@
+.course{
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.courseAll{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    width: 70%;
+    margin: 20px auto;
+}
+
+/* card */
+
+.card-all{
+    text-decoration: none;
+    color: black;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.25s ease;
+}
+
+.card-all:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.card-all:hover .card-show{
+    opacity: 0;
+}
+.card-all:hover .card-hidden{
+    opacity: 1;
+}
+
+/* image */
+
+.image-card-all{
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* content */
+
+.content-card-all{
+    padding: 15px;
+}
+
+.course-title{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* list */
+
+.ul-card{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rating{
+    color: #f4b400;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.text{
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+/* hidden info */
+
+.card-hidden{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #777;
+}
+.pagination{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.pagination button{
+    padding: 8px 16px;
+    border: none;
+    background: #0a66c2;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pagination button:disabled{
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.filter-bar{
+    display: flex;
+    gap: 15px;
+    margin: 20px auto;
+}
+
+.filter-bar select{
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+.reset{
+    padding: 8px 16px;
+    border: none;
+    background: #f44336;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.no-course{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    padding: 40px 0;
+}

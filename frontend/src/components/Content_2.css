@@ -1,0 +1,188 @@
+.content-2{
+    width: 100%;
+    min-height: 500px;
+    background: linear-gradient(to top, #ead6ff, #deeafe);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content-3{
+    width: 100%;
+    min-height: 500px;
+    background: linear-gradient(to top,#deeafe, #ead6ff);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title{
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* cards layout */
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    width: 70%;
+    margin: 20px auto;
+}
+
+/* card */
+.card{
+    text-decoration: none;
+    color: black;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.25s ease;
+}
+
+.card:hover{
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    transform: translateY(-4px);
+}
+
+/* image */
+.image-card{
+    width: 100%;
+    height: 180px;
+    background-color: antiquewhite;
+}
+
+/* content */
+.content-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.content-card h4{
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.course-card::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgb(117, 116, 116);
+    position: absolute;
+    bottom: 0;
+}
+
+/* list */
+.ul-card{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+.ul-card p {
+    width: 100%;
+}
+.ul-card li{
+    text-align: center;
+    position: relative;
+}
+
+/* visible info */
+.card-show{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+/* hidden info */
+.card-hidden{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transition: 0.3s;
+}
+
+/* hover effect */
+.card:hover .card-show{
+    opacity: 0;
+}
+
+.card:hover .card-hidden{
+    opacity: 1;
+}
+
+/* rating learners */
+.rating-learners{
+    display: flex;
+    gap: 25px;
+}
+
+.rating{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.learners{
+    display: flex;
+    align-items: center;
+}
+
+/* button */
+.btn-more-card{
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    background-color: #7678ED;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 6px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+}
+.btn-more-card:hover{
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+}
+
+/* teacher text cut */
+.teachers{
+  width: 200px;        
+}
+
+.teachers p{
+  white-space: nowrap;      
+  overflow: hidden;         
+  text-overflow: ellipsis;  
+}
+.course-title{
+  width: 200px;     
+  white-space: nowrap;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 10px;
+}
+.text{
+    width: 50px;     
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

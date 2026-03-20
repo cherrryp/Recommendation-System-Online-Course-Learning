@@ -1,0 +1,29 @@
+.footer{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.contact{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact h3{
+    margin: 5px 0;
+}
+.contact::before{
+    content: " ";
+    width: 1px;
+    height: 100%;
+    background-color: rgb(111, 111, 111);
+    position: absolute;
+    left: -30px;
+}
+.footer-logo{
+    mix-blend-mode: multiply;
+    text-align: center;
+}
