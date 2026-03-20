@@ -8,6 +8,7 @@ export const getCourses = () => {
 // ดึง course ตาม id
 export const getCourseById = (id) => {
   return api.get(`/courses/${id}`)
+  
 }
 
 // popular courses

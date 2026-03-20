@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar.jsx"
 import Footer from "../components/Footer.jsx"
 import Content_1 from "../components/Content_1.jsx";
-import Content_2 from "../components/Content_2.jsx";
+import Content_2 from "../components/content_2.jsx";
 import Rating from "../components/Rating.jsx";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -52,7 +52,7 @@ function Home() {
         <Content_1 />
         <div className="content-3">
           <h3 className="title">Popular Course</h3>
-          
+          <h1>gggg</h1>
             <div className="cards">
               {courses.map((course) => (
                 <Link to={`/course/${course.id}`} className="card" key={course.id}>
