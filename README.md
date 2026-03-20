@@ -24,10 +24,6 @@ cd backend
 npm install
 npm install express-async-handler
 ```
-```bash
-cd frontend
-npm install
-```
 
 ### 2. Setup environment variables
 สร้างไฟล์ `.env` ใน folder `backend`:
