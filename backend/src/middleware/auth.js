@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken"
-import prisma from '../lib/prisma.js';
+import prisma from "../lib/prisma.js"
 
-// verify + attach user
+// 🔐 verify + attach user
 export const authMiddleware = async (req, res, next) => {
   try {
     const authHeader = req.headers.authorization
@@ -16,9 +16,9 @@ export const authMiddleware = async (req, res, next) => {
 
     const decoded = jwt.verify(token, process.env.JWT_SECRET)
 
-    // เช็ค user ใน DB
+    // ✅ เช็ค user ใน DB
     const user = await prisma.user.findUnique({
-      where: { id: decoded.sub }
+      where: { id: decoded.id }
     })
 
     if (!user) {
@@ -27,7 +27,7 @@ export const authMiddleware = async (req, res, next) => {
       })
     }
 
-    // แนบ user
+    // ✅ แนบ user
     req.user = {
       sub: user.id,
       role: user.role

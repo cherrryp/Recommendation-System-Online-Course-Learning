@@ -53,7 +53,8 @@
 .image-card{
     width: 100%;
     height: 180px;
-    background-color: antiquewhite;
+    background-position: center;
+    background-size: cover;
 }
 
 /* content */
