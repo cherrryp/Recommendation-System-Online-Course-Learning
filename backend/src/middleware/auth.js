@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken"
-import prisma from '../lib/prisma.js';
+import prisma from "../lib/prisma.js"
 
 // 🔐 verify + attach user
 export const authMiddleware = async (req, res, next) => {
@@ -18,7 +18,7 @@ export const authMiddleware = async (req, res, next) => {
 
     // ✅ เช็ค user ใน DB
     const user = await prisma.user.findUnique({
-      where: { id: decoded.sub }
+      where: { id: decoded.id }
     })
 
     if (!user) {

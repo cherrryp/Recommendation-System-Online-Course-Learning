@@ -1,4 +1,4 @@
-const prisma = require('../utils/prisma');
+import prisma from "../lib/prisma.js";
 
 // ✅ 1. ลงทะเบียนเรียน
 const enrollCourse = async (userId, courseId) => {
@@ -135,7 +135,7 @@ const deleteEnrollment = async (id, userId) => {
   });
 };
 
-module.exports = {
+export default {
   enrollCourse,
   getMyEnrollments,
   getEnrollmentById,

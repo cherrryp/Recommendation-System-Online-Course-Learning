@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar.jsx"
 import Footer from "../components/Footer.jsx"
 import Content_1 from "../components/Content_1.jsx";
-import Content_2 from "../components/Content_2.jsx";
+import Content_2 from "../components/content_2.jsx";
 import Rating from "../components/Rating.jsx";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";

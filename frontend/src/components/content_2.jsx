@@ -29,11 +29,10 @@ function Content_2() {
                 <Link to={`/course/${course.id}`} className="card" key={course.id}>
                   <div
                     className="image-card"
-                    style={{
-                      backgroundImage: `url(${course.thumbnailUrl})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center"
-                    }}
+                    src={course.thumdnailUrl || "https://res.cloudinary.com/dygjtp2be/image/upload/v1774030276/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%A0%E0%B8%B2%E0%B8%9E_cga0pm.jpg" }
+                    onError={(e) => {
+                          e.target.src = "https://res.cloudinary.com/dygjtp2be/image/upload/v1774030276/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%A0%E0%B8%B2%E0%B8%9E_cga0pm.jpg";
+                    }} 
                   ></div>
 
                   <div className="content-card">
