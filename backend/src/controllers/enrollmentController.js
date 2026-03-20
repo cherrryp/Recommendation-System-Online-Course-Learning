@@ -1,68 +1,45 @@
-const asyncHandler = require('express-async-handler');
-const enrollmentService = require('../services/enrollment.service');
+import asyncHandler from "express-async-handler";
+import enrollmentService from "../service/enrollment.service.js"; 
 
-// ✅ 1. ลงทะเบียนเรียน
-const enroll = asyncHandler(async (req, res) => {
+export const enroll = asyncHandler(async (req, res) => {
   const userId = req.user.sub;
   const { courseId } = req.body;
 
-  const result = await enrollmentService.enrollCourse(userId, courseId);
+  try {
+    // เรียกใช้ลอจิกจาก Service ของคุณ!
+    const enrollment = await enrollmentService.enrollCourse(userId, courseId);
 
-  res.status(201).json({
-    message: 'Enroll success',
-    data: result
-  });
+    res.status(201).json({
+      success: true,
+      message: "Enroll success 🎉",
+      data: enrollment
+    });
+  } catch (error) {
+    // ดักจับ Error ที่ถูกโยนมาจาก Service (เช่น "Already enrolled in this course")
+    res.status(400).json({
+      success: false,
+      message: error.message
+    });
+  }
 });
 
-// ✅ 2. ดูคอร์สที่ตัวเองลงทะเบียน
-const getMyEnrollments = asyncHandler(async (req, res) => {
-  const userId = req.user.sub;
+// ฟังก์ชันสำหรับดึงคอร์สเรียนทั้งหมดของฉัน
+export const getMyCourses = asyncHandler(async (req, res) => {
+  // ดึง userId จาก token (ขึ้นอยู่กับว่า auth middleware ของคุณเก็บไว้ที่ไหน เช่น req.user.id หรือ req.user.sub)
+  const userId = req.user.sub; 
 
-  const data = await enrollmentService.getMyEnrollments(userId);
+  try {
+    const enrollments = await enrollmentService.getMyEnrollments(userId);
 
-  res.json({ data });
+    res.status(200).json({
+      success: true,
+      data: enrollments
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "ไม่สามารถดึงข้อมูลคอร์สเรียนได้",
+      error: error.message
+    });
+  }
 });
-
-// ✅ 3. ดู enrollment ตาม id (แก้แล้ว 🔥)
-const getEnrollmentById = asyncHandler(async (req, res) => {
-  const { id } = req.params;
-  const userId = req.user.sub;
-
-  const data = await enrollmentService.getEnrollmentById(id, userId);
-
-  res.json({ data });
-});
-
-// ✅ 4. อัปเดต (แก้แล้ว 🔥)
-const updateEnrollment = asyncHandler(async (req, res) => {
-  const { id } = req.params;
-  const userId = req.user.sub;
-  const updateData = req.body;
-
-  const data = await enrollmentService.updateEnrollment(id, userId, updateData);
-
-  res.json({
-    message: 'Enrollment updated',
-    data
-  });
-});
-
-// ✅ 5. ลบ (แก้แล้ว 🔥)
-const deleteEnrollment = asyncHandler(async (req, res) => {
-  const { id } = req.params;
-  const userId = req.user.sub;
-
-  await enrollmentService.deleteEnrollment(id, userId);
-
-  res.json({
-    message: 'Enrollment deleted'
-  });
-});
-
-module.exports = {
-  enroll,
-  getMyEnrollments,
-  getEnrollmentById,
-  updateEnrollment,
-  deleteEnrollment
-};

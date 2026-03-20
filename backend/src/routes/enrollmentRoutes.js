@@ -1,12 +1,10 @@
-const express = require('express');
+import express from "express";
+import { enroll ,getMyCourses} from "../controllers/enrollmentController.js";
+import { authMiddleware } from "../middleware/auth.js";
+
 const router = express.Router();
-const enrollmentController = require('../controllers/enrollmentController');
-const authMiddleware = require('../middleware/authMiddleware');
 
-router.post('/', authMiddleware, enrollmentController.enroll);
-router.get('/my', authMiddleware, enrollmentController.getMyEnrollments);
-router.get('/:id', authMiddleware, enrollmentController.getEnrollmentById);
-router.patch('/:id', authMiddleware, enrollmentController.updateEnrollment);
-router.delete('/:id', authMiddleware, enrollmentController.deleteEnrollment);
+router.post("/", authMiddleware, enroll);
+router.get("/my-courses", authMiddleware, getMyCourses);
 
-module.exports = router;
+export default router;
