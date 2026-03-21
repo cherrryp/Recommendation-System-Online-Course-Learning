@@ -54,3 +54,22 @@ pip install -r requirement.txt
 ```bash
 pip3 install -r requirement.txt
 ```
+
+## 5. Running the Project
+
+### Backend (Node.js)
+```bash
+cd backend
+npm run dev
+```
+
+### AI Model (Python)
+```bash
+python3 -m uvicorn api.main:app --reload --port 8000
+```
+
+### Frontend (React)
+```bash
+cd frontend
+npm run dev
+```
