@@ -33,3 +33,6 @@ dist-ssr
 
 clean_courses.csv
 __pycache__
+
+backend/node_modules/
+frontend/node_modules/
