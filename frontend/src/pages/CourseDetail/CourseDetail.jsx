@@ -4,6 +4,7 @@ import { getCourseById } from "../../api/courseApi";
 import Navbar from "../../components/Navbar";
 import "./CourseDetail.css";
 import { enrollCourse , getMyCoursesAPI } from "../../api/enrollmentApi";
+import { recordCourseInteraction } from "../../api/interactionApi";
 
 function CourseDetail() {
   const { id } = useParams();
@@ -15,37 +16,36 @@ function CourseDetail() {
   const [enrolling, setEnrolling] = useState(false);
   const [isEnrolled, setIsEnrolled] = useState(false);
 
+  
   useEffect(() => {
-    async function loadCourseData() {
+    const user = JSON.parse(localStorage.getItem("user"));
+    const userId = user?.id;
+
+    async function loadCourseAndCheckEnroll() {
       setLoading(true);
       setError(null);
-
       try {
+        // ดึงข้อมูลคอร์ส
         const resCourse = await getCourseById(id);
-
-        if (!resCourse.data.success) {
-          throw new Error(resCourse.data.message);
-        }
-
+        if (!resCourse.data.success) throw new Error(resCourse.data.message);
         const courseData = resCourse.data.data;
         setCourse(courseData);
 
-        // 🔥 เช็ค enroll
-        try {
+        // เช็คว่า enroll หรือยัง
+        if (userId) {
           const myCourses = await getMyCoursesAPI();
-
           if (myCourses.success) {
             const found = myCourses.data.find(
-              (enroll) =>
-                String(enroll.courseId) === String(courseData.id)
+              (enroll) => String(enroll.courseId) === String(courseData.id)
             );
-
             setIsEnrolled(!!found);
           }
-        } catch (err) {
-          console.log("Check enroll error:", err);
         }
 
+        // Track view
+        if (userId) {
+          await recordCourseInteraction(userId, id, "view");
+        }
       } catch (err) {
         setError(err.message);
       } finally {
@@ -53,22 +53,31 @@ function CourseDetail() {
       }
     }
 
-    loadCourseData();
+    loadCourseAndCheckEnroll();
   }, [id]);
 
   const handleEnroll = async () => {
+    const user = JSON.parse(localStorage.getItem("user"));
+    const userId = user?.id;
+
+    if (!userId) {
+      alert("Please login first!");
+      return;
+    }
+
     try {
       setEnrolling(true);
-
       const res = await enrollCourse(course.id);
+      if (!res.success) throw new Error(res.message);
 
-      if (!res.success) {
-        throw new Error(res.message);
-      }
+      await recordCourseInteraction(userId, course.id, "enroll");
+      setIsEnrolled(true);
+      
+      // Reload course modules (optional)
+      const updatedCourse = await getCourseById(id);
+      setCourse(updatedCourse.data.data);
 
       alert("Enroll success 🎉");
-      setIsEnrolled(true);
-
     } catch (err) {
       const msg = err.response?.data?.message || err.message;
       alert(msg);
@@ -76,6 +85,7 @@ function CourseDetail() {
       setEnrolling(false);
     }
   };
+
 
   return (
     <div className="detail">
@@ -114,18 +124,12 @@ function CourseDetail() {
                         )}
                         {isEnrolled ? (
                           <div style={{ marginTop: "1.5rem", padding: "1rem", backgroundColor: "#f9f9f9", borderRadius: "8px", border: "1px solid #ddd" }}>
-                            <h3 style={{ color: "#2c3e50", marginBottom: "10px" }}>คุณลงทะเบียนคอร์สนี้แล้ว ✅</h3>
+                            <h3 style={{ color: "#2c3e50", marginBottom: "10px" }}>คุณลงทะเบียนคอร์สนี้แล้ว</h3>
                             <button 
                               onClick={() => navigate(`/learn/${course.id}`)}
-                              style={{ padding: "10px 20px", backgroundColor: "#007bff", color: "white", border: "none", borderRadius: "4px", cursor: "pointer", marginRight: "10px" }}
+                              className="start-course"
                             >
                               เข้าสู่บทเรียน
-                            </button>
-                            <button 
-                              onClick={() => navigate(`/tests/${course.id}`)} // ตัวอย่างลิงก์ไปหน้าทำข้อสอบ
-                              style={{ padding: "10px 20px", backgroundColor: "#f39c12", color: "white", border: "none", borderRadius: "4px", cursor: "pointer" }}
-                            >
-                              📝 ทำข้อสอบ
                             </button>
                           </div>
                         ) : (

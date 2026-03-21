@@ -8,6 +8,7 @@ import authRoutes from "./routes/authRoutes.js"
 import userRoutes from "./routes/userRoutes.js"
 import enrollmentRoutes from "./routes/enrollmentRoutes.js"
 import adminRoutes from "./routes/admin.routes.js"
+import interactionRoutes from "./routes/interactionRoutes.js"
 
 // โหลด .env
 dotenv.config()
@@ -25,6 +26,7 @@ app.use("/api/recommendations", recommendationRoutes)
 app.use("/api/user", userRoutes)
 app.use("/api/enrollments", enrollmentRoutes)
 app.use("/api/admin", adminRoutes)
+app.use("/api/interactions", interactionRoutes);
 
 // Health check
 app.get("/health", (req, res) => res.json({ status: "ok" }))
