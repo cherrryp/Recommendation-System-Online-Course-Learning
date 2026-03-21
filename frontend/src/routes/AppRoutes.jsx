@@ -7,6 +7,7 @@ import Register from "../pages/LoginRegister/Register"
 import Profile from "../pages/Profile/Profile"
 import Course from "../pages/Course/Course"
 import CourseDetail from "../pages/CourseDetail/CourseDetail"
+import UserDetail from "../pages/admin/UserDetail"
 
 import AdminLayout from "../components/AdminLayout"
 import AdminRoute from "../components/AdminRoute"
@@ -47,6 +48,7 @@ function AppRoutes() {
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="users" element={<UserManagement />} />
           <Route path="courses" element={<CourseManagement />} />
+          <Route path="users/:id" element={<UserDetail />} />
 
         </Route>
 
