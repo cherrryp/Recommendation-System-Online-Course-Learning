@@ -1,6 +1,4 @@
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
+import prisma from "../lib/prisma.js"
 
 // ฟังก์ชันสำหรับบันทึก Interaction
 export const trackCourseInteraction = async (userId, courseId, action) => {

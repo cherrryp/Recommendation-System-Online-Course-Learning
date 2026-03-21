@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react"
 import { getCourses, deleteCourse } from "../../api/adminApi"
+import { useNavigate } from "react-router-dom"
+
 
 const PAGE_SIZE = 20
 
 function CourseManagement() {
+  const navigate = useNavigate()
   const [courses, setCourses] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -122,6 +125,7 @@ function CourseManagement() {
                     </td>
                     <td style={td}>{course.price ? `฿${course.price}` : "Free"}</td>
                     <td style={td}>
+                      <button onClick={() => navigate(`/admin/courses/${course.id}`)} style={editBtn}>Edit</button>
                       <button onClick={() => handleDelete(course.id)} style={deleteBtn}>Delete</button>
                     </td>
                   </tr>
@@ -167,6 +171,8 @@ const td = { padding: "10px 8px", color: "#334155" }
 const input = { padding: "8px 12px", borderRadius: "8px", border: "1px solid #e2e8f0", fontSize: "14px", outline: "none" }
 const deleteBtn = { padding: "4px 12px", borderRadius: "6px", border: "1px solid #ef4444", color: "#ef4444", cursor: "pointer", background: "white" }
 const clearBtn = { padding: "8px 12px", borderRadius: "8px", border: "1px solid #ccc", cursor: "pointer", background: "white", color: "#64748b" }
+const editBtn = { padding: "4px 12px", borderRadius: "6px", border: "1px solid #0891b2", color: "#0891b2", cursor: "pointer", background: "white", marginRight: "8px" }
+
 const pageBtn = (disabled, active = false) => ({
   padding: "6px 12px",
   borderRadius: "6px",
