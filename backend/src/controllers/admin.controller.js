@@ -123,3 +123,31 @@ export const getUserById = async (req, res) => {
     res.status(500).json({ error: "Failed to fetch user" })
   }
 }
+
+export const getCourseById = async (req, res) => {
+  const { id } = req.params
+  try {
+    const course = await prisma.course.findUnique({
+      where: { id },
+      include: { category: true }
+    })
+    if (!course) return res.status(404).json({ error: "Course not found" })
+    res.json(course)
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch course" })
+  }
+}
+
+export const updateCourse = async (req, res) => {
+  const { id } = req.params
+  const { courseName, level, price, categoryId, courseDescription } = req.body
+  try {
+    const course = await prisma.course.update({
+      where: { id },
+      data: { courseName, level, price: price ? Number(price) : null, categoryId, courseDescription }
+    })
+    res.json(course)
+  } catch (error) {
+    res.status(500).json({ error: "Failed to update course" })
+  }
+}
