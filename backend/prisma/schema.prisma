@@ -1,287 +1,132 @@
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
+  previewFeatures = ["postgresqlExtensions"]
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
+  extensions = [vector]
 }
 
+
+// USER
 model User {
-  id              String              @id @default(uuid())
-  username        String
-  email           String              @unique
-  password        String
-  role            Role
-  createdAt       DateTime            @default(now())
-  birthDate       DateTime?
-  educationLevel  EducationLevel?
-  fname           String?
-  lname           String?
-  certificates    Certificate[]
-  enrollments     Enrollment[]
-  feedbacks       Feedback[]
-  recommendations RecommendationLog[]
-  interactions    UserInteraction[]
-  interests       UserInterest[]
+  id           String            @id @default(uuid())
+  username     String
+  email        String            @unique
+  password     String
+  role         Role              @default(student)
+  createdAt    DateTime          @default(now())
+  fname        String?
+  lname        String?
+  interactions UserInteraction[]
+  interests    UserInterest[]
+  bookmarks    Bookmark[]
 }
 
+
+// COURSE
 model Course {
-  id                String            @id @default(uuid())
-  courseName        String
-  courseDescription String
-  targetGroup       String?
-  organization      String?
-  price             Float?
-  level             Level
-  thumbnailUrl      String?
-  createdAt         DateTime          @default(now())
-  categoryId        String
-  slug              String            @unique @db.VarChar(255)
-  university        String?
-  courseNameEn      String
-  certificates      Certificate[]
-  category          Category          @relation(fields: [categoryId], references: [id])
-  embedding         CourseEmbedding?
-  keywords          CourseKeyword[]
-  enrollments       Enrollment[]
-  feedbacks         Feedback[]
-  modules           Module[]
-  interactions      UserInteraction[]
-
-  @@index([categoryId])
+  id           String            @id @default(uuid())
+  title        String
+  description  String
+  category     String            // เก็บเป็น string ตรงๆ ไม่แยก table
+  university   String?
+  instructor   String?
+  price        Float             @default(0)
+  status       String            @default("open")
+  thumbnailUrl String?
+  url          String            @unique  // link ไปมหาลัยจริง
+  createdAt    DateTime          @default(now())
+  keywords     CourseKeyword[]
+  embedding    CourseEmbedding?
+  interactions UserInteraction[]
+  bookmarks    Bookmark[]
 }
 
-model Category {
-  id     String   @id @default(uuid())
-  name   String   @unique
-  course Course[]
-}
 
-model Instructor {
-  id           String   @id @default(uuid())
-  name         String
-  organization String?
-  title        String?
-  lessons      Lesson[]
-}
-
+// COURSE KEYWORD  
+// เก็บ tags ใช้ train recommend
 model CourseKeyword {
   id       String @id @default(uuid())
   courseId String
   keyword  String
-  course   Course @relation(fields: [courseId], references: [id])
+  course   Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
 
   @@unique([courseId, keyword])
   @@index([courseId])
+  @@index([keyword])
 }
 
-model Module {
-  id                String   @id @default(uuid())
-  courseId          String
-  moduleName        String
-  orderIndex        Int
-  durationMin       Int
-  moduleDescription String?
-  lessons           Lesson[]
-  course            Course   @relation(fields: [courseId], references: [id])
+
+// COURSE EMBEDDING  
+// vector สำหรับ recommend
+model CourseEmbedding {
+  id        String                     @id @default(uuid())
+  courseId  String                     @unique
+  embedding Unsupported("vector(1536)")
+  course    Course                     @relation(fields: [courseId], references: [id], onDelete: Cascade)
 
   @@index([courseId])
 }
 
-model Lesson {
-  id           String              @id @default(uuid())
-  moduleId     String
-  topicNo      String?
-  topicName    String
-  videoUrl     String?
-  instructorId String?
-  instructor   Instructor?         @relation(fields: [instructorId], references: [id])
-  module       Module              @relation(fields: [moduleId], references: [id])
-  performances LessonPerformance[]
-  tests        Test[]
 
-  @@index([moduleId])
-}
-
-model Enrollment {
-  id           String              @id @default(uuid())
-  userId       String
-  courseId     String
-  status       EnrollmentStatus
-  progress     Float               @default(0)
-  finalScore   Float?
-  enrolledDate DateTime            @default(now())
-  updatedAt    DateTime            @updatedAt
-  course       Course              @relation(fields: [courseId], references: [id])
-  user         User                @relation(fields: [userId], references: [id])
-  performances LessonPerformance[]
-
-  @@unique([userId, courseId])
-  @@index([userId])
-  @@index([courseId])
-}
-
-model LessonPerformance {
-  id           String       @id @default(uuid())
-  enrollmentId String
-  lessonId     String
-  quizScore    Float?
-  timeSpentMin Float?
-  lessonStatus LessonStatus
-  updatedAt    DateTime     @updatedAt
-  enrollment   Enrollment   @relation(fields: [enrollmentId], references: [id])
-  lesson       Lesson       @relation(fields: [lessonId], references: [id])
-
-  @@unique([enrollmentId, lessonId])
-  @@index([lessonId])
-}
-
-model Feedback {
+// BOOKMARK 
+model Bookmark {
   id        String   @id @default(uuid())
   userId    String
   courseId  String
-  rating    Int
-  comment   String?
   createdAt DateTime @default(now())
-  course    Course   @relation(fields: [courseId], references: [id])
-  user      User     @relation(fields: [userId], references: [id])
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course    Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
 
-  @@unique([userId, courseId])
-  @@index([courseId])
-}
-
-model Test {
-  id            String @id @default(uuid())
-  lessonId      String
-  question      String
-  optionA       String
-  optionB       String
-  optionC       String
-  optionD       String
-  correctAnswer String
-  score         Int
-  lesson        Lesson @relation(fields: [lessonId], references: [id])
-
-  @@index([lessonId])
-}
-
-model RecommendationLog {
-  id                 String   @id @default(uuid())
-  userId             String
-  algorithm          String
-  generatedAt        DateTime @default(now())
-  recommendedCourses Json
-  user               User     @relation(fields: [userId], references: [id])
-
+  // bookmark ซ้ำไม่ได้
+  @@unique([userId, courseId])  
   @@index([userId])
-}
-
-model Certificate {
-  id             String   @id @default(uuid())
-  certificateId  String   @unique
-  userId         String
-  courseId       String
-  issueDate      DateTime
-  certificateUrl String
-  course         Course   @relation(fields: [courseId], references: [id])
-  user           User     @relation(fields: [userId], references: [id])
-}
-
-model CourseEmbedding {
-  id        String                @id @default(uuid())
-  courseId  String                @unique
-  embedding Unsupported("vector")
-  course    Course                @relation(fields: [courseId], references: [id])
-
   @@index([courseId])
 }
+
+
+// USER INTERACTION 
+// เก็บพฤติกรรม ใช้ปรับ UserInterest
 
 model UserInteraction {
   id        String          @id @default(uuid())
   userId    String
   courseId  String
-  createdAt DateTime        @default(now())
   action    InteractionType
-  course    Course          @relation(fields: [courseId], references: [id])
-  user      User            @relation(fields: [userId], references: [id])
+  createdAt DateTime        @default(now())
+  course    Course          @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  user      User            @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
   @@index([courseId])
 }
 
+
+// USER INTEREST  (สรุปความสนใจ user → ใช้ recommend)
+// score: bookmark = +3, click = +1, search = +1
 model UserInterest {
   userId  String
   keyword String
-  user    User   @relation(fields: [userId], references: [id])
+  score   Float  @default(1)
+  user    User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@id([userId, keyword])
   @@index([keyword])
 }
 
-/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
-model course_import {
-  course_id          String?
-  course_name_th     String?
-  course_name_en     String?
-  module_desc        String?
-  module_no          String?
-  module_name        String?
-  lesson_no          String?
-  lesson_name        String?
-  instructor         String?
-  duration_min       String?
-  media_type         String?
-  target_group       String?
-  module_price       Float?
-  grad_req           String?
-  organization       String?
-  objective          String?
-  category           String?
-  target_group_clean String?
-  university         String?
 
-  @@ignore
-}
-
-enum EducationLevel {
-  SECONDARY
-  HIGH_SCHOOL
-  DIPLOMA
-  BACHELOR
-  MASTER
-  DOCTORATE
-  OTHER
-}
-
+// ENUMS
 enum Role {
   admin
   student
 }
 
-enum Level {
-  beginner
-  intermediate
-  advanced
-}
-
-enum EnrollmentStatus {
-  not_started
-  in_progress
-  completed
-}
-
-enum LessonStatus {
-  not_started
-  in_progress
-  completed
-}
-
 enum InteractionType {
-  view
+  // กดการ์ด
   click
-  enroll
-  complete
-  like
-  search
+  search   
+  bookmark 
 }
