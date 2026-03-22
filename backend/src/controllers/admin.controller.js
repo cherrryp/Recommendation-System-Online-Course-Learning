@@ -22,7 +22,6 @@ export const getDashboardStats = async (req, res) => {
       orderBy: { _count: { courseId: "desc" } },
       take: 5,
     })
-
     const topCourses = await Promise.all(
       topInteracted.map(async (e) => {
         const course = await prisma.course.findUnique({
@@ -33,14 +32,13 @@ export const getDashboardStats = async (req, res) => {
       })
     )
 
-    // top 5 คอร์สที่ถูก bookmark มากที่สุด
+    // top 5 bookmark
     const topBookmarked = await prisma.bookmark.groupBy({
       by: ["courseId"],
       _count: { courseId: true },
       orderBy: { _count: { courseId: "desc" } },
       take: 5,
     })
-
     const topBookmarkedCourses = await Promise.all(
       topBookmarked.map(async (e) => {
         const course = await prisma.course.findUnique({
@@ -51,7 +49,7 @@ export const getDashboardStats = async (req, res) => {
       })
     )
 
-    // user ล่าสุด
+    // recent users
     const recentUsers = await prisma.user.findMany({
       orderBy: { createdAt: "desc" },
       take: 5,
@@ -63,21 +61,68 @@ export const getDashboardStats = async (req, res) => {
       by: ["category"],
       _count: { category: true },
       orderBy: { _count: { category: "desc" } },
-      take: 8,
     })
+
+    // ── ใหม่ ──
+
+    // university distribution
+    const universityStats = await prisma.course.groupBy({
+      by: ["university"],
+      _count: { university: true },
+      orderBy: { _count: { university: "desc" } },
+    })
+
+    // free vs paid
+    const freeCourses = await prisma.course.count({ where: { price: 0 } })
+    const paidCourses = await prisma.course.count({ where: { price: { gt: 0 } } })
+
+    // top interest keywords
+    const topKeywords = await prisma.userInterest.groupBy({
+      by: ["keyword"],
+      _sum: { score: true },
+      orderBy: { _sum: { score: "desc" } },
+      take: 20,
+    })
+
+    // active users ใน 7 วัน
+    const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000)
+    const activeUsers = await prisma.userInteraction.findMany({
+      where: { createdAt: { gte: sevenDaysAgo } },
+      select: { userId: true },
+      distinct: ["userId"],
+    })
+
+    // interaction trend 7 วัน (groupBy วัน)
+    const recentInteractions = await prisma.userInteraction.findMany({
+      where: { createdAt: { gte: sevenDaysAgo } },
+      select: { createdAt: true, action: true },
+      orderBy: { createdAt: "asc" },
+    })
+
+    // group by date
+    const trendMap = {}
+    recentInteractions.forEach((i) => {
+      const date = i.createdAt.toISOString().split("T")[0]
+      trendMap[date] = (trendMap[date] || 0) + 1
+    })
+    const interactionTrend = Object.entries(trendMap).map(([date, count]) => ({ date, count }))
+
+    // embedding coverage
+    const embeddingCount = await prisma.courseEmbedding.count()
 
     res.json({
       success: true,
       data: {
-        users,
-        courses,
-        interactions,
-        bookmarks,
+        users, courses, interactions, bookmarks,
         interactionsByAction,
-        topCourses,
-        topBookmarkedCourses,
-        recentUsers,
-        categoryStats,
+        topCourses, topBookmarkedCourses,
+        recentUsers, categoryStats,
+        universityStats,
+        freeCourses, paidCourses,
+        topKeywords,
+        activeUsers: activeUsers.length,
+        interactionTrend,
+        embeddingCoverage: { total: courses, covered: embeddingCount },
       },
     })
   } catch (error) {
