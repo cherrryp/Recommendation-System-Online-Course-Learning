@@ -1,10 +1,16 @@
 import express from "express"
+import {
+  getProfile, updateProfile, changePassword,
+  getInterests, updateInterests,
+} from "../controllers/userController.js"
 import { verifyToken } from "../middleware/auth.js"
-import prisma from "../lib/prisma.js"
-import { getUserProfile } from "../controllers/userController.js"
 
 const router = express.Router()
 
-router.get("/profile", verifyToken, getUserProfile)
+router.get("/profile/:userId", verifyToken, getProfile)
+router.put("/profile/:userId", verifyToken, updateProfile)
+router.put("/password/:userId", verifyToken, changePassword)
+router.get("/interests/:userId", verifyToken, getInterests)
+router.put("/interests/:userId", verifyToken, updateInterests)
 
 export default router
