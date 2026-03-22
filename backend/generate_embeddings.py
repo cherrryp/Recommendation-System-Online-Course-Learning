@@ -62,7 +62,7 @@ def main():
         ORDER BY c.title
     """)
     courses = cur.fetchall()
-    print(f"📚 คอร์สที่ยังไม่มี embedding: {len(courses)} คอร์ส\n")
+    print(f"คอร์สที่ยังไม่มี embedding: {len(courses)} คอร์ส\n")
 
     if not courses:
         print("✅ ทุกคอร์สมี embedding แล้ว")
@@ -109,7 +109,7 @@ def main():
     cur.close()
     conn.close()
 
-    print(f"\n🎉 เสร็จแล้ว! สร้าง embedding {inserted} คอร์ส")
+    print(f"\nเสร็จแล้ว! สร้าง embedding {inserted} คอร์ส")
     print(f"   พร้อมใช้งานระบบแนะนำได้เลย")
 
 if __name__ == "__main__":
