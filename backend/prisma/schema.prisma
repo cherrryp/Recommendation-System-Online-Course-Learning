@@ -65,7 +65,7 @@ model CourseKeyword {
 model CourseEmbedding {
   id        String                     @id @default(uuid())
   courseId  String                     @unique
-  embedding Unsupported("vector(1536)")
+  embedding Unsupported("vector(384)")
   course    Course                     @relation(fields: [courseId], references: [id], onDelete: Cascade)
 
   @@index([courseId])

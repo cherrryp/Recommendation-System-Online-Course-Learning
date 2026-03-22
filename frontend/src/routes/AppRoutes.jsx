@@ -29,7 +29,6 @@ function AppRoutes() {
 
         <Route path="/" element={<Home />} />
         <Route path="/course" element={<Course />} />
-        <Route path="/course/:id" element={<CourseDetail />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<Profile />} />
