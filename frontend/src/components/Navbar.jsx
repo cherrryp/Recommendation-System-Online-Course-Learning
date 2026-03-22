@@ -38,18 +38,17 @@ return (
 
                 {openMenu && (
                   <div className="dropdown-menu">
-
+                    {user.role === "admin" && (
+                      <Link to="/admin/dashboard" className="dropdown-item">
+                        Dashboard
+                      </Link>
+                    )}
                     <Link to="/profile" className="dropdown-item">
                       Profile
                     </Link>
-
-                    <button 
-                      className="dropdown-item logout"
-                      onClick={handleLogout}
-                    >
+                    <button className="dropdown-item logout" onClick={handleLogout}>
                       Logout
                     </button>
-
                   </div>
                 )}
               </div>
