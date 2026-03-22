@@ -9,9 +9,7 @@ export const register = async (req, res) => {
       email,
       password,
       fname,
-      lname,
-      birthDate,
-      educationLevel
+      lname
     } = req.body
 
     // check email ซ้ำ
@@ -36,9 +34,7 @@ export const register = async (req, res) => {
         password: hashedPassword,
         role: "student",
         fname,
-        lname,
-        birthDate: birthDate ? new Date(birthDate) : undefined,
-        educationLevel
+        lname
       }
     })
 
