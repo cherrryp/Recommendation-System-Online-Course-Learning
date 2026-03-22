@@ -29,3 +29,5 @@ export const recordCourseInteraction = async (userId, courseId, action = "view")
     throw error;
   }
 };
+
+export const recordInteraction = recordCourseInteraction

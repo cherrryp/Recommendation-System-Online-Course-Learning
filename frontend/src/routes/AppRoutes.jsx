@@ -6,7 +6,6 @@ import Login from "../pages/LoginRegister/Login"
 import Register from "../pages/LoginRegister/Register"
 import Profile from "../pages/Profile/Profile"
 import Course from "../pages/Course/Course"
-import CourseDetail from "../pages/CourseDetail/CourseDetail"
 import UserDetail from "../pages/admin/UserDetail"
 
 import AdminLayout from "../components/AdminLayout"
@@ -15,8 +14,6 @@ import AdminRoute from "../components/AdminRoute"
 import Dashboard from "../pages/admin/Dashboard"
 import UserManagement from "../pages/admin/UserManagement"
 import CourseManagement from "../pages/admin/CourseManagement"
-
-import AdminCourseDetail from "../pages/admin/CourseDetail"
 
 
 function AppRoutes() {
@@ -51,7 +48,6 @@ function AppRoutes() {
           <Route path="users" element={<UserManagement />} />
           <Route path="courses" element={<CourseManagement />} />
           <Route path="users/:id" element={<UserDetail />} />
-          <Route path="courses/:id" element={<AdminCourseDetail />} />
 
         </Route>
 
