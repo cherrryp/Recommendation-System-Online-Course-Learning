@@ -5,7 +5,7 @@ import { Link ,useNavigate} from "react-router-dom";
 
 function Login() {
 
-  const [email,setEmail] = useState("")
+  const [identifier,setIdentifier] = useState("")
   const [password,setPassword] = useState("")
   const navigate = useNavigate()
 
@@ -19,8 +19,8 @@ function Login() {
         headers:{
           "Content-Type":"application/json"
         },
-        body:JSON.stringify({
-          email,
+        body: JSON.stringify({
+          email: identifier,
           password
         })
       })
@@ -55,12 +55,11 @@ function Login() {
         <h2>Login</h2>
         <form onSubmit={handleLogin}>
           <div className="input-group">
-          <label htmlFor="email">Email</label>
+          <label>Email or Username</label>
           <input
-            id="email"
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            type="text"
+            value={identifier}
+            onChange={(e) => setIdentifier(e.target.value)}
           />
           </div>
           <div className="input-group">
@@ -73,10 +72,10 @@ function Login() {
           />
           </div>
           <div className="btn-LogReg">
-          <button className="btn-log" type="submit">
+          <button className="btn-logre log" type="submit">
             Login
           </button>
-          <Link to="/register" className="btn-reg">Register</Link>
+          <Link to="/register" className="btn-logre regis">Register</Link>
           </div>
         </form>
       </div>

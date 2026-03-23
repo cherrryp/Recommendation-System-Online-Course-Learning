@@ -25,7 +25,6 @@ return (
         <ul className="menu-ul">
             <li><Link to="/" className="menu-a">Home</Link></li>
             <li><Link to="/course" className="menu-a">Course</Link></li>
-            <li><Link to="/about" className="menu-a">About US</Link></li>
             <li className="btn-lr">
             {token && user ? (
               <div className="account-menu">

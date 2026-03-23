@@ -14,21 +14,43 @@ function Home() {
   const userId = user?.id
 
   useEffect(() => {
+
     if (userId) {
-      // login แล้ว → แสดง recommended
+
+      // login → recommendation
       getRecommendations(userId, 4)
-        .then((r) => setCourses(r.data.data || []))
+        .then(res => {
+
+          const mapped = res.data.recommendations.map(c => ({
+            id: c.course_id,
+            title: c.course_name_en || c.course_name_th,
+            category: c.category,
+            university: c.university,
+            price: 0,
+            url: "#",
+            thumbnailUrl: ""
+          }))
+
+          setCourses(mapped)
+
+        })
         .catch(() => loadLatest())
+
     } else {
-      // ยังไม่ login → แสดงคอร์สล่าสุด
+
+      // ไม่ login → คอร์สล่าสุด
       loadLatest()
+
     }
+
   }, [userId])
 
   const loadLatest = () => {
+
     getCourses({ page: 1, limit: 4 })
-      .then((r) => setCourses(r.data.courses || []))
+      .then(res => setCourses(res.data.courses || []))
       .catch(() => setCourses([]))
+
   }
 
   return (
