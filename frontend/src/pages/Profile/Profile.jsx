@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import Navbar from "../../components/Navbar.jsx"
-import { getBookmarks, toggleBookmark } from "../../api/BookmarkApi"
+import { getBookmarks } from "../../api/BookmarkApi"
+import { useBookmark } from "../../context/BookmarkContext.jsx"
 import "./Profile.css"
 import {UNI_HOVER_IMAGES, encodeImg} from "../../components/content_2.jsx"
 
@@ -28,6 +29,8 @@ function Profile() {
   const token = localStorage.getItem("token")
   const storedUser = JSON.parse(localStorage.getItem("user") || "null")
   const userId = storedUser?.id
+
+  const { toggle } = useBookmark()
 
   useEffect(() => {
     if (!token || !userId) {
@@ -188,9 +191,10 @@ function Profile() {
                           className="btn-bookmark bookmarked"
                           onClick={async (e) => {
                             e.stopPropagation()
-                            const res = await toggleBookmark(userId, course.id)
-                            if (!res.data.bookmarked) {
-                              await toggle(course.id)
+
+                            const bookmarked = await toggle(course.id)
+
+                            if (!bookmarked) {
                               setBookmarks((prev) => prev.filter((c) => c.id !== course.id))
                             }
                           }}

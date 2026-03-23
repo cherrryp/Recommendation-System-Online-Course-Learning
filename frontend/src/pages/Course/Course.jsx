@@ -189,7 +189,7 @@ function Course() {
     <div className="course">
       <Navbar />
 
-      {recommended.length > 0 && (
+      {/* {recommended.length > 0 && (
         <div className="recommended-section">
           <h3>แนะนำสำหรับคุณ</h3>
           <div className="courseAll recommended">
@@ -199,7 +199,7 @@ function Course() {
             ))}
           </div>
         </div>
-      )}
+      )} */}
 
       <form className="search-bar" onSubmit={handleSearch}>
         <input type="text" placeholder="ค้นหาคอร์ส..." value={searchInput}
