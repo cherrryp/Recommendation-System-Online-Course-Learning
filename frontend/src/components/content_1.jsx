@@ -7,15 +7,16 @@ function Content_1() {
     <div className="content-1">
       <div className="in-content-1">
         <div className="text-con1">
-          <h3>Personalized Learning, Designed for Your Growth</h3>
+          <h3>ค้นหาคอร์สที่ใช่ สำหรับคุณโดยเฉพาะ</h3>
           <p>
-            Unlock your full potential with our intelligent course recommendation system.
-            Learn smarter, achieve faster, and start your journey to success today.
+            ระบบแนะนำคอร์สอัจฉริยะที่ช่วยวิเคราะห์ความสนใจของคุณ
+            เพื่อคัดเลือกคอร์สที่เหมาะสมที่สุด ไม่ต้องเสียเวลาค้นหาเอง
+            เรียนรู้ได้ตรงจุด และพัฒนาทักษะได้เร็วขึ้น
           </p>
 
           <div className="button-con">
-            <Link to="/course" className="con1-btn start">Get Started</Link>
-            <Link to="/about" className="con1-btn learn">Learn More</Link>
+            <Link to="/course" className="con1-btn start">สำรวจคอร์ส</Link>
+            <Link to="/profile" className="con1-btn learn">ปรับความสนใจ</Link>
           </div>
         </div>
 
