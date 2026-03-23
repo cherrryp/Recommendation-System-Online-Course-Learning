@@ -2,6 +2,37 @@ import "./Content_2.css"
 import { Link } from "react-router-dom"
 import { UNI_NAMES } from "../constants/universities"
 
+const UNI_HOVER_IMAGES = {
+  Chulalongkorn: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248855/563000010687901_iw03ss.jpg",
+  CMU: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248857/unnamed_bguhc3.png",
+  KKU: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774249715/KKU_SLA_Logo.svg_yzfddp.png",
+  HU: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248855/logo_B_taoe7z.png",
+  KMITL: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248856/KMITL_Sublogo.svg_svlwi2.png",
+  KU: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248857/png-clipart-kasetsart-university-national-pingtung-university-of-science-and-technology-king-mongkut-s-university-of-technology-thonburi-student-student-thumbnail_ewqzaa.png",
+  MJU: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248858/MJU_LOGO_nbczak.svg",
+  NU: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248857/NULOGO-EN_y4g3de.png",
+  PSU: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248855/images_emjhsc.png",
+  RMU: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248855/images_1_f701zp.png",
+  SRU: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248856/logo-sru-png_neqczi.png",
+  TU: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248856/logo01_ooeuuf.jpg",
+}
+
+const encodeImg = (url) => {
+  if (!url) return null
+  try {
+    const u = new URL(url)
+    u.pathname = u.pathname
+      .split("/")
+      .map((seg) => encodeURIComponent(decodeURIComponent(seg)))
+      .join("/")
+    return u.toString()
+  } catch {
+    return null
+  }
+}
+
+// const encodeImg = (url) => url ? encodeURI(url) : null
+
 function Content_2({ courses = [], isRecommended = false }) {
   const handleOpen = (url) => {
     window.open(url, "_blank", "noopener,noreferrer")
@@ -17,38 +48,56 @@ function Content_2({ courses = [], isRecommended = false }) {
         {courses.length === 0 ? (
           <p style={{ color: "#888", padding: "20px 0" }}>กำลังโหลด...</p>
         ) : (
-          courses.map((course) => (
-            <div
-              className="card"
-              key={course.id}
-              onClick={() => handleOpen(course.url)}
-              style={{ cursor: "pointer" }}
-            >
+          courses.map((course) => {
+            const fallbackImg = UNI_HOVER_IMAGES[course.university]
+            const displayImg = encodeImg(course.thumbnailUrl) || fallbackImg
+
+            return (
               <div
-                className="image-card"
-                style={{
-                  backgroundImage: course.thumbnailUrl
-                    ? `url(${course.thumbnailUrl})`
-                    : "none",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  backgroundColor: "#e9ecef",
+                className="card-all"
+                key={course.id}
+                onClick={() => handleOpen(course.url)}
+                style={{ cursor: "pointer" }}
+                onMouseEnter={(e) => {
+                  const imgEl = e.currentTarget.querySelector(".image-card-all")
+                  if (fallbackImg && imgEl) {
+                    imgEl.style.backgroundImage = `url(${fallbackImg})`
+                  }
                 }}
-              />
-              <div className="content-card">
-                <h4 className="course-title">{course.title}</h4>
-                <div className="card-badges">
-                  <span className="badge badge-category">{course.category}</span>
-                  <span className="badge badge-uni">
-                    {UNI_NAMES[course.university] || course.university || "-"}
-                  </span>
+                onMouseLeave={(e) => {
+                  const imgEl = e.currentTarget.querySelector(".image-card-all")
+                  if (imgEl) {
+                    imgEl.style.backgroundImage = displayImg ? `url(${displayImg})` : "none"
+                  }
+                }}
+              >
+                <div
+                  className="image-card-all"
+                  style={{
+                    backgroundImage: displayImg ? `url(${displayImg})` : "none",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundColor: "#e9ecef",
+                    transition: "all 0.3s ease",
+                  }}
+                />
+                <div className="content-card-all">
+                  <h4 className="course-title">{course.title}</h4>
+                  <div className="card-badges">
+                    <span className="badge badge-category">{course.category}</span>
+                    <span className="badge badge-uni">
+                      {UNI_NAMES[course.university] || course.university || "-"}
+                    </span>
+                  </div>
+                  <div className="card-footer">
+                    <span className={`price-badge ${course.price === 0 ? "free" : "paid"}`}>
+                      {course.price === 0 ? "ฟรี" : `${course.price} ฿`}
+                    </span>
+                  </div>
                 </div>
-                <span className={`price-badge ${course.price === 0 ? "free" : "paid"}`}>
-                  {course.price === 0 ? "ฟรี" : `${course.price} ฿`}
-                </span>
               </div>
-            </div>
-          ))
+            )  
+          })  
         )}
       </div>
 
