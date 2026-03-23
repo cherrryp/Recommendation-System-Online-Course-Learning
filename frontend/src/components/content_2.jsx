@@ -2,6 +2,9 @@ import "./Content_2.css"
 import { Link } from "react-router-dom"
 import { UNI_NAMES } from "../constants/universities"
 
+import { useState, useEffect } from "react"
+import { toggleBookmark, getBookmarks } from "../api/BookmarkApi"
+
 const UNI_HOVER_IMAGES = {
   Chulalongkorn: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248855/563000010687901_iw03ss.jpg",
   CMU: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248857/unnamed_bguhc3.png",
@@ -34,6 +37,31 @@ const encodeImg = (url) => {
 // const encodeImg = (url) => url ? encodeURI(url) : null
 
 function Content_2({ courses = [], isRecommended = false }) {
+  const [bookmarks, setBookmarks] = useState(new Set())
+
+  const user = JSON.parse(localStorage.getItem("user") || "null")
+  const userId = user?.id
+
+  // โหลด bookmark ของ user
+  useEffect(() => {
+    if (!userId) return
+    getBookmarks(userId).then((r) => {
+      setBookmarks(new Set((r.data.data || []).map((c) => c.id)))
+    })
+  }, [userId])
+
+  const handleBookmark = async (e, courseId) => {
+    e.stopPropagation() // ไม่ให้ trigger handleOpen
+    if (!userId) return alert("กรุณาเข้าสู่ระบบก่อน")
+    const res = await toggleBookmark(userId, courseId)
+    const { bookmarked } = res.data
+    setBookmarks((prev) => {
+      const next = new Set(prev)
+      bookmarked ? next.add(courseId) : next.delete(courseId)
+      return next
+    })
+  }
+
   const handleOpen = (url) => {
     window.open(url, "_blank", "noopener,noreferrer")
   }
@@ -51,6 +79,7 @@ function Content_2({ courses = [], isRecommended = false }) {
           courses.map((course) => {
             const fallbackImg = UNI_HOVER_IMAGES[course.university]
             const displayImg = encodeImg(course.thumbnailUrl) || fallbackImg
+            const isBookmarked = bookmarks.has(course.id)
 
             return (
               <div
@@ -60,15 +89,11 @@ function Content_2({ courses = [], isRecommended = false }) {
                 style={{ cursor: "pointer" }}
                 onMouseEnter={(e) => {
                   const imgEl = e.currentTarget.querySelector(".image-card-all")
-                  if (fallbackImg && imgEl) {
-                    imgEl.style.backgroundImage = `url(${fallbackImg})`
-                  }
+                  if (fallbackImg && imgEl) imgEl.style.backgroundImage = `url(${fallbackImg})`
                 }}
                 onMouseLeave={(e) => {
                   const imgEl = e.currentTarget.querySelector(".image-card-all")
-                  if (imgEl) {
-                    imgEl.style.backgroundImage = displayImg ? `url(${displayImg})` : "none"
-                  }
+                  if (imgEl) imgEl.style.backgroundImage = displayImg ? `url(${displayImg})` : "none"
                 }}
               >
                 <div
@@ -93,11 +118,31 @@ function Content_2({ courses = [], isRecommended = false }) {
                     <span className={`price-badge ${course.price === 0 ? "free" : "paid"}`}>
                       {course.price === 0 ? "ฟรี" : `${course.price} ฿`}
                     </span>
+
+                    {/* ปุ่ม bookmark */}
+                    <button
+                      className={`btn-bookmark ${isBookmarked ? "bookmarked" : ""}`}
+                      onClick={(e) => handleBookmark(e, course.id)}
+                      title={isBookmarked ? "ยกเลิก bookmark" : "บันทึก"}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16"
+                        viewBox="0 0 24 24"
+                        fill={isBookmarked ? "#6c63ff" : "none"}
+                        stroke={isBookmarked ? "#6c63ff" : "#aaa"}
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </div>
-            )  
-          })  
+            )
+          })
         )}
       </div>
 

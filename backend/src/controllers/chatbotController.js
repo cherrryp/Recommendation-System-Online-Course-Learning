@@ -4,13 +4,11 @@ import { chat, checkOllamaHealth } from "../service/chatbot.service.js"
 // body: { userId, message, history: [{role, content}] }
 export const sendMessage = async (req, res) => {
   try {
-    const { userId, message, history = [] } = req.body
-
+    const { userId, message, page = 1 } = req.body
     if (!userId || !message) {
       return res.status(400).json({ success: false, message: "userId และ message required" })
     }
-
-    const result = await chat(userId, message, history)
+    const result = await chat(userId, message, page)
     res.json({ success: true, ...result })
   } catch (error) {
     console.error(error)

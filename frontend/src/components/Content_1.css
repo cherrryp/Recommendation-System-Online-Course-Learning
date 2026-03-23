@@ -58,3 +58,78 @@
     outline: 2px solid rgb(196, 227, 252);    
     outline-offset: 3px; 
 }
+
+.mini-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 8px 0 8px 36px;
+}
+
+.mini-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid #ede9fe;
+  border-radius: 12px;
+  padding: 8px 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.mini-card:hover {
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+.mini-card-img {
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  background-color: #e9ecef;
+}
+
+.mini-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.mini-card-title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mini-card-uni {
+  font-size: 0.7rem;
+  color: #888;
+  margin: 0;
+}
+
+.price-badge.free {
+  background: #d1fae5;
+  color: #065f46;
+  font-size: 0.65rem;
+  padding: 2px 7px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.price-badge.paid {
+  background: #ede9fe;
+  color: #5b21b6;
+  font-size: 0.65rem;
+  padding: 2px 7px;
+  border-radius: 20px;
+  width: fit-content;
+}

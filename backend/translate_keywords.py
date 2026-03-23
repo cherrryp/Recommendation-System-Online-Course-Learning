@@ -33,7 +33,7 @@ def translate_keyword(kw: str, translator) -> str:
         print(f"  {kw} → {translated}")
         return translated
     except Exception as e:
-        print(f"  ⚠️ แปลไม่ได้: {kw} ({e})")
+        print(f"แปลไม่ได้: {kw} ({e})")
         return kw  # คืนค่าเดิมถ้าแปลไม่ได้
 
 def main():
@@ -41,12 +41,12 @@ def main():
         import psycopg2
         from deep_translator import GoogleTranslator
     except ImportError:
-        print("❌ รัน:  pip install deep-translator psycopg2-binary python-dotenv")
+        print("รัน:  pip install deep-translator psycopg2-binary python-dotenv")
         return
 
     db_url = os.getenv("DATABASE_URL")
     if not db_url:
-        print("❌ ไม่พบ DATABASE_URL ใน .env")
+        print("ไม่พบ DATABASE_URL ใน .env")
         return
 
     conn = psycopg2.connect(db_url)
@@ -59,10 +59,10 @@ def main():
         ORDER BY keyword
     """)
     rows = cur.fetchall()
-    print(f"📝 พบ keyword ภาษาไทย {len(rows)} รายการ\n")
+    print(f"พบ keyword ภาษาไทย {len(rows)} รายการ\n")
 
     if not rows:
-        print("✅ ไม่มี keyword ไทยแล้ว")
+        print("ไม่มี keyword ไทยแล้ว")
         conn.close()
         return
 
@@ -111,7 +111,7 @@ def main():
     cur.close()
     conn.close()
 
-    print(f"\n🎉 เสร็จแล้ว!")
+    print(f"\nเสร็จแล้ว!")
     print(f"   แปลแล้ว: {updated}  |  ลบซ้ำ: {deleted}")
 
 if __name__ == "__main__":
