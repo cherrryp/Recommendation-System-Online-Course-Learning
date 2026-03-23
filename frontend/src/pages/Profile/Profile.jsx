@@ -1,155 +1,175 @@
-import Navbar from "../../components/Navbar.jsx"
 import { useEffect, useState } from "react"
-import { useNavigate, Link } from "react-router-dom"
-import { getMyCoursesAPI } from "../../api/enrollmentApi"
+import { useNavigate } from "react-router-dom"
+import Navbar from "../../components/Navbar.jsx"
+import { getBookmarks } from "../../api/BookmarkApi"
 import "./Profile.css"
+
+import { UNI_NAMES } from "../../constants/universities"
+
+// keyword ที่ให้ user เลือกได้
+const KEYWORD_OPTIONS = [
+  "excel", "python", "programming", "data", "finance", "accounting",
+  "business", "management", "english", "language", "health", "nursing",
+  "science", "research", "marketing", "law", "education", "agriculture",
+  "environment", "technology", "ai", "statistics", "design", "digital",
+]
 
 function Profile() {
   const [user, setUser] = useState(null)
-  const [loadingProfile, setLoadingProfile] = useState(true)
-  const [errorProfile, setErrorProfile] = useState(null)
+  const [bookmarks, setBookmarks] = useState([])
+  const [interests, setInterests] = useState([])
+  const [selectedKeywords, setSelectedKeywords] = useState([])
+  const [saving, setSaving] = useState(false)
+  const [saveMsg, setSaveMsg] = useState("")
+  const [loading, setLoading] = useState(true)
   const navigate = useNavigate()
 
-  const [courses, setCourses] = useState([])
-  const [loadingCourses, setLoadingCourses] = useState(true)
-  const [errorCourses, setErrorCourses] = useState(null)
+  const token = localStorage.getItem("token")
+  const storedUser = JSON.parse(localStorage.getItem("user") || "null")
+  const userId = storedUser?.id
 
   useEffect(() => {
-    const token = localStorage.getItem("token")
-    if (!token) {
+    if (!token || !userId) {
       navigate("/login")
       return
     }
 
-    const fetchData = async () => {
-      // 1. ดึงข้อมูล Profile
+    const fetchAll = async () => {
       try {
-        const profileRes = await fetch("http://localhost:3000/api/user/profile", {
-          headers: {
-            Authorization: `Bearer ${token}`
-          }
+        // ดึง profile
+        const res = await fetch(`http://localhost:3000/api/users/profile/${userId}`, {
+          headers: { Authorization: `Bearer ${token}` },
         })
-        const profileData = await profileRes.json()
-        
-        if (profileData.success) {
-          setUser(profileData.user)
-        } else {
-          setErrorProfile(profileData.message || "Unable to load profile")
+        const data = await res.json()
+        if (data.success) {
+          setUser(data.data)
+          const kws = (data.data.interests || []).map((i) => i.keyword)
+          setInterests(kws)
+          setSelectedKeywords(kws)
         }
-      } catch (err) {
-        console.error("Profile fetch error:", err)
-        setErrorProfile("Unable to load profile")
-      } finally {
-        setLoadingProfile(false)
-      }
 
-      // 2. ดึงข้อมูลคอร์สเรียนที่ลงทะเบียนไว้
-      try {
-        const coursesData = await getMyCoursesAPI()
-        if (coursesData.success) {
-          setCourses(coursesData.data)
-        } else {
-          setErrorCourses(coursesData.message || "Unable to load courses")
-        }
+        // ดึง bookmarks
+        const bRes = await getBookmarks(userId)
+        setBookmarks(bRes.data.data || [])
       } catch (err) {
-        console.error("Courses fetch error:", err)
-        // จัดการ error จาก axios
-        setErrorCourses(err.response?.data?.message || err.message || "Unable to load courses")
+        console.error(err)
       } finally {
-        setLoadingCourses(false)
+        setLoading(false)
       }
     }
 
-    fetchData()
-  }, [navigate])
+    fetchAll()
+  }, [navigate, token, userId])
+
+  const toggleKeyword = (kw) => {
+    setSelectedKeywords((prev) =>
+      prev.includes(kw) ? prev.filter((k) => k !== kw) : [...prev, kw]
+    )
+  }
+
+  const saveInterests = async () => {
+    setSaving(true)
+    setSaveMsg("")
+    try {
+      const res = await fetch(`http://localhost:3000/api/users/interests/${userId}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ keywords: selectedKeywords }),
+      })
+      const data = await res.json()
+      if (data.success) {
+        setInterests(selectedKeywords)
+        setSaveMsg("บันทึกความสนใจแล้ว ✓")
+      }
+    } catch (err) {
+      setSaveMsg("เกิดข้อผิดพลาด ลองใหม่อีกครั้ง")
+    } finally {
+      setSaving(false)
+      setTimeout(() => setSaveMsg(""), 3000)
+    }
+  }
+
+  if (loading) return <div className="profile"><Navbar /><p style={{ padding: "2rem" }}>กำลังโหลด...</p></div>
 
   return (
     <div className="profile">
       <Navbar />
       <div className="profile-page">
-        <h1>Profile</h1>
 
-        {/* --- ส่วนแสดงข้อมูลผู้ใช้ --- */}
-        {loadingProfile && <p>Loading profile...</p>}
-        {errorProfile && <p style={{ color: "red" }}>{errorProfile}</p>}
+        {/* ข้อมูลผู้ใช้ */}
+        <div className="profile-card">
+          <h2>ข้อมูลส่วนตัว</h2>
+          {user && (
+            <>
+              <p><strong>ชื่อ:</strong> {user.fname || "-"} {user.lname || "-"}</p>
+              <p><strong>Username:</strong> {user.username}</p>
+              <p><strong>Email:</strong> {user.email}</p>
+              <p><strong>สมัครเมื่อ:</strong> {new Date(user.createdAt).toLocaleDateString("th-TH")}</p>
+            </>
+          )}
+        </div>
 
-        {user && (
-          <div className="profile-card">
-            <p><strong>First name:</strong> {user.fname || "-"}</p>
-            <p><strong>Last name:</strong> {user.lname || "-"}</p>
-            <p><strong>Email:</strong> {user.email}</p>
-            <p><strong>Education:</strong> {user.educationLevel || "-"}</p>
-            <p><strong>Birth date:</strong> {user.birthDate ? new Date(user.birthDate).toLocaleDateString() : "-"}</p>
-            <p><strong>Username:</strong> {user.username}</p>
-            <p><strong>Role:</strong> {user.role}</p>
-            <p>
-              <strong>Interests:</strong>{" "}
-              {user.interests?.length > 0 ? user.interests.join(", ") : "No interests yet"}
-            </p>
-            <p><strong>Account created:</strong> {new Date(user.createdAt).toLocaleDateString()}</p>
+        {/* ความสนใจ */}
+        <div className="interests-section">
+          <h2>ความสนใจของฉัน</h2>
+          <p className="hint">เลือก keyword ที่สนใจ ระบบจะแนะนำคอร์สให้ตรงกับคุณมากขึ้น</p>
+          <div className="keyword-grid">
+            {KEYWORD_OPTIONS.map((kw) => (
+              <button
+                key={kw}
+                className={`keyword-btn ${selectedKeywords.includes(kw) ? "selected" : ""}`}
+                onClick={() => toggleKeyword(kw)}
+              >
+                {kw}
+              </button>
+            ))}
           </div>
-        )}
+          <div className="save-row">
+            <button className="btn-save" onClick={saveInterests} disabled={saving}>
+              {saving ? "กำลังบันทึก..." : "บันทึกความสนใจ"}
+            </button>
+            {saveMsg && <span className="save-msg">{saveMsg}</span>}
+          </div>
+        </div>
 
-        <div className="my-courses-section">
-          <h2>My Enrolled Courses 📚</h2>
-          <hr className="hr"/>
-          {loadingCourses && <p>Loading courses...</p>}
-          {errorCourses && <p style={{ color: "red" }}>{errorCourses}</p>}
-
-          {!loadingCourses && !errorCourses && courses.length === 0 && (
-            <p>You haven't enrolled in any courses yet. <Link to="/courses">Browse courses</Link></p>
-            )}
-          
-          {courses.length > 0 && (
+        {/* Bookmarks */}
+        <div className="bookmarks-section">
+          <h2>คอร์สที่บันทึกไว้ 🔖</h2>
+          {bookmarks.length === 0 ? (
+            <p>ยังไม่มีคอร์สที่บันทึกไว้</p>
+          ) : (
             <div className="cards">
-              {courses.map((enrollment) => (
-                <Link 
-                  to={`/course/${enrollment.course.id}`} 
-                  key={enrollment.id} 
+              {bookmarks.map((course) => (
+                <a
+                  key={course.id}
+                  href={course.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="course-card"
-                  style={{ textDecoration: 'none', color: 'inherit' }} // 💡 ป้องกัน Link เปลี่ยนสีข้อความและขีดเส้นใต้
                 >
                   <div
                     className="image-card"
                     style={{
-                      backgroundImage: `url(${enrollment.course.thumbnailUrl})`,
+                      backgroundImage: `url(${course.thumbnailUrl || "/placeholder.png"})`,
                       backgroundSize: "cover",
-                      backgroundPosition: "center"
+                      backgroundPosition: "center",
                     }}
-                  ></div>
-
+                  />
                   <div className="content-card">
-                    <h4 className="course-title">{enrollment.course.courseName}</h4>
-
-                    <ul className="ul-card">
-                      <li>
-                        <div className="card-show">
-                          <p className="rating">
-                            ⭐ {enrollment.course.averageRating ?? "-"} ({enrollment.course.totalReviews ?? 0} reviews)
-                          </p>
-                          <p className="text">
-                          Categories : {enrollment.course.category?.name}
-                          </p>
-                          <p className="text">
-                          Price : {enrollment.course.price === null ? "Free" : `${enrollment.course.price} Baht`}
-                          </p>
-                        </div>
-
-                        <div className="card-hidden">
-                          <p>Level : {enrollment.course.level}</p>
-                          {enrollment.course.organization &&
-                            <p>Organization : {enrollment.course.organization}</p>
-                          }
-                          <p>University : {enrollment.course.university}</p>
-                        </div>
-                      </li>
-                    </ul>
+                    <h4 className="course-title">{course.title}</h4>
+                    <p className="text">{course.category}</p>
+                    <p className="text">{UNI_NAMES[course.university] || course.university}</p>
+                    <p className="text">{course.price === 0 ? "ฟรี" : `${course.price} บาท`}</p>
                   </div>
-              </Link>
-            ))}
+                </a>
+              ))}
             </div>
           )}
         </div>
+
       </div>
     </div>
   )

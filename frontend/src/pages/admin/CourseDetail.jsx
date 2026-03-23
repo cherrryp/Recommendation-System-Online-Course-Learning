@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react"
 import { useParams, useNavigate } from "react-router-dom"
-import { getCourseById, updateCourse } from "../../api/adminApi"
+import { getCourseById, updateCourse, getCategories } from "../../api/adminApi"
 
 function CourseDetail() {
   const { id } = useParams()
   const navigate = useNavigate()
   const [course, setCourse] = useState(null)
+  const [categories, setCategories] = useState([])
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState(null)
@@ -15,21 +16,24 @@ function CourseDetail() {
     courseName: "",
     level: "",
     price: "",
+    categoryId: "",
     courseDescription: ""
   })
 
   useEffect(() => {
-    getCourseById(id)
-      .then(res => {
-        setCourse(res.data)
+    Promise.all([getCourseById(id), getCategories()])
+      .then(([courseRes, catRes]) => {
+        setCourse(courseRes.data)
+        setCategories(catRes.data)
         setForm({
-          courseName: res.data.courseName ?? "",
-          level: res.data.level ?? "",
-          price: res.data.price ?? "",
-          courseDescription: res.data.courseDescription ?? ""
+          courseName: courseRes.data.courseName ?? "",
+          level: courseRes.data.level ?? "",
+          price: courseRes.data.price ?? "",
+          categoryId: courseRes.data.categoryId ?? "",
+          courseDescription: courseRes.data.courseDescription ?? ""
         })
       })
-      .catch(() => setError("Failed to load course"))
+      .catch(() => setError("Failed to load"))
       .finally(() => setLoading(false))
   }, [id])
 
@@ -86,7 +90,11 @@ function CourseDetail() {
           </div>
           <div>
             <label style={labelStyle}>Category</label>
-            <input value={course.category?.name ?? "-"} disabled style={{ ...input, background: "#f8fafc", color: "#94a3b8" }} />
+            <select name="categoryId" value={form.categoryId} onChange={handleChange} style={input}>
+              {categories.map(cat => (
+                <option key={cat.id} value={cat.id}>{cat.name}</option>
+              ))}
+            </select>
           </div>
         </div>
 

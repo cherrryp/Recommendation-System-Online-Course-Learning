@@ -8,6 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+node_modules/
 dist
 dist-ssr
 *.local
@@ -27,12 +28,17 @@ dist-ssr
 *.sln
 *.sw?
 
-.venv/
-.venv/*
-.venv.*
-
-clean_courses.csv
-__pycache__
+frontend/.env
+backend/.env
 
 backend/node_modules/
 frontend/node_modules/
+
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.venv/*
+.venv.*

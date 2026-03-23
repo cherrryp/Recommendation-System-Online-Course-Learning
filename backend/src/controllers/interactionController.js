@@ -1,40 +1,28 @@
-import * as interactionService from "../service/interaction.service.js";
+import prisma from "../lib/prisma.js"
+import { updateUserInterest } from "../service/recommendation.service.js"
+import { trackCourseInteraction } from "../service/interaction.service.js"
 
+// POST /api/interactions
+// เก็บ interaction และอัปเดต UserInterest
 export const recordInteraction = async (req, res) => {
-  const { userId, courseId, action } = req.body;
-
-  // 1. ตรวจสอบว่าส่งข้อมูลมาครบไหม
-  if (!userId || !courseId || !action) {
-    return res.status(400).json({ 
-      success: false, 
-      message: "Missing required fields: userId, courseId, or action" 
-    });
-  }
-
   try {
-    // 2. เรียกใช้ Service เพื่อทำงานหลัก
-    const result = await interactionService.trackCourseInteraction(userId, courseId, action);
+    const { userId, courseId, action } = req.body
 
-    // 3. จัดการ Response ตามผลลัพธ์ที่ได้จาก Service
-    if (result.isSpam) {
-      return res.status(200).json({ 
-        success: true,
-        message: "Interaction already recorded recently", 
-        data: result.data 
-      });
+    if (!userId || !courseId || !action) {
+      return res.status(400).json({ success: false, message: "userId, courseId, action required" })
     }
 
-    return res.status(201).json({ 
-      success: true,
-      message: "Interaction recorded successfully", 
-      data: result.data 
-    });
+    // บันทึก interaction (มี spam protection อยู่แล้ว)
+    const result = await trackCourseInteraction(userId, courseId, action)
 
+    // อัปเดต UserInterest ถ้าไม่ใช่ spam
+    if (!result.isSpam) {
+      await updateUserInterest(userId, courseId, action)
+    }
+
+    res.json({ success: true, data: result.data, isSpam: result.isSpam })
   } catch (error) {
-    console.error("Controller Error (recordInteraction):", error);
-    return res.status(500).json({ 
-      success: false,
-      message: "Internal server error" 
-    });
+    console.error(error)
+    res.status(500).json({ success: false, message: "Error recording interaction" })
   }
-};
+}

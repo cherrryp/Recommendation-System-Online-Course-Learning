@@ -1,0 +1,4241 @@
+[
+  {
+    "title": "คู่คิด คันจิ",
+    "description": "",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/หน้าปกวิชาคันจิคู่คิด.png",
+    "instructor": "ผศ. ดร.อัษฎายุทธ ชูศรี, ผศ. ดร.อัษฎายุทธ ชูศรี",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/1",
+    "tags": [
+      "language",
+      "คู่คิด"
+    ],
+    "scraped_at": "2026-03-21T22:58:27.098330"
+  },
+  {
+    "title": "แนวทางการออกแบบบ้านประหยัดพลังงานและเป็นมิตรต่อสิ่งแวดล้อม",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ปก แนวทางการออกแบบบ้านประหยัดพลังงาน.png",
+    "instructor": "ผศ.สรายุทธ ทรัพย์สุข, ผศ.สรายุทธ ทรัพย์สุข",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/2",
+    "tags": [
+      "digital",
+      "environment",
+      "energy",
+      "design"
+    ],
+    "scraped_at": "2026-03-21T22:58:32.194011"
+  },
+  {
+    "title": "Critical Thinking for Business",
+    "description": "",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Critical Thinking for Business.png",
+    "instructor": "รศ. ดร.เดชา เดชะวัฒนไพศาล, รศ. ดร.เดชา เดชะวัฒนไพศาล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/3",
+    "tags": [
+      "management",
+      "business",
+      "critical",
+      "thinking"
+    ],
+    "scraped_at": "2026-03-21T22:58:36.153105"
+  },
+  {
+    "title": "หลักการพื้นฐานทางกฎหมายทั่วไป",
+    "description": "",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/หลักการพื้นฐานกฎหมายทั่วไป.png",
+    "instructor": "รศ. ดร.มานิตย์ จุมปา, รศ. ดร.มานิตย์ จุมปา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/4",
+    "tags": [
+      "law"
+    ],
+    "scraped_at": "2026-03-21T22:58:39.822991"
+  },
+  {
+    "title": "การช่วยฟื้นคืนชีพขั้นพื้นฐาน",
+    "description": "",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การช่วยฟื้นคืนชีพขั้นพื้นฐาน (Basic Life Support).png",
+    "instructor": "อ. นพ.ธนดล โรจนศานติกุล, อ. นพ.ธนดล โรจนศานติกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/5",
+    "tags": [
+      "health",
+      "medical"
+    ],
+    "scraped_at": "2026-03-21T22:58:43.074882"
+  },
+  {
+    "title": "มหากาพย์ อังกฤษ อัปเกรด: โค้งสุดท้ายไวยากรณ์ และการออกเสียงภาษาอังกฤษ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/โค้งสุดท้ายไวยากรณ์และการออกเสียง.png",
+    "instructor": "ผศ.มณฑิรา ดำรงมณี, ผศ.มณฑิรา ดำรงมณี, สถาบันภาษา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/6",
+    "tags": [
+      "language",
+      "english"
+    ],
+    "scraped_at": "2026-03-21T22:58:46.732175"
+  },
+  {
+    "title": "Communicative Thai for Foreigners",
+    "description": "About course",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Communicative Thai for Foreigners.jpg",
+    "instructor": "Asst. Prof.Kiat Thepchuaysuk, Ph.D., Asst. Prof.Kiat Thepchuaysuk, Ph.D., Thailand Foundation, Thailand Foundation",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/8",
+    "tags": [
+      "language",
+      "communicative",
+      "thai",
+      "foreigners"
+    ],
+    "scraped_at": "2026-03-21T22:58:54.584878"
+  },
+  {
+    "title": "กฎหมายกับธุรกิจ Law for Business: กฎหมายพื้นฐาน​สำหรับธุรกิจ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/กฎหมายกับธุรกิจ.png",
+    "instructor": "ผศ.ชนิสา งามอภิชน, ผศ.ชนิสา งามอภิชน",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/9",
+    "tags": [
+      "management",
+      "business",
+      "law"
+    ],
+    "scraped_at": "2026-03-21T22:58:59.472952"
+  },
+  {
+    "title": "อาหารสุขภาพ รู้ทัน รู้จริง",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/อาหารสุขภาพ รู้ทัน รู้จริง.png",
+    "instructor": "ศ. ดร.ภญ.จงจิตร อังคทะวานิช, ศ. ดร.ภญ.จงจิตร อังคทะวานิช",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/10",
+    "tags": [
+      "health",
+      "medical",
+      "food"
+    ],
+    "scraped_at": "2026-03-21T22:59:03.272912"
+  },
+  {
+    "title": "มหากาพย์ กลเม็ด เก่งคณิต: พร้อมสู้สู่แคลคูลัส (ความรู้พื้นฐานสำหรับแคลคูลัส)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/มหากาพย์ กลเม็ด เก่งคณิต พร้อมสู้สู่แคลคูลัส.png",
+    "instructor": "ผศ. ดร.เก่ง วิบูลย์ธัญญ์, ผศ. ดร.เก่ง วิบูลย์ธัญญ์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/11",
+    "tags": [
+      "digital",
+      "มหากาพย์"
+    ],
+    "scraped_at": "2026-03-21T22:59:07.791384"
+  },
+  {
+    "title": "เรื่องสิ่งแวดล้อมเรื่องของเรา: FOOD-WATER-ENERGY NEXUS",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สิ่งแวดล้อมเรื่องของเรา Food-Water.png",
+    "instructor": "ศ. ดร.พิสุทธิ์ เพียรมนกุล, ศ. ดร.พิสุทธิ์ เพียรมนกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/12",
+    "tags": [
+      "digital",
+      "environment",
+      "food",
+      "water",
+      "energy"
+    ],
+    "scraped_at": "2026-03-21T22:59:12.512172"
+  },
+  {
+    "title": "การประชาสัมพันธ์ผ่านกิจกรรมทำอย่างไร?",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การประชาสัมพันธ์ผ่านกิจกรรมทำอย่างไร .png",
+    "instructor": "รศ. ดร.สมิทธิ์ บุญชุติมา, รศ. ดร.สมิทธิ์ บุญชุติมา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/13",
+    "tags": [
+      "การประชาสัมพันธ์ผ่านกิจกรรมทำอย่างไร",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T22:59:16.690540"
+  },
+  {
+    "title": "เคล็ดวิชาค้นคว้า กระบวนท่านำเสนอผลงาน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เคล็ดลับวิชาค้นคว้ากระบวนท่านำเสนอผลงาน.png",
+    "instructor": "รศ.จินดารัตน์ เบอรพันธุ์, รศ.จินดารัตน์ เบอรพันธุ์, ผศ. ดร.อรนุช เศวตรัตนเสถียร, ผศ. ดร.อรนุช เศวตรัตนเสถียร, ผศ. ดร.พิมพ์รำไพ เปรมสมิทธ์, ผศ. ดร.พิมพ์รำไพ เปรมสมิทธ์, รศ. ดร.สมศักดิ์ ศรีบริสุทธิ์สกุล, รศ. ดร.สมศักดิ์ ศรีบริสุทธิ์สกุล, ผศ. ดร.เสาวภา หลิมวิจิตร, ผศ. ดร.เสาวภา หลิมวิจิตร, ผศ. ดร.วชิราภรณ์ คลังธนบูรณ์, ผศ. ดร.วชิราภรณ์ คลังธนบูรณ์, อ.เนณุภา สุภเวชย์, อ.เนณุภา สุภเวชย์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/14",
+    "tags": [
+      "เคล็ดวิชาค้นคว้า",
+      "กระบวนท่านำเสนอผลงาน"
+    ],
+    "scraped_at": "2026-03-21T22:59:21.169597"
+  },
+  {
+    "title": "ภาษาอาหรับเบื้องต้น",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/phaasaaaahrbebngtn.original.png",
+    "instructor": "ผศ. ดร.ทรงศักดิ์ หมัดสะและ, ผศ. ดร.ทรงศักดิ์ หมัดสะและ, อ.นิรันดร์ ขันธวิธิ, อ.นิรันดร์ ขันธวิธิ, อาจารย์พิเศษ สาขาวิชาภาษาอาหรับ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/15",
+    "tags": [
+      "language",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T22:59:26.619235"
+  },
+  {
+    "title": "สังคมผู้สูงอายุและการดูแลสุขภาพช่องปาก",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สังคมผู้สูงอายุและการดูแลสุขภาพช่องปาก.png",
+    "instructor": "รศ. ทพญ. ดร.อรพินท์ โคมิน, รศ. ทพญ. ดร.อรพินท์ โคมิน, รศ.ไตรรัตน์ จารุทัศน์, รศ.ไตรรัตน์ จารุทัศน์, รศ. นพ.สุขเจริญ ตั้งวงษ์ไชย, รศ. นพ.สุขเจริญ ตั้งวงษ์ไชย, ทพ.สหพรหม นามะโน, ทพ.สหพรหม นามะโน, ทพ.ชานน สุวรรณประพิศ, ทพ.ชานน สุวรรณประพิศ, ทญ.ชรินญา กาญจนเสวี, ทญ.ชรินญา กาญจนเสวี",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/16",
+    "tags": [
+      "health",
+      "medical",
+      "elderly",
+      "social"
+    ],
+    "scraped_at": "2026-03-21T22:59:31.534241"
+  },
+  {
+    "title": "Learn Python: Language Basics and Fundamental Data Processing",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ปกวิชา Learn Python Language Basics and Fundamental.png",
+    "instructor": "รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.โปรดปราน บุณยพุกกณะ, รศ. ดร.โปรดปราน บุณยพุกกณะ, รศ. ดร.ธนารัตน์ ชลิดาพงศ์, รศ. ดร.ธนารัตน์ ชลิดาพงศ์, อ.ชินวิทย์ ชลิดาพงศ์, อ.ชินวิทย์ ชลิดาพงศ์, Eikonnex AI Co., Ltd.",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/17",
+    "tags": [
+      "python",
+      "digital",
+      "language",
+      "data"
+    ],
+    "scraped_at": "2026-03-21T22:59:35.171618"
+  },
+  {
+    "title": "Learn Python: Data Processing with NumPy and Matplotlib",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Learn Python Data Processing with NumPy and Matplotlib.png",
+    "instructor": "รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.โปรดปราน บุณยพุกกณะ, รศ. ดร.โปรดปราน บุณยพุกกณะ, รศ. ดร.ธนารัตน์ ชลิดาพงศ์, รศ. ดร.ธนารัตน์ ชลิดาพงศ์, อ.ชินวิทย์ ชลิดาพงศ์, อ.ชินวิทย์ ชลิดาพงศ์, Eikonnex AI Co., Ltd.",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/18",
+    "tags": [
+      "python",
+      "digital",
+      "data"
+    ],
+    "scraped_at": "2026-03-21T22:59:39.503125"
+  },
+  {
+    "title": "กฎหมายกับธุรกิจ Law for Business: กฎหมายกับธุรกิจยุค Thailand 4.0 และภาษีกับธุรกิจ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/กฎหมายกับธุรกิจ Law for Business กฎหมายกับธุรกิจยุค Thailand 4.0 และภาษีกับธุรกิจ.png",
+    "instructor": "ผศ.ชนิสา งามอภิชน, ผศ.ชนิสา งามอภิชน",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/19",
+    "tags": [
+      "management",
+      "business",
+      "law"
+    ],
+    "scraped_at": "2026-03-21T22:59:43.617303"
+  },
+  {
+    "title": "เศรษฐกิจเกษตร",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Agricultural Economics_cover.png",
+    "instructor": "ผศ. ดร.วริพัสย์ เจียมปัญญารัช, ผศ. ดร.วริพัสย์ เจียมปัญญารัช, สำนักวิชาทรัพยากรการเกษตร",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/20",
+    "tags": [
+      "management",
+      "business",
+      "economics",
+      "agriculture"
+    ],
+    "scraped_at": "2026-03-21T22:59:47.699752"
+  },
+  {
+    "title": "มหากาพย์ กลเม็ด เก่งคณิต: พิชิตพีชคณิต (พีชคณิตและพีชคณิตเชิงเส้น)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/มหากาพย์ กลเม็ด เก่งคณิต พิชิตพีชคณิต พีชคณิตและพีชคณิตเชิงเส้น.png",
+    "instructor": "รศ. ดร.เก่ง วิบูลย์ธัญญ์, รศ. ดร.เก่ง วิบูลย์ธัญญ์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/21",
+    "tags": [
+      "digital",
+      "มหากาพย์"
+    ],
+    "scraped_at": "2026-03-21T22:59:53.625867"
+  },
+  {
+    "title": "IoT Raspberry Pi การทำโครงงานไอโอทีด้วย Raspberry PI: ภาคโปรแกรม",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/IoT Raspberry Pi การทำโครงงานไอโอทีด้วย Raspberry PI ภาคโปรแกรม.png",
+    "instructor": "รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.อติวงศ์ สุชาโต, คุณปณิดา วิริยะชัยพร, คุณปณิดา วิริยะชัยพร, คุณไกรฤกษ์ ตรีทิพสุนทร, คุณไกรฤกษ์ ตรีทิพสุนทร",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/22",
+    "tags": [
+      "digital",
+      "iot",
+      "programming"
+    ],
+    "scraped_at": "2026-03-21T22:59:58.606546"
+  },
+  {
+    "title": "การออกแบบเพื่อทุกคน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การออกแบบเพื่อทุกคน.png",
+    "instructor": "รศ.ไตรรัตน์ จารุทัศน์, รศ.ไตรรัตน์ จารุทัศน์, รศ.ภาวดี อังศุสิงห์, รศ.ภาวดี อังศุสิงห์, ผศ.กิตติอร ศิริสุข, ผศ.กิตติอร ศิริสุข",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/23",
+    "tags": [
+      "health",
+      "medical",
+      "design"
+    ],
+    "scraped_at": "2026-03-21T23:00:03.614487"
+  },
+  {
+    "title": "IoT Raspberry Pi การทำโครงงานไอโอทีด้วย Raspberry PI: ภาคบูรณาการ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/IoT Raspberry Pi การทำโครงงานไอโอทีด้วย Raspberry PI ภาคบูรณาการ.png",
+    "instructor": "รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.อติวงศ์ สุชาโต, คุณปณิดา วิริยะชัยพร, คุณปณิดา วิริยะชัยพร, คุณไกรฤกษ์ ตรีทิพสุนทร, คุณไกรฤกษ์ ตรีทิพสุนทร",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/24",
+    "tags": [
+      "digital",
+      "iot",
+      "raspberry"
+    ],
+    "scraped_at": "2026-03-21T23:00:07.594446"
+  },
+  {
+    "title": "มหากาพย์ อังกฤษ อัปเกรด: ไวยากรณ์พร้อมรบ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/หน้าปกวิชาไวยากรณ์พร้อมรบ.png",
+    "instructor": "ผศ.มณฑิรา ดำรงมณี, ผศ.มณฑิรา ดำรงมณี, สถาบันภาษา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/25",
+    "tags": [
+      "language",
+      "มหากาพย์"
+    ],
+    "scraped_at": "2026-03-21T23:00:12.594892"
+  },
+  {
+    "title": "Inter-Professional Collaboration for Patient Safety",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Inter-Professional Collaboration for Patient Safety.png",
+    "instructor": "สถาบันการพยาบาลศรีสวรินทิรา, สถาบันการพยาบาลศรีสวรินทิรา, สภากาชาดไทย, สภากาชาดไทย, สภากาชาดไทย, บริษัท การบินไทย จำกัด (มหาชน), บริษัท การบินไทย จำกัด (มหาชน), สถาบันรับรองคุณภาพสถานพยาบาล (องค์การมหาชน) (สรพ.), สถาบันรับรองคุณภาพสถานพยาบาล (องค์การมหาชน) (สรพ.), ศูนย์ฝึกทักษะทางการแพทย์เสมือนจริง, ศูนย์ฝึกทักษะทางการแพทย์เสมือนจริง, ER-VIPE, ER-VIPE, EMERGENCY ROOM - VIRTUAL PROFESSIONAL EDUCATION",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/26",
+    "tags": [
+      "health",
+      "medical",
+      "inter",
+      "professional",
+      "collaboration"
+    ],
+    "scraped_at": "2026-03-21T23:00:17.448404"
+  },
+  {
+    "title": "Survival Thai",
+    "description": "About course",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Survival Thai.png",
+    "instructor": "Staffs from Office of International Affairs and Global Network, Staffs from Office of International Affairs and Global Network",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/27",
+    "tags": [
+      "language",
+      "survival",
+      "thai"
+    ],
+    "scraped_at": "2026-03-21T23:00:21.259624"
+  },
+  {
+    "title": "Thai on Campus",
+    "description": "About course",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Thaioncampus.png",
+    "instructor": "Academic Staffs from Centre for Thai as a Foreign Language, Academic Staffs from Centre for Thai as a Foreign Language",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/28",
+    "tags": [
+      "language",
+      "thai",
+      "campus"
+    ],
+    "scraped_at": "2026-03-21T23:00:29.296890"
+  },
+  {
+    "title": "หัตถการเบื้องต้นทางศัลยศาสตร์อุบัติเหตุสำหรับแพทย์เวชปฏิบัติทั่วไป",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/หัตถการเบื้องต้นทางศัลยศาสตร์อุบัติเหตุสำหรับแพทย์เวชปฏิบัติทั่วไป.png",
+    "instructor": "​ศ. นพ.สุวิทย์ ศรีอัษฎาพร, ​ศ. นพ.สุวิทย์ ศรีอัษฎาพร, หน่วยศัลยศาสตร์อุบัติเหตุ, รศ. นพ.รัฐพลี ภาคอรรถ, รศ. นพ.รัฐพลี ภาคอรรถ, หน่วยศัลยศาสตร์อุบัติเหตุ, รศ. พญ.สุกัญญา ศรีอัษฎาพร, รศ. พญ.สุกัญญา ศรีอัษฎาพร, หน่วยศัลยศาสตร์อุบัติเหตุ, รศ. นพ.กฤตยา กฤตยากีรณ, รศ. นพ.กฤตยา กฤตยากีรณ, หน่วยศัลยศาสตร์อุบัติเหตุ, ศ. นพ.ศุภฤกษ์ ปรีชายุทธ, ศ. นพ.ศุภฤกษ์ ปรีชายุทธ, หน่วยศัลยศาสตร์อุบัติเหตุ, ผศ. นพ.พสุรเชษฐ์ สมร, ผศ. นพ.พสุรเชษฐ์ สมร, หน่วยศัลยศาสตร์อุบัติเหตุ, อ. นพ.ญฐวรรธ นฤพนธ์จิรกุล, อ. นพ.ญฐวรรธ นฤพนธ์จิรกุล, หน่วยศัลยศาสตร์อุบัติเหตุ, อ. นพ.อภินันท์ อุทัยไพศาลวงศ์, อ. นพ.อภินันท์ อุทัยไพศาลวงศ์, หน่วยศัลยศาสตร์อุบัติเหตุ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/29",
+    "tags": [
+      "health",
+      "medical",
+      "medicine"
+    ],
+    "scraped_at": "2026-03-21T23:00:32.685425"
+  },
+  {
+    "title": "ยาน่ารู้: การใช้ยาเทคนิคพิเศษ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ยาน่ารู้.png",
+    "instructor": "ผศ. ภญ. ดร.ณัฎฐดา อารีเปี่ยม, ผศ. ภญ. ดร.ณัฎฐดา อารีเปี่ยม, รศ. ภก.ดร.วันชัย ตรียะประเสริฐ, รศ. ภก.ดร.วันชัย ตรียะประเสริฐ, ผศ. ภญ. ดร.ทัดตา ศรีบุญเรือง, ผศ. ภญ. ดร.ทัดตา ศรีบุญเรือง, อ. ภก.บวรภัทร สุริยะปกรณ์, อ. ภก.บวรภัทร สุริยะปกรณ์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/30",
+    "tags": [
+      "health",
+      "medical"
+    ],
+    "scraped_at": "2026-03-21T23:00:36.883846"
+  },
+  {
+    "title": "สืบสานสาระมหาชาติ (คำหลวง)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สืบสานสาระมหาชาติ คำหลวง.png",
+    "instructor": "ผศ. ดร.ประทุม อังกูรโรหิต, ผศ. ดร.ประทุม อังกูรโรหิต, รศ. ดร.ปรมินท์ จารุวร, รศ. ดร.ปรมินท์ จารุวร, ผศ. ดร.ประพจน์ อัศววิรุฬหการ, ผศ. ดร.ประพจน์ อัศววิรุฬหการ, ผศ. ดร.ชานป์วิชช์ ทัดแก้ว, ผศ. ดร.ชานป์วิชช์ ทัดแก้ว, ผศ. ดร.อาทิตย์ ชีรวณิชย์กุล, ผศ. ดร.อาทิตย์ ชีรวณิชย์กุล, อาจารย์แม่ชีวิมุตติยา, อาจารย์แม่ชีวิมุตติยา, พล. อ.ต. กิตติ ตัณฑโอภาส, พล. อ.ต. กิตติ ตัณฑโอภาส, รุ่น พ.ศ. 2510, น. ท.ญ. สุมาลี วีระวงศ์, น. ท.ญ. สุมาลี วีระวงศ์, รุ่น พ.ศ. 2510, คุณชมัยภร บางคมบาง, คุณชมัยภร บางคมบาง, รุ่น พ.ศ. 2510, คุณอัจฉรา เสริบุตร, คุณอัจฉรา เสริบุตร, รุ่น พ.ศ. 2510, คุณวิชนี รัตนพันธ์, คุณวิชนี รัตนพันธ์, รุ่น พ.ศ. 2510, คุณสุรพล จันทร์น้อย, คุณสุรพล จันทร์น้อย, รุ่น พ.ศ. 2510, คุณวรพจน์ จิระวัฒน์พงศา, คุณวรพจน์ จิระวัฒน์พงศา, รุ่น พ.ศ. 2510, ดร.ปรัชญา ภิญญาวัธน์, ดร.ปรัชญา ภิญญาวัธน์, รุ่น พ.ศ. 2510, คุณศักดา วิมลจันทร์, คุณศักดา วิมลจันทร์, รุ่น พ.ศ. 2510, คุณกิจจา จำนงค์อาษา, คุณกิจจา จำนงค์อาษา, รุ่น พ.ศ. 2510",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/31",
+    "tags": [
+      "สืบสานสาระมหาชาติ",
+      "คำหลวง"
+    ],
+    "scraped_at": "2026-03-21T23:00:41.464081"
+  },
+  {
+    "title": "การแสดงเบื้องต้นสำหรับทุกคน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การแสดงเบื้องต้นสำหรับทุกคน.png",
+    "instructor": "ผศ. ดร.กฤษณะ พันธุ์เพ็ง, ผศ. ดร.กฤษณะ พันธุ์เพ็ง",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/32",
+    "tags": [
+      "การแสดงเบื้องต้นสำหรับทุกคน",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:00:45.470923"
+  },
+  {
+    "title": "Introduction to Smart Grid",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Introduction to Smart Grid.png",
+    "instructor": "รศ. ดร.แนบบุญ หุนเจริญ, รศ. ดร.แนบบุญ หุนเจริญ, รศ. ดร.กุลยศ อุดมวงศ์เสรี, รศ. ดร.กุลยศ อุดมวงศ์เสรี, รศ. ดร.เชาวน์ดิศ อัศวกุล, รศ. ดร.เชาวน์ดิศ อัศวกุล, ผศ. ดร.สมบูรณ์ แสงวงค์วาณิชย์, ผศ. ดร.สมบูรณ์ แสงวงค์วาณิชย์, รศ. ดร.วันเฉลิม โปรา, รศ. ดร.วันเฉลิม โปรา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/33",
+    "tags": [
+      "digital",
+      "introduction",
+      "smart",
+      "grid"
+    ],
+    "scraped_at": "2026-03-21T23:00:50.377929"
+  },
+  {
+    "title": "การประชาสัมพันธ์ผ่านวิทยุและโทรทัศน์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การประชาสัมพันธ์ผ่านวิทยุและโทรทัศน์.png",
+    "instructor": "รศ. ดร.สมิทธิ์ บุญชุติมา, รศ. ดร.สมิทธิ์ บุญชุติมา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/34",
+    "tags": [
+      "การประชาสัมพันธ์ผ่านวิทยุและโทรทัศน์",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:00:54.426874"
+  },
+  {
+    "title": "คู่คิด คันจิ ยกที่ 2",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/คันจิ คู่คิดยกที่ 2.png",
+    "instructor": "ผศ. ดร.อัษฎายุทธ ชูศรี, ผศ. ดร.อัษฎายุทธ ชูศรี",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/35",
+    "tags": [
+      "language",
+      "คู่คิด"
+    ],
+    "scraped_at": "2026-03-21T23:00:59.180885"
+  },
+  {
+    "title": "การทำความเข้าใจงบการเงิน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การทำความเข้าใจงบการเงิน.png",
+    "instructor": "รศ. ดร.พิมพ์พนา ศรีสวัสดิ์, รศ. ดร.พิมพ์พนา ศรีสวัสดิ์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/36",
+    "tags": [
+      "management",
+      "business",
+      "finance"
+    ],
+    "scraped_at": "2026-03-21T23:01:03.096227"
+  },
+  {
+    "title": "การฟอกไตและการปลูกถ่ายไต",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การฟอกไต.jpeg",
+    "instructor": "อ. นพ.สุวศิน อุดมกาญจนนันท์, อ. นพ.สุวศิน อุดมกาญจนนันท์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/37",
+    "tags": [
+      "health",
+      "medical"
+    ],
+    "scraped_at": "2026-03-21T23:01:06.586115"
+  },
+  {
+    "title": "Exploring Mixed Realities",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Exploring Mixed Realities.jpg",
+    "instructor": "คุณนพดล รัตนวิเศษรัตน์, คุณนพดล รัตนวิเศษรัตน์, Customer Success Manager, บริษัท ไมโครซอฟท์ (ประเทศไทย) จำกัด",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/38",
+    "tags": [
+      "digital",
+      "exploring",
+      "mixed",
+      "realities"
+    ],
+    "scraped_at": "2026-03-21T23:01:11.983758"
+  },
+  {
+    "title": "ปลุกพลังความคิดสร้างสรรค์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ปลุกพลังความคิดสร้างสรรค์.png",
+    "instructor": "อ.ธงชัย โรจน์กังสดาล, อ.ธงชัย โรจน์กังสดาล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/39",
+    "tags": [
+      "ปลุกพลังความคิดสร้างสรรค์",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:01:16.655231"
+  },
+  {
+    "title": "ปัญหาการได้ยินในสังคมผู้สูงอายุ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ปัญหาการได้ยินในผู้สูงอายุ.png",
+    "instructor": "อ. พญ. ดร.นัตวรรณ อุทุมพฤกษ์พร, อ. พญ. ดร.นัตวรรณ อุทุมพฤกษ์พร",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/40",
+    "tags": [
+      "health",
+      "medical",
+      "elderly",
+      "social"
+    ],
+    "scraped_at": "2026-03-21T23:01:20.583052"
+  },
+  {
+    "title": "มหากาพย์ อังกฤษ อัปเกรด: ตั้งไข่ไวยากรณ์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/มหากาพย์อังกฤษ อัปเกรด ตั้งไข่ไวยากรณ์.png",
+    "instructor": "ผศ.มณฑิรา ดำรงมณี, ผศ.มณฑิรา ดำรงมณี, สถาบันภาษา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/41",
+    "tags": [
+      "language",
+      "มหากาพย์"
+    ],
+    "scraped_at": "2026-03-21T23:01:25.440402"
+  },
+  {
+    "title": "คณิตศาสตร์การเงินในชีวิตประจำวัน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/คณิตศาสตร์การเงินในชีวิตประจำวัน.png",
+    "instructor": "ศ. ดร.กฤษณะ เนียมมณี, ศ. ดร.กฤษณะ เนียมมณี, รศ.ทิพวัลย์ สันติวิภานนท์, รศ.ทิพวัลย์ สันติวิภานนท์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/42",
+    "tags": [
+      "management",
+      "business",
+      "mathematics",
+      "finance"
+    ],
+    "scraped_at": "2026-03-21T23:01:29.018800"
+  },
+  {
+    "title": "Online Class Preparation Using MS Teams",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Online Class Preparation Using MS Teams.png",
+    "instructor": "รศ. ดร.ณัฏฐ์ ลีละวัฒน์, รศ. ดร.ณัฏฐ์ ลีละวัฒน์, คุณนพดล รัตนวิเศษรัตน์, คุณนพดล รัตนวิเศษรัตน์, Customer Success Manager, บริษัท ไมโครซอฟท์ (ประเทศไทย) จำกัด",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/43",
+    "tags": [
+      "digital",
+      "online",
+      "class",
+      "preparation",
+      "using"
+    ],
+    "scraped_at": "2026-03-21T23:01:33.871988"
+  },
+  {
+    "title": "การตายอย่างมีคุณภาพ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การตายอย่างมีคุณภาพ.png",
+    "instructor": "ศ. ดร.เอมอัชฌา วัฒนบุรานนท์, ศ. ดร.เอมอัชฌา วัฒนบุรานนท์, ศูนย์การศึกษาทั่วไป",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/45",
+    "tags": [
+      "การตายอย่างมีคุณภาพ",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:01:40.819039"
+  },
+  {
+    "title": "การตรวจคุณภาพสมุนไพรด้วยเทคนิค HPTLC",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การตรวจคุณภาพสมุนไพรด้วย HPTLC.png",
+    "instructor": "ศ. ดร.วันชัย ดีเอกนามกูล, ศ. ดร.วันชัย ดีเอกนามกูล, รศ. ภญ. ดร.สรกนก วิมลมั่งคั่ง, รศ. ภญ. ดร.สรกนก วิมลมั่งคั่ง, ผศ. ภญ. ดร.ทักษิณา ชวนอาษา, ผศ. ภญ. ดร.ทักษิณา ชวนอาษา, ผศ. ภญ. ดร.วิชชุดา ธนกิจเจริญพัฒน์, ผศ. ภญ. ดร.วิชชุดา ธนกิจเจริญพัฒน์, อ. ภญ.จีรภัทร์ ดวงฉวี, อ. ภญ.จีรภัทร์ ดวงฉวี",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/46",
+    "tags": [
+      "health",
+      "medical",
+      "hptlc"
+    ],
+    "scraped_at": "2026-03-21T23:01:45.209474"
+  },
+  {
+    "title": "การวินิจฉัยและการรักษาโรคติดเชื้อพิธิโอซิสในหลอดเลือดในปัจจุบัน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การวินิจฉัยและการรักษาโรคติดเชื้อพิธิโอซิสในหลอดเลือดในปัจจุบัน.png",
+    "instructor": "รศ. ดร.อริยา จินดามพร, รศ. ดร.อริยา จินดามพร, ผศ. นพ.นิติพงศ์ เพิ่มพลัง, ผศ. นพ.นิติพงศ์ เพิ่มพลัง, สังกัด สาขาวิชาโรคติดเชื้อในผู้ป่วยปลูกถ่ายอวัยวะ มหาวิทยาลัย John Hopkins ประเทศสหรัฐอเมริกา, อ. ดร.นวพร วรศิลป์ชัย, อ. ดร.นวพร วรศิลป์ชัย, อ. นพ.รองพงศ์ โพล้งละ, อ. นพ.รองพงศ์ โพล้งละ, อ. พญ.ปัทมา ต.วรพานิช, อ. พญ.ปัทมา ต.วรพานิช, อ. นพ.พงศกร เอื้อวงศ์ประยูร, อ. นพ.พงศกร เอื้อวงศ์ประยูร, สาขารังสีวิทยาวินิจฉัย, สภากาชาดไทย, อ. นพ.ณัฐพล สุแสงรัตน์, อ. นพ.ณัฐพล สุแสงรัตน์, สังกัด กลุ่มงานศัลยกรรม, รพ.ขอนแก่น",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/47",
+    "tags": [
+      "health",
+      "medical",
+      "disease"
+    ],
+    "scraped_at": "2026-03-21T23:01:49.556603"
+  },
+  {
+    "title": "SDGs x CHULA : จุฬากับนวัตกรรมเพื่อการพัฒนาที่ยั่งยืน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/SDGs.png",
+    "instructor": "ทีมคณาจารย์, ทีมคณาจารย์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/48",
+    "tags": [
+      "management",
+      "business",
+      "sdgs",
+      "innovation"
+    ],
+    "scraped_at": "2026-03-21T23:01:53.535311"
+  },
+  {
+    "title": "วิทยาการคำนวณ: สำรวจหลักสูตรและก้าวแรก Coding",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/วิทยาการการคำนวณ.png",
+    "instructor": "รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.อติวงศ์ สุชาโต",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/49",
+    "tags": [
+      "digital",
+      "coding"
+    ],
+    "scraped_at": "2026-03-21T23:01:58.807509"
+  },
+  {
+    "title": "การระงับข้อพิพาททางเลือกในทางธุรกิจ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การเจรจาข้อพิพาททางธุรกิจ.png",
+    "instructor": "ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, คุณลีลา เกตุขุนทด, คุณลีลา เกตุขุนทด, ที่ปรึกษากฎหมายประจำสถาบันอนุญาโตตุลาการ (THAC), คุณนพมาศ ธรรมธีรเดโช, คุณนพมาศ ธรรมธีรเดโช, อนุญาโตตุลาการประจำสถาบัน",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/50",
+    "tags": [
+      "business",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:02:02.045039"
+  },
+  {
+    "title": "Essential Grammar for Writing and Speaking",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/หน้าปกวิชา Essential Grammar for Writing and Speaking.png",
+    "instructor": "คณาจารย์จากสถาบันภาษา, คณาจารย์จากสถาบันภาษา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/51",
+    "tags": [
+      "language",
+      "writing",
+      "essential",
+      "grammar",
+      "speaking"
+    ],
+    "scraped_at": "2026-03-21T23:02:06.955500"
+  },
+  {
+    "title": "คนรักสุนัข",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/คนรักสุนัข.png",
+    "instructor": "รศ. น.สพ. ดร.ณุวีร์ ประภัสระกูล, รศ. น.สพ. ดร.ณุวีร์ ประภัสระกูล, รศ. น.สพ. ดร.สนธยา เตียวศิริทรัพย์, รศ. น.สพ. ดร.สนธยา เตียวศิริทรัพย์, รศ. สพ.ญ. ดร.สิริลักษณ์ สุรเชษฐพงษ์, รศ. สพ.ญ. ดร.สิริลักษณ์ สุรเชษฐพงษ์, ผศ. สพ.ญ. ดร.นิภัทรา สวนไพรินทร์, ผศ. สพ.ญ. ดร.นิภัทรา สวนไพรินทร์, ผศ. น.สพ. ดร.ศุภวิวัธน์ พงษ์เลาหพันธุ์, ผศ. น.สพ. ดร.ศุภวิวัธน์ พงษ์เลาหพันธุ์, ผศ. สพ.ญ. ดร.จุฑามาส เบ็ญจนิรัตน์, ผศ. สพ.ญ. ดร.จุฑามาส เบ็ญจนิรัตน์, อ. น.สพ.ชัยยศ ธารรัตนะ, อ. น.สพ.ชัยยศ ธารรัตนะ, สพ.ญ.ฐิตา เตโชฬาร, สพ.ญ.ฐิตา เตโชฬาร, โรงพยาบาลสัตว์เล็ก",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/52",
+    "tags": [
+      "health",
+      "medical"
+    ],
+    "scraped_at": "2026-03-21T23:02:12.154183"
+  },
+  {
+    "title": "หลักชะรีอะฮ์ในธนาคารอิสลาม",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/หลักชะรีอะฮ์ในธนาคารอิสลาม.png",
+    "instructor": "อ. ดร.อภิชาติ พงษ์เกษม, อ. ดร.อภิชาติ พงษ์เกษม, ดร.สมีธ อีซอ, ดร.สมีธ อีซอ, นักวิชาการอิสระด้านการเงินอิสลาม, ดร.อาบิดีน วันขวัญ, ดร.อาบิดีน วันขวัญ, ธนาคารอิสลามแห่งประเทศไทย",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/53",
+    "tags": [
+      "management",
+      "business"
+    ],
+    "scraped_at": "2026-03-21T23:02:15.543824"
+  },
+  {
+    "title": "ROAD SAFETY: ร่วมสร้างจิตสำนึกความปลอดภัยบนท้องถนนในทุกคน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Road Safty.png",
+    "instructor": "สถาบันการขนส่ง, สถาบันการขนส่ง, บริษัท ไปรษณีย์ไทย, บริษัท ไปรษณีย์ไทย, กรมการขนส่งทางบก, กรมการขนส่งทางบก",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/54",
+    "tags": [
+      "safety",
+      "road"
+    ],
+    "scraped_at": "2026-03-21T23:02:19.952883"
+  },
+  {
+    "title": "ความปกติใหม่ในอุตสาหกรรมก่อสร้างของไทย (BIM)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/BIM.png",
+    "instructor": "ศ. ดร.วีระศักดิ์ ลิขิตเรืองศิลป์, ศ. ดร.วีระศักดิ์ ลิขิตเรืองศิลป์, รศ.กวีไกร ศรีหิรัญ, รศ.กวีไกร ศรีหิรัญ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/55",
+    "tags": [
+      "digital",
+      "ความปกติใหม่ในอุตสาหกรรมก่อสร้างของไทย"
+    ],
+    "scraped_at": "2026-03-21T23:02:24.160709"
+  },
+  {
+    "title": "หลักการพื้นฐานทางกฎหมายแพ่ง",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/กฎหมายแพ่ง.png",
+    "instructor": "อ.ชนิสา งามอภิชน, อ.ชนิสา งามอภิชน",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/56",
+    "tags": [
+      "law",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:02:29.023039"
+  },
+  {
+    "title": "การนำเสนอผลงานเป็นภาษาอังกฤษเบื้องต้น",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/หน้าปกวิชา Giving Basic Presentation.png",
+    "instructor": "สถาบันภาษา, สถาบันภาษา, ผศ.กรุณา นาผล, ผศ.กรุณา นาผล, สถาบันภาษา, อาจารย์วรลัญจ์ กองพลพรหม, อาจารย์วรลัญจ์ กองพลพรหม, สถาบันภาษา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/57",
+    "tags": [
+      "language",
+      "english"
+    ],
+    "scraped_at": "2026-03-21T23:02:32.523603"
+  },
+  {
+    "title": "ความรู้เรื่องดวงตาสำหรับบุคลากรทางการแพทย์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Eye for all Part II.png",
+    "instructor": "รศ. พญ.เปรมจิต เศาณานนท์, รศ. พญ.เปรมจิต เศาณานนท์, อ. พญ.กิติยา รัตนวงศ์ไพบูลย์, อ. พญ.กิติยา รัตนวงศ์ไพบูลย์, ผศ. (พิเศษ) นพ.สุภณัฐ อภิญญาวสีสุข, ผศ. (พิเศษ) นพ.สุภณัฐ อภิญญาวสีสุข, ผศ. (พิเศษ) พญ.วรรณกรณ์ พฤกษากร, ผศ. (พิเศษ) พญ.วรรณกรณ์ พฤกษากร",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/58",
+    "tags": [
+      "health",
+      "medical",
+      "medicine"
+    ],
+    "scraped_at": "2026-03-21T23:02:37.806104"
+  },
+  {
+    "title": "HRM From Theories to Practices",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/HRM From Theories to Practices.png",
+    "instructor": "รศ. ดร.เดชา เดชะวัฒนไพศาล, รศ. ดร.เดชา เดชะวัฒนไพศาล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/59",
+    "tags": [
+      "management",
+      "business",
+      "theories",
+      "practices"
+    ],
+    "scraped_at": "2026-03-21T23:02:41.882023"
+  },
+  {
+    "title": "เรื่องสิ่งแวดล้อมเรื่องของเรา: Shelldon ชวนน้องรักษ์โลก เรื่องมลพิษทางทะเล",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เรื่องสิ่งแวดล้อมเรื่องของเรา  Shelldon ชวนน้องรักษ์โลก เรื่องมลพิษทางทะเล.png",
+    "instructor": "ศ. ดร.พิสุทธิ์ เพียรมนกุล, ศ. ดร.พิสุทธิ์ เพียรมนกุล, ดร.ณัฐวิญญ์ ชวเลิศพรศิยา, ดร.ณัฐวิญญ์ ชวเลิศพรศิยา, ศ. ดร.สุชนา ชวนิชย์, ศ. ดร.สุชนา ชวนิชย์, ศ. ดร.เผดิมศักดิ์ จารยะพันธุ์, ศ. ดร.เผดิมศักดิ์ จารยะพันธุ์, บัณฑิตวิทยาลัย, รศ. ดร.ธรณ์ ธำรงนาวาสวัสดิ์, รศ. ดร.ธรณ์ ธำรงนาวาสวัสดิ์, มหาวิทยาลัยเกษตรศาสตร์, ดร.วิจารย์ สิมาฉายา, ดร.วิจารย์ สิมาฉายา, สถาบันสิ่งแวดล้อมไทย, คุณหญิง ทองทิพ รัตนะรัต, คุณหญิง ทองทิพ รัตนะรัต, สถาบันปิโตรเลียมแห่งประเทศไทย",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/60",
+    "tags": [
+      "digital",
+      "environment",
+      "shelldon"
+    ],
+    "scraped_at": "2026-03-21T23:02:48.915465"
+  },
+  {
+    "title": "การสร้างชิ้นงานจากโปรแกรมสร้างภาพสามมิติ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การสร้างชิ้นงานจากโปรแกรมสร้างภาพสามมิติ.png",
+    "instructor": "รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.อติวงศ์ สุชาโต, คุณกฤตนัย สัจจพงษ์, คุณกฤตนัย สัจจพงษ์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/61",
+    "tags": [
+      "digital",
+      "programming"
+    ],
+    "scraped_at": "2026-03-21T23:02:54.301462"
+  },
+  {
+    "title": "จริยธรรมการวิจัยในคน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/จริยธรรมการวิจัยในคน.png",
+    "instructor": "รศ. ดร.นันทรี ชัยชนะวงศาโรจน์, รศ. ดร.นันทรี ชัยชนะวงศาโรจน์, กลุ่มสหสถาบัน ชุดที่ 1, รศ. นพ.ปรีดา ทัศนประดิษฐ์, รศ. นพ.ปรีดา ทัศนประดิษฐ์, กลุ่มสหสถาบัน ชุดที่ 1, ผศ. ดร.ระวีนันท์ มิ่งภัคนีย์, ผศ. ดร.ระวีนันท์ มิ่งภัคนีย์, กลุ่มสหสถาบัน ชุดที่ 1",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/62",
+    "tags": [
+      "ethics",
+      "research"
+    ],
+    "scraped_at": "2026-03-21T23:02:58.215861"
+  },
+  {
+    "title": "English for Job Hunters",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/English for Job Hunter.png",
+    "instructor": "ผศ.มณฑิรา ดำรงมณี, ผศ.มณฑิรา ดำรงมณี, สถาบันภาษา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/63",
+    "tags": [
+      "english",
+      "language",
+      "hunters"
+    ],
+    "scraped_at": "2026-03-21T23:03:03.809296"
+  },
+  {
+    "title": "ก่อนจะมาเป็นยา: การทดลองทางเภสัชจลนศาสตร์พรีคลินิก",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ก่อนจะมาเป็นยา.png",
+    "instructor": "รศ. ภก.ดร.พิสิฐ เขมาวุฆฒ์, รศ. ภก.ดร.พิสิฐ เขมาวุฆฒ์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/64",
+    "tags": [
+      "health",
+      "medical",
+      "pharmacy"
+    ],
+    "scraped_at": "2026-03-21T23:03:06.638856"
+  },
+  {
+    "title": "การสำรวจปิโตรเลียม",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การสำรวจปิโตรเลียม.png",
+    "instructor": "รศ. ดร.ปิยพงษ์ เชนร้าย, รศ. ดร.ปิยพงษ์ เชนร้าย",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/65",
+    "tags": [
+      "digital",
+      "การสำรวจปิโตรเลียม"
+    ],
+    "scraped_at": "2026-03-21T23:03:10.888625"
+  },
+  {
+    "title": "Exploring Digital Technology Landscape",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Exploring Digital Technology Landscape.png",
+    "instructor": "ผศ. ดร.นฤมล ประทานวณิช, ผศ. ดร.นฤมล ประทานวณิช",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/66",
+    "tags": [
+      "digital",
+      "exploring",
+      "technology",
+      "landscape"
+    ],
+    "scraped_at": "2026-03-21T23:03:16.851119"
+  },
+  {
+    "title": "Cloud Computing for Everyone",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Cloud Computing for Everyone.png",
+    "instructor": "ผศ. ดร.ฑิตยา หวานวารี, ผศ. ดร.ฑิตยา หวานวารี",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/67",
+    "tags": [
+      "digital",
+      "cloud",
+      "computing",
+      "everyone"
+    ],
+    "scraped_at": "2026-03-21T23:03:19.996784"
+  },
+  {
+    "title": "มหากาพย์ อังกฤษ อัปเกรด: Conversation มั่นใจ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/มหากาพย์ อังกฤษ อัปเกรด Conversation มั่นใจ.png",
+    "instructor": "ผศ.มณฑิรา ดำรงมณี, ผศ.มณฑิรา ดำรงมณี, สถาบันภาษา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/68",
+    "tags": [
+      "language",
+      "conversation"
+    ],
+    "scraped_at": "2026-03-21T23:03:24.436307"
+  },
+  {
+    "title": "เรื่องสิ่งแวดล้อมเรื่องของเรา: ปรับเปลี่ยนกระบวนทัศน์ จัดการพลาสติก",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เรื่องสิ่งแวดล้อมเรื่องของเรา  ปรับเปลี่ยนกระบวนทัศน์ จัดการพลาสติก.png",
+    "instructor": "ศ. ดร.พิสุทธิ์ เพียรมนกุล, ศ. ดร.พิสุทธิ์ เพียรมนกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/69",
+    "tags": [
+      "digital",
+      "environment"
+    ],
+    "scraped_at": "2026-03-21T23:03:29.665774"
+  },
+  {
+    "title": "หลักการพื้นฐานทางกฎหมายอาญา​",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/หลักการพื้นฐานกฎหมายอาญา.png",
+    "instructor": "อ. ดร.ฐิตินันท์ เต็งอำนวย, อ. ดร.ฐิตินันท์ เต็งอำนวย",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/70",
+    "tags": [
+      "law",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:03:33.869167"
+  },
+  {
+    "title": "การพัฒนาการท่องเที่ยวเชิงสร้างสรรค์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/พัฒนาการท่องเที่ยว.png",
+    "instructor": "ศ. ดร.ฉันทนา หวันแก้ว, ศ. ดร.ฉันทนา หวันแก้ว, สถาบันเอเชียศึกษา, ศ. ดร.ศุภกรณ์ ดิษฐพันธุ์, ศ. ดร.ศุภกรณ์ ดิษฐพันธุ์, ศ. ดร.พัดชา อุทิศวรรณกุล, ศ. ดร.พัดชา อุทิศวรรณกุล, รศ. ดร.สมิทธิ์ บุญชุติมา, รศ. ดร.สมิทธิ์ บุญชุติมา, รศ. ดร.นฤมล อรุโณทัย, รศ. ดร.นฤมล อรุโณทัย, สถาบันวิจัยสังคม, ผศ. ดร.ฐิติรัตน์ ปั้นบำรุงกิจ, ผศ. ดร.ฐิติรัตน์ ปั้นบำรุงกิจ, ผศ. ดร.ฐิตินัน บุญภาพ คอมมอน, ผศ. ดร.ฐิตินัน บุญภาพ คอมมอน",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/71",
+    "tags": [
+      "management",
+      "business"
+    ],
+    "scraped_at": "2026-03-21T23:03:38.028770"
+  },
+  {
+    "title": "มหากาพย์ อังกฤษ อัปเกรด: ศัพท์ทะลุ อ่านทะลวง",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/มหากาพย์ อังกฤษ อัปเกรด ศัพท์ทะลุอ่านทะลวง.png",
+    "instructor": "ผศ.มณฑิรา ดำรงมณี, ผศ.มณฑิรา ดำรงมณี, สถาบันภาษา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/72",
+    "tags": [
+      "language",
+      "มหากาพย์"
+    ],
+    "scraped_at": "2026-03-21T23:03:41.930884"
+  },
+  {
+    "title": "Service Design Innovation",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Service Design Innovation.png",
+    "instructor": "รศ. ดร.ไปรมา อิศรเสนา ณ อยุธยา, รศ. ดร.ไปรมา อิศรเสนา ณ อยุธยา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/73",
+    "tags": [
+      "digital",
+      "design",
+      "service",
+      "innovation"
+    ],
+    "scraped_at": "2026-03-21T23:03:46.405430"
+  },
+  {
+    "title": "การสื่อสารในภาวะวิกฤต",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การสื่อสารในภาวะวิกฤต.png",
+    "instructor": "รศ. ดร.สมิทธิ์ บุญชุติมา, รศ. ดร.สมิทธิ์ บุญชุติมา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/74",
+    "tags": [
+      "management",
+      "business",
+      "communication"
+    ],
+    "scraped_at": "2026-03-21T23:03:52.497697"
+  },
+  {
+    "title": "นาฏยกรรมสยาม ตอน โขน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/โขน.png",
+    "instructor": "รศ. ดร.อนุกูล โรจนสุขสมบูรณ์, รศ. ดร.อนุกูล โรจนสุขสมบูรณ์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/75",
+    "tags": [
+      "นาฏยกรรมสยาม",
+      "ตอน"
+    ],
+    "scraped_at": "2026-03-21T23:03:56.960130"
+  },
+  {
+    "title": "ดนตรีบำบัด",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ดนตรีบำบัด.png",
+    "instructor": "อ.ภัชชพร ชาญวิเศษ, อ.ภัชชพร ชาญวิเศษ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/76",
+    "tags": [
+      "health",
+      "medical",
+      "music"
+    ],
+    "scraped_at": "2026-03-21T23:04:01.394575"
+  },
+  {
+    "title": "ทำอย่างไรให้โฆษณาได้ดีต่อใจและไม่เครียดมากในสังคมหลังโควิด 19",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ทำอย่างไรให้โฆษณาได้ดีต่อใจและไม่เครียดมากในสังคมหลังโควิด 19.png",
+    "instructor": "รศ. ดร.วรวรรณ องค์ครุฑรักษา, รศ. ดร.วรวรรณ องค์ครุฑรักษา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/77",
+    "tags": [
+      "management",
+      "business",
+      "social"
+    ],
+    "scraped_at": "2026-03-21T23:04:07.611847"
+  },
+  {
+    "title": "ธรณีแปรสัณฐาน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ธรณีแปรสัณฐาน.png",
+    "instructor": "ศ. ดร.สันติ ภัยหลบลี้, ศ. ดร.สันติ ภัยหลบลี้",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/78",
+    "tags": [
+      "digital",
+      "ธรณีแปรสัณฐาน"
+    ],
+    "scraped_at": "2026-03-21T23:04:11.109109"
+  },
+  {
+    "title": "Practical Data Analytics Using RapidMiner",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Practical Data Analytics Using RapidMiner.png",
+    "instructor": "รศ. ดร.พีรพล เวทีกูล, รศ. ดร.พีรพล เวทีกูล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/79",
+    "tags": [
+      "data analytics",
+      "digital",
+      "data"
+    ],
+    "scraped_at": "2026-03-21T23:04:16.313159"
+  },
+  {
+    "title": "ความผกผันทางประชากรกับธุรกิจ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ความผกผันกับประชากร.png",
+    "instructor": "ศ. ดร.เกื้อ วงศ์บุญสิน, ศ. ดร.เกื้อ วงศ์บุญสิน, สถาบันบัณฑิตบริหารธุรกิจศศินทร์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/80",
+    "tags": [
+      "management",
+      "business"
+    ],
+    "scraped_at": "2026-03-21T23:04:21.629564"
+  },
+  {
+    "title": "มหากาพย์ กลเม็ด เก่งคณิต: ตรีโกณทะลุมิติและจำนวนเชิงซ้อนที่ไม่ซ่อนเงื่อน (ตรีโกณมิติและจำนวนเชิงซ้อน)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/CHULAMOOC2624.png",
+    "instructor": "รศ. ดร.เก่ง วิบูลย์ธัญญ์, รศ. ดร.เก่ง วิบูลย์ธัญญ์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/81",
+    "tags": [
+      "digital",
+      "มหากาพย์"
+    ],
+    "scraped_at": "2026-03-21T23:04:25.336023"
+  },
+  {
+    "title": "วิทยาศาสตร์ฮาลาลเบื้องต้นสำหรับอุตสาหกรรมอาหารฮาลาล",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/วิทยาศาสตร์ฮาลาล.png",
+    "instructor": "รศ. ดร.วินัย ดะห์ลัน, รศ. ดร.วินัย ดะห์ลัน, ผู้อำนวยการ ศูนย์วิทยาศาสตร์ฮาลาล, ดร.อัซอารีย์ สุขสุวรรณ, ดร.อัซอารีย์ สุขสุวรรณ, นักวิจัย ศูนย์วิทยาศาสตร์ฮาลาล, ดร.พรพิมล มะหะหมัด, ดร.พรพิมล มะหะหมัด, หัวหน้าฝ่ายบริการวิชาการและวิจัย, ดร.อาณัฐ เด่นยิ่งโยชน์, ดร.อาณัฐ เด่นยิ่งโยชน์, หัวหน้ากลุ่มภารกิจบริการวิทยาศาสตร์และเทคโนโลยี, คุณซูไนนี มาหะมะ, คุณซูไนนี มาหะมะ, หัวหน้างานวิจัยและนวัตกรรม, คุณอิรฟัน แวหะมะ, คุณอิรฟัน แวหะมะ, หัวหน้างานบริการหน่วยงานภายนอก สำนักงานกรุงเทพฯ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/82",
+    "tags": [
+      "digital",
+      "science",
+      "food"
+    ],
+    "scraped_at": "2026-03-21T23:04:29.537732"
+  },
+  {
+    "title": "ออกแบบชีวิตมหาวิทยาลัยให้ลงตัว",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ออกแบบชีวิตมหาวิทยาลัยให้ลงตัว.png",
+    "instructor": "ดร.เพิ่มสิทธิ์ นำประสิทธิผล, ดร.เพิ่มสิทธิ์ นำประสิทธิผล, นักจิตวิทยา ผู้ก่อตั้งบริษัท Modular Consulting",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/83",
+    "tags": [
+      "design",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:04:34.421768"
+  },
+  {
+    "title": "ภาษารัสเซียเบื้องต้น",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ภาษารัสเซียเบื้องต้น.png",
+    "instructor": "อ. ดร.รมย์ ภิรมนตรี, อ. ดร.รมย์ ภิรมนตรี, ผู้อำนวยการศูนย์รัสเซียศึกษา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/84",
+    "tags": [
+      "language",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:04:38.301063"
+  },
+  {
+    "title": "ทำอย่างไรให้สินค้า Go Inter ขายได้ขายดี และดังข้ามโลก",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Go inter.png",
+    "instructor": "รศ. ดร.วรวรรณ องค์ครุฑรักษา, รศ. ดร.วรวรรณ องค์ครุฑรักษา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/85",
+    "tags": [
+      "management",
+      "business",
+      "inter"
+    ],
+    "scraped_at": "2026-03-21T23:04:43.434744"
+  },
+  {
+    "title": "การออกแบบงานวิจัยด้านการแพทย์แผนไทยและการแพทย์ทางเลือก",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/pkwchaaeephthyeephnaithy_1.original.png",
+    "instructor": "รศ. ดร.นพ.กฤษณ์ พงศ์พิรุฬห์, รศ. ดร.นพ.กฤษณ์ พงศ์พิรุฬห์, กรมการแพทย์แผนไทย และการแพทย์ทางเลือก, กรมการแพทย์แผนไทย และการแพทย์ทางเลือก, กระทรวงสาธารณสุข",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/87",
+    "tags": [
+      "health",
+      "medical",
+      "medicine",
+      "design",
+      "research"
+    ],
+    "scraped_at": "2026-03-21T23:04:50.158453"
+  },
+  {
+    "title": "สุขภาพดีในภาวะโลกร้อน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/โลกร้อน.png",
+    "instructor": "รศ. ภญ.ดร.มะลิ วิโรจน์แสงทอง, รศ. ภญ.ดร.มะลิ วิโรจน์แสงทอง, รศ. ภก.ดร.พิสิฐ เขมาวุฆฒ์, รศ. ภก.ดร.พิสิฐ เขมาวุฆฒ์, รศ.สัตถาพร สิโรตมรัตน์, รศ.สัตถาพร สิโรตมรัตน์, อ. ภก.ดร.วีระพงษ์ ประสงค์จีน, อ. ภก.ดร.วีระพงษ์ ประสงค์จีน, อ. ดร.กรรณิกา ขันธศุภ, อ. ดร.กรรณิกา ขันธศุภ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/88",
+    "tags": [
+      "health",
+      "medical"
+    ],
+    "scraped_at": "2026-03-21T23:04:53.737316"
+  },
+  {
+    "title": "เรื่องสิ่งแวดล้อมเรื่องของเรา: Environment 4.0",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ENVI_4.0_COVER.original.png",
+    "instructor": "ศ. ดร.พิสุทธิ์ เพียรมนกุล, ศ. ดร.พิสุทธิ์ เพียรมนกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/89",
+    "tags": [
+      "digital",
+      "environment"
+    ],
+    "scraped_at": "2026-03-21T23:04:58.971778"
+  },
+  {
+    "title": "การดูแลตนเองเพื่อการเป็นผู้สูงวัยสุขภาพดีมีความสุข",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การดูแลตนเองเพื่อการเป็นผู้สูงวัยสุขภาพ.png",
+    "instructor": "ทีมคณาจารย์จาก CHULA ARi, ทีมคณาจารย์จาก CHULA ARi",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/90",
+    "tags": [
+      "health",
+      "medical"
+    ],
+    "scraped_at": "2026-03-21T23:05:03.760118"
+  },
+  {
+    "title": "การอ่านจับใจความ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การอ่านจับใจความ.png",
+    "instructor": "สถาบันภาษาไทยสิรินธร, สถาบันภาษาไทยสิรินธร",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/91",
+    "tags": [
+      "การอ่านจับใจความ",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:05:08.914586"
+  },
+  {
+    "title": "การพัฒนาทักษะชีวิต",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การพัฒนาทักษะชีวิต.png",
+    "instructor": "ผศ. ดร.ธนสิน ชุตินธรานนท์, ผศ. ดร.ธนสิน ชุตินธรานนท์, อ. ดร.รับขวัญ ภูษาแก้ว, อ. ดร.รับขวัญ ภูษาแก้ว, หัวหน้าศูนย์แนะแนว, อ. ดร.อัจฉราวรรณ จันทร์เพ็ญศรี, อ. ดร.อัจฉราวรรณ จันทร์เพ็ญศรี, กรรมการและเลขานุการมูลนิธิพัฒนาทักษะชีวิต",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/92",
+    "tags": [
+      "การพัฒนาทักษะชีวิต",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:05:12.527577"
+  },
+  {
+    "title": "รู้จักกรอบอนุสัญญาว่าด้วยการควบคุมยาสูบ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ยาสูบ.png",
+    "instructor": "ผศ. ดร.สุนิดา ปรีชาวงษ์, ผศ. ดร.สุนิดา ปรีชาวงษ์, ผศ. ดร.สุวิมล โรจนาวี, ผศ. ดร.สุวิมล โรจนาวี, รศ. ดร.เนาวรัตน์ เจริญค้า, รศ. ดร.เนาวรัตน์ เจริญค้า, มหาวิทยาลัยมหิดล, รศ. ดร.นิทัศน์ ศิริโชติรัตน์, รศ. ดร.นิทัศน์ ศิริโชติรัตน์, มหาวิทยาลัยมหิดล, ดร.วศิน พิพัฒนฉัตร, ดร.วศิน พิพัฒนฉัตร, ศูนย์วิจัยและจัดการความรู้เพื่อการควบคุมยาสูบ (ศจย.), มหาวิทยาลัยมหิดล, อ.ไพศาล ลิ้มสถิตย์, อ.ไพศาล ลิ้มสถิตย์, กรรมการศูนย์กฎหมายสุขภาพและจริยศาสตร์, มหาวิทยาลัยธรรมศาสตร์, ทพญ.วิกุล วิสาลเสสถ์, ทพญ.วิกุล วิสาลเสสถ์, สถาบันส่งเสริมสุขภาพไทย, มูลนิธิสาธารณสุขแห่งชาติ, ดร. ทพญ.ศิริวรรณ พิทยรังสฤษฏ์, ดร. ทพญ.ศิริวรรณ พิทยรังสฤษฏ์, กองโรคไม่ติดต่อ, กรมควบคุมโรค, รศ. ดร.สุชาดา ตั้งทางธรรม, รศ. ดร.สุชาดา ตั้งทางธรรม, สถาบันส่งเสริมสุขภาพไทย มูลนิธิสาธารณสุขแห่งชาติ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/93",
+    "tags": [
+      "health",
+      "medical",
+      "contract"
+    ],
+    "scraped_at": "2026-03-21T23:05:16.892810"
+  },
+  {
+    "title": "การเปลี่ยนแปลงภาษา: ภาษามนุษย์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การเปลี่ยนแปลงภาษา_ภาษามนุษย์.png",
+    "instructor": "รศ. ดร.พิทยาวัฒน์ พิทยาภรณ์, รศ. ดร.พิทยาวัฒน์ พิทยาภรณ์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/94",
+    "tags": [
+      "language",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:05:21.873492"
+  },
+  {
+    "title": "ลดน้ำหนักด้วยอาหารและวิธีการหลากหลาย",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ลดน้ำหนักด้วยอาหาร.png",
+    "instructor": "ศ. ดร.ภญ.จงจิตร อังคทะวานิช, ศ. ดร.ภญ.จงจิตร อังคทะวานิช",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/95",
+    "tags": [
+      "health",
+      "medical",
+      "food"
+    ],
+    "scraped_at": "2026-03-21T23:05:25.595168"
+  },
+  {
+    "title": "ก้าวแรกสู่การสร้างคุณค่าด้วยข้อมูล",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ก้าวแรกสู่การสร้างคุณค่าด้วยข้อมูล.png",
+    "instructor": "รศ. ดร.โปรดปราน บุณยพุกกณะ, รศ. ดร.โปรดปราน บุณยพุกกณะ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/96",
+    "tags": [
+      "digital",
+      "data"
+    ],
+    "scraped_at": "2026-03-21T23:05:29.828771"
+  },
+  {
+    "title": "การส่งเสริมการเรียนรู้ด้วยการนำตนเอง",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การส่งเสริมการเรียนรู้ด้วยการนำตนเอง.png",
+    "instructor": "รศ. ดร.สุวิธิดา จรุงเกียรติกุล, รศ. ดร.สุวิธิดา จรุงเกียรติกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/97",
+    "tags": [
+      "learning",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:05:33.805991"
+  },
+  {
+    "title": "Introduction to Data Analytics and Big Data",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Introduction_to_Data_Analytics_and_Big_Data.original.png",
+    "instructor": "ผศ. ดร.ณัฐวุฒิ หนูไพโรจน์, ผศ. ดร.ณัฐวุฒิ หนูไพโรจน์, ศ. ดร.ประภาส จงสถิตย์วัฒนา, ศ. ดร.ประภาส จงสถิตย์วัฒนา, รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.เกริก ภิรมย์โสภา, รศ. ดร.เกริก ภิรมย์โสภา, ผศ. ดร.สุกรี สินธุภิญโญ, ผศ. ดร.สุกรี สินธุภิญโญ, รศ. ดร.วีระ เหมืองสิน, รศ. ดร.วีระ เหมืองสิน, ศ. ดร.พีรพล เวทีกูล, ศ. ดร.พีรพล เวทีกูล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/98",
+    "tags": [
+      "data analytics",
+      "digital",
+      "data"
+    ],
+    "scraped_at": "2026-03-21T23:05:38.122188"
+  },
+  {
+    "title": "พูดจาภาษารัสเซีย",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/พูดจาภาษารัสเซีย.png",
+    "instructor": "อ. ดร.อังสนา เรืองดำ, อ. ดร.อังสนา เรืองดำ, อ. ดร.รมย์ ภิรมนตรี, อ. ดร.รมย์ ภิรมนตรี, ผู้อำนวยการศูนย์รัสเซียศึกษา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/99",
+    "tags": [
+      "language",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:05:41.982361"
+  },
+  {
+    "title": "ทรัพย์สินทางปัญญากับธุรกิจ และการพัฒนานวัตกรรม",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ทรัพย์สินทางปัญญา.png",
+    "instructor": "รศ. ดร.ดวงหทัย เพ็ญตระกูล, รศ. ดร.ดวงหทัย เพ็ญตระกูล, ผู้อำนวยการสถาบันทรัพย์สินทางปัญญา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/100",
+    "tags": [
+      "management",
+      "business",
+      "innovation"
+    ],
+    "scraped_at": "2026-03-21T23:05:46.916786"
+  },
+  {
+    "title": "ความปลอดภัยด้านสิ่งส่งตรวจ รังสีวิทยาและทันตกรรม",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ควงามปลอดภัยด้านสิ่งส่งตรวจ รังสีวิทยาและทันตกรรม.png",
+    "instructor": "ทีมคณาจารย์, ทีมคณาจารย์, ทีมคณาจารย์, ทีมคณาจารย์, ทีมคณาจารย์, ทีมคณาจารย์, ทีมคณาจารย์, ทีมคณาจารย์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/101",
+    "tags": [
+      "health",
+      "medical",
+      "safety",
+      "dentistry"
+    ],
+    "scraped_at": "2026-03-21T23:05:51.534578"
+  },
+  {
+    "title": "มหากาพย์ สังคมศึกษา น่ารู้: ภูมิศาสตร์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/มหากาพย์ สังคมศึกษา น่ารู้_ภูมิศาสตร์.png",
+    "instructor": "อ. ดร.กนก จันทรา, อ. ดร.กนก จันทรา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/102",
+    "tags": [
+      "social",
+      "มหากาพย์"
+    ],
+    "scraped_at": "2026-03-21T23:05:56.281791"
+  },
+  {
+    "title": "ระบบประกันสุขภาพ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ระบบประกันสุขภาพ.png",
+    "instructor": "รศ. ร.ต.ท.หญิง ภญ. ดร.ภูรี อนันตโชติ, รศ. ร.ต.ท.หญิง ภญ. ดร.ภูรี อนันตโชติ, ผศ. ภญ. ดร.สุธีรา เตชคุณวุฒิ, ผศ. ภญ. ดร.สุธีรา เตชคุณวุฒิ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/103",
+    "tags": [
+      "health",
+      "medical"
+    ],
+    "scraped_at": "2026-03-21T23:06:02.967207"
+  },
+  {
+    "title": "แผ่นดินไหว ธรณีพิโรธที่น่ากลัว",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/แผ่นดินไหว.png",
+    "instructor": "ศ. ดร.ปัญญา จารุศิริ, ศ. ดร.ปัญญา จารุศิริ, หัวหน้ากลุ่มวิจัยธรณีวิทยาแผ่นดินไหวและธรณีแปรสัณฐาน",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/104",
+    "tags": [
+      "digital",
+      "แผ่นดินไหว"
+    ],
+    "scraped_at": "2026-03-21T23:06:06.915703"
+  },
+  {
+    "title": "การตลาดในศตวรรษที่ 21",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การตลาดในศตวรรษที่ 21.png",
+    "instructor": "ผศ. ดร.กฤตินี พงษ์ธนเลิศ, ผศ. ดร.กฤตินี พงษ์ธนเลิศ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/105",
+    "tags": [
+      "management",
+      "business",
+      "marketing"
+    ],
+    "scraped_at": "2026-03-21T23:06:11.230470"
+  },
+  {
+    "title": "ดนตรีคลาสสิกปริทรรศน์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ดนตรีคลา่สสิคปริทัศน์.png",
+    "instructor": "ศ. ดร.ณัชชา พันธุ์เจริญ, ศ. ดร.ณัชชา พันธุ์เจริญ, ศ. ดร.ณรงค์ฤทธิ์ ธรรมบุตร, ศ. ดร.ณรงค์ฤทธิ์ ธรรมบุตร, ศ. ดร.วีรชาติ เปรมานนท์, ศ. ดร.วีรชาติ เปรมานนท์, รศ. ดร.ศศี พงศ์สรายุทธ, รศ. ดร.ศศี พงศ์สรายุทธ, ศ.ดวงใจ ทิวทอง, ศ.ดวงใจ ทิวทอง, ศ.ธงสรวง อิศรางกูร ณ อยุธยา, ศ.ธงสรวง อิศรางกูร ณ อยุธยา, รศ. ดร.นรอรรถ จันทร์กล่ำ, รศ. ดร.นรอรรถ จันทร์กล่ำ, ผศ. ดร.รามสูร สีตลายัน, ผศ. ดร.รามสูร สีตลายัน, คุณกรรชิต จิตระทาน, คุณกรรชิต จิตระทาน, ผู้อำนวยการสำนักบริหารศิลปวัฒนธรรม",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/106",
+    "tags": [
+      "music",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:06:15.448182"
+  },
+  {
+    "title": "ความปลอดภัยด้านกายภาพ ยา และโภชนาการ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ความปลอดภัยด้านกายภาพ ยา และโภชนาการ.png",
+    "instructor": "ทีมคณาจารย์, ทีมคณาจารย์, ทีมคณาจารย์, ทีมคณาจารย์, ทีมคณาจารย์, ทีมคณาจารย์, ทีมคณาจารย์, ทีมคณาจารย์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/107",
+    "tags": [
+      "health",
+      "medical",
+      "safety",
+      "physical-therapy",
+      "nutrition"
+    ],
+    "scraped_at": "2026-03-21T23:06:19.431539"
+  },
+  {
+    "title": "ภาษาสเปนเบื้องต้นสำหรับการสื่อสาร",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ภาษาสเปนเบื้องต้นสำหรับการสื่อสาร.png",
+    "instructor": "ผศ. ดร.เพ็ญพิสาข์ ศรีวรนารถ, ผศ. ดร.เพ็ญพิสาข์ ศรีวรนารถ, นิสิตปริญญาตรี เอกวิชาภาษาสเปน ชั้นปีที่ 4, นิสิตปริญญาตรี เอกวิชาภาษาสเปน ชั้นปีที่ 4",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/108",
+    "tags": [
+      "language",
+      "communication"
+    ],
+    "scraped_at": "2026-03-21T23:06:23.830605"
+  },
+  {
+    "title": "มหากาพย์ สังคมศึกษา น่ารู้: ประวัติศาสตร์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/มหากาพย์ สังคมศึกษา น่ารู้_ประวัติศาสตร์.png",
+    "instructor": "อ.กนก จันทรา, อ.กนก จันทรา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/109",
+    "tags": [
+      "history",
+      "social"
+    ],
+    "scraped_at": "2026-03-21T23:06:28.459660"
+  },
+  {
+    "title": "มหากาพย์ กลเม็ด เก่งคณิต: ความน่าจะเป็นและสถิติ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/มหากาพย์ กลเม็ด เก่งคณิต ความน่าจะเป็นและสถิติ.png",
+    "instructor": "ผศ. ดร.เก่ง วิบูลย์ธัญญ์, ผศ. ดร.เก่ง วิบูลย์ธัญญ์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/110",
+    "tags": [
+      "digital",
+      "statistics"
+    ],
+    "scraped_at": "2026-03-21T23:06:33.557270"
+  },
+  {
+    "title": "ประกันสังคมนั้นสำคัญไฉน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ประกันสังคมนั้นสำคัญไฉน.png",
+    "instructor": "ศ. นพ. ดร.พรชัย สิทธิศรัณย์กุล, ศ. นพ. ดร.พรชัย สิทธิศรัณย์กุล, คุณนันทชัย ปัญญาสุรฤทธิ์, คุณนันทชัย ปัญญาสุรฤทธิ์, ผู้ตรวจราชการกรม, สำนักงานประกันสังคม, คุณเกตุธริน ไชยศรี, คุณเกตุธริน ไชยศรี, ผู้ตรวจราชการกรม, สำนักงานประกันสังคม",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/111",
+    "tags": [
+      "social",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:06:37.987116"
+  },
+  {
+    "title": "สัญญาจ้างก่อสร้าง: หลักการและการจัดการ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สัญญาจ้างก่อสร้าง.png",
+    "instructor": "รศ. ดร.วีระศักดิ์ ลิขิตเรืองศิลป์, รศ. ดร.วีระศักดิ์ ลิขิตเรืองศิลป์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/112",
+    "tags": [
+      "management",
+      "business",
+      "contract"
+    ],
+    "scraped_at": "2026-03-21T23:06:42.989840"
+  },
+  {
+    "title": "เทคนิคพื้นฐานในห้องปฏิบัติการชีวเคมี",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เทคนิคพื้นฐานในห้องปฏิบัติการเคมี.png",
+    "instructor": "คณาจารย์และเจ้าหน้าที่, คณาจารย์และเจ้าหน้าที่",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/113",
+    "tags": [
+      "health",
+      "medical",
+      "chemistry"
+    ],
+    "scraped_at": "2026-03-21T23:06:50.861004"
+  },
+  {
+    "title": "หลักและวิธีบรรเลงเพลงพระราชพิธี",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ปก_หลักและวิธีบรรเลงเพลงพระราชพิธี.jpeg",
+    "instructor": "รศ. ดร.ภัทระ คมขำ, รศ. ดร.ภัทระ คมขำ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/114",
+    "tags": [
+      "หลักและวิธีบรรเลงเพลงพระราชพิธี",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:06:56.190387"
+  },
+  {
+    "title": "ผลิตภัณฑ์สำหรับดวงตา",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ผลิตภัณฑ์สำหรับดวงตา.png",
+    "instructor": "ผศ. สพ.ญ. ดร.วุฒิพร ลิ้มประสูตร, ผศ. สพ.ญ. ดร.วุฒิพร ลิ้มประสูตร, รศ. ภญ. ดร.รัชนี รอดศิริ, รศ. ภญ. ดร.รัชนี รอดศิริ, รศ. ภญ. ดร.วริษา พงศ์เรขนานนท์, รศ. ภญ. ดร.วริษา พงศ์เรขนานนท์, ภก.ดนุพล เชวงกิจสกล, ภก.ดนุพล เชวงกิจสกล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/115",
+    "tags": [
+      "health",
+      "medical"
+    ],
+    "scraped_at": "2026-03-21T23:07:02.150127"
+  },
+  {
+    "title": "การประเมินภาวะสุขภาพเด็ก",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/S__20447539.jpg",
+    "instructor": "ผศ. ดร.สุวิมล โรจนาวี, ผศ. ดร.สุวิมล โรจนาวี",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/116",
+    "tags": [
+      "health",
+      "medical",
+      "children"
+    ],
+    "scraped_at": "2026-03-21T23:07:06.117598"
+  },
+  {
+    "title": "Crunching data with Pandas",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Crunching data with Pandas.jpg",
+    "instructor": "ผศ. ดร.สุกรี สินธุภิญโญ, ผศ. ดร.สุกรี สินธุภิญโญ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/117",
+    "tags": [
+      "digital",
+      "data",
+      "crunching",
+      "pandas"
+    ],
+    "scraped_at": "2026-03-21T23:07:11.256356"
+  },
+  {
+    "title": "Machine Learning Series : Supervised Learning",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เกี่ยวกับรายวิชา.png",
+    "instructor": "ผศ. ดร.นฤมล ประทานวณิช, ผศ. ดร.นฤมล ประทานวณิช",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/118",
+    "tags": [
+      "machine learning",
+      "digital",
+      "machine",
+      "learning",
+      "series"
+    ],
+    "scraped_at": "2026-03-21T23:07:14.930792"
+  },
+  {
+    "title": "Machine Learning Series: Time Series Modeling",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Machine Learning Series_Time Series Modeling.jpg",
+    "instructor": "อ. ดร.เอกพล ช่วงสุวนิช, อ. ดร.เอกพล ช่วงสุวนิช",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/119",
+    "tags": [
+      "machine learning",
+      "digital",
+      "machine",
+      "learning",
+      "series"
+    ],
+    "scraped_at": "2026-03-21T23:07:18.821045"
+  },
+  {
+    "title": "Machine Learning Series : Unsupervised Learning",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Machine Learning Series Unsupervised Learning.jpg",
+    "instructor": "ผศ. ดร.ฑิตยา หวานวารี, ผศ. ดร.ฑิตยา หวานวารี",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/120",
+    "tags": [
+      "machine learning",
+      "digital",
+      "machine",
+      "learning",
+      "series"
+    ],
+    "scraped_at": "2026-03-21T23:07:22.344546"
+  },
+  {
+    "title": "Python for Data Science",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Python for Data Sci.png",
+    "instructor": "ผศ. ดร.สุกรี สินธุภิญโญ, ผศ. ดร.สุกรี สินธุภิญโญ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/121",
+    "tags": [
+      "python",
+      "data science",
+      "digital",
+      "data"
+    ],
+    "scraped_at": "2026-03-21T23:07:27.481227"
+  },
+  {
+    "title": "Competing in a Data-Driven World: Understand and Know-How",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Competing in a Data-Driven World.png",
+    "instructor": "อ. ดร.วัชรา จันทาทับ, อ. ดร.วัชรา จันทาทับ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/122",
+    "tags": [
+      "digital",
+      "data",
+      "competing",
+      "driven",
+      "world"
+    ],
+    "scraped_at": "2026-03-21T23:07:32.051759"
+  },
+  {
+    "title": "ยานยนต์ไฟฟ้า - กุญแจสู่การสัญจรยุคหน้า",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ยานยนต์ไฟฟ้า.jpg",
+    "instructor": "รศ. ดร.อังคีร์ ศรีภคากร, รศ. ดร.อังคีร์ ศรีภคากร",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/123",
+    "tags": [
+      "digital",
+      "ยานยนต์ไฟฟ้า"
+    ],
+    "scraped_at": "2026-03-21T23:07:35.755841"
+  },
+  {
+    "title": "การสื่อสารในเชิงธุรกิจ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การสื่อสารในเชิงธุรกิจ_New.png",
+    "instructor": "ผศ. ดร.ธีรดา จงกลรัตนาภรณ์, ผศ. ดร.ธีรดา จงกลรัตนาภรณ์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/124",
+    "tags": [
+      "management",
+      "business",
+      "communication"
+    ],
+    "scraped_at": "2026-03-21T23:07:40.102190"
+  },
+  {
+    "title": "Computational Thinking and My First Code",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Computational Thinking & My First Code.png",
+    "instructor": "รศ. ดร.จารุโลจน์ จงสถิตย์วัฒนา, รศ. ดร.จารุโลจน์ จงสถิตย์วัฒนา, ผศ. ดร.ฑิตยา หวานวารี, ผศ. ดร.ฑิตยา หวานวารี",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/125",
+    "tags": [
+      "digital",
+      "computational",
+      "thinking",
+      "first",
+      "code"
+    ],
+    "scraped_at": "2026-03-21T23:07:45.289409"
+  },
+  {
+    "title": "Coding for Beginners",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Coding for Beginners.png",
+    "instructor": "รศ. ดร.จารุโลจน์ จงสถิตย์วัฒนา, รศ. ดร.จารุโลจน์ จงสถิตย์วัฒนา, ผศ. ดร.ฑิตยา หวานวารี, ผศ. ดร.ฑิตยา หวานวารี",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/126",
+    "tags": [
+      "digital",
+      "coding",
+      "beginners"
+    ],
+    "scraped_at": "2026-03-21T23:07:49.858722"
+  },
+  {
+    "title": "Attacking the Real World with Python",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Attacking the Real World.png",
+    "instructor": "ผศ. ดร.สุกรี สินธุภิญโญ, ผศ. ดร.สุกรี สินธุภิญโญ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/127",
+    "tags": [
+      "python",
+      "digital",
+      "attacking",
+      "real",
+      "world"
+    ],
+    "scraped_at": "2026-03-21T23:07:55.597704"
+  },
+  {
+    "title": "Basic First Aid for Medical Emergency",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Basic First Aid for Medical Emergency.png",
+    "instructor": "อ. นพ.ธนดล โรจนศานติกุล, อ. นพ.ธนดล โรจนศานติกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/128",
+    "tags": [
+      "health",
+      "medical",
+      "basic",
+      "first",
+      "emergency"
+    ],
+    "scraped_at": "2026-03-21T23:07:59.876598"
+  },
+  {
+    "title": "การเล่าเรื่องและการออกแบบสื่อ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การเล่าเรื่องและการออกแบบสื่อ_New.png",
+    "instructor": "รศ. ดร.สมิทธิ์ บุญชุติมา, รศ. ดร.สมิทธิ์ บุญชุติมา, ผศ. ดร.ประภัสสร จันทร์สถิตย์พร, ผศ. ดร.ประภัสสร จันทร์สถิตย์พร",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/130",
+    "tags": [
+      "management",
+      "business",
+      "design"
+    ],
+    "scraped_at": "2026-03-21T23:08:07.686703"
+  },
+  {
+    "title": "ภาษาอาหรับในชีวิตประจำวัน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/อาหรับในชีวิตประจำวัน.png",
+    "instructor": "ผศ. ดร.ทรงศักดิ์ หมัดสะ, ผศ. ดร.ทรงศักดิ์ หมัดสะ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/131",
+    "tags": [
+      "language",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:08:10.587077"
+  },
+  {
+    "title": "กฎหมายคุ้มครองข้อมูลส่วนบุคคลสำหรับผู้ปฏิบัติงานในหน่วยงานและองค์กรธุรกิจ (สพฐ.)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/กฎหมายคุ้มครองข้อมูลส่วนบุคคลสำหรับผู้ป.png",
+    "instructor": "รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, อ. ดร.พีรพัฒ โชคสุวัฒนสกุล, อ. ดร.พีรพัฒ โชคสุวัฒนสกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/132",
+    "tags": [
+      "data",
+      "business",
+      "law"
+    ],
+    "scraped_at": "2026-03-21T23:08:14.792833"
+  },
+  {
+    "title": "กฎหมายคุ้มครองข้อมูลส่วนบุคคลสำหรับผู้ปฏิบัติงานในหน่วยงานและองค์กรธุรกิจ (พนักงานประกันสังคม)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/กฎหมายคุ้มครองข้อมูลส่วนบุคคลสำหรับเจ้า.png",
+    "instructor": "รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, อ. ดร.พีรพัฒ โชคสุวัฒนสกุล, อ. ดร.พีรพัฒ โชคสุวัฒนสกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/133",
+    "tags": [
+      "data",
+      "business",
+      "law",
+      "social"
+    ],
+    "scraped_at": "2026-03-21T23:08:19.615919"
+  },
+  {
+    "title": "การฝึกอบรมหลักสูตรความรู้เกี่ยวกับกฎหมายคุ้มครองข้อมูลส่วนบุคคลสำหรับผู้ปฏิบัติงานภายใต้โครงการพัฒนาแพลตฟอร์มภาครัฐเพื่อรองรับการปฏิบัติตามกฎหมายคุ้มครองข้อมูลส่วนบุคคล",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Presence (1).png",
+    "instructor": "รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/134",
+    "tags": [
+      "data",
+      "law"
+    ],
+    "scraped_at": "2026-03-21T23:08:23.843417"
+  },
+  {
+    "title": "เรื่องสิ่งแวดล้อมเรื่องของเรา: What (Love) is in the air?",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สิ่งแวดล้อม_What (Love) is in the air.png",
+    "instructor": "ศ. ดร.พิสุทธิ์ เพียรมนกุล, ศ. ดร.พิสุทธิ์ เพียรมนกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/135",
+    "tags": [
+      "digital",
+      "environment",
+      "what",
+      "love"
+    ],
+    "scraped_at": "2026-03-21T23:08:28.495129"
+  },
+  {
+    "title": "มหากาพย์ กลเม็ด เก่งคณิต: เปิดมิติเรขาคณิต",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/มหากาพย์ กลเม็ด เก่งคณิต เปิดมิติเราขาคณิต.png",
+    "instructor": "รศ. ดร.เก่ง วิบูลย์ธัญญ์, รศ. ดร.เก่ง วิบูลย์ธัญญ์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/136",
+    "tags": [
+      "digital",
+      "มหากาพย์"
+    ],
+    "scraped_at": "2026-03-21T23:08:35.409843"
+  },
+  {
+    "title": "กฎหมายคุ้มครองข้อมูลส่วนบุคคลสำหรับผู้ปฏิบัติงานในหน่วยงานและองค์กรธุรกิจ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/picture20220908092256.png",
+    "instructor": "รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/137",
+    "tags": [
+      "data",
+      "business",
+      "law"
+    ],
+    "scraped_at": "2026-03-21T23:08:38.597258"
+  },
+  {
+    "title": "แพะ : นวัตกรรมทางระบบสืบพันธุ์ขั้นสูงเพื่อขับเคลื่อนการผลิตแพะ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ปก(cover) CHULA MOOC (4).png",
+    "instructor": "ศ.กิตติคุณ น.สพ.ดร.มงคล เตชะกำพุ, ศ.กิตติคุณ น.สพ.ดร.มงคล เตชะกำพุ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/138",
+    "tags": [
+      "management",
+      "business",
+      "innovation"
+    ],
+    "scraped_at": "2026-03-21T23:08:42.978762"
+  },
+  {
+    "title": "Principles of Innovation and Entrepreneurship: VIE",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/principles of innovation and entrepreneurship.png",
+    "instructor": "ศ.กิตติคุณ น.สพ. ดร.มงคล เตชะกำพุ, ศ.กิตติคุณ น.สพ. ดร.มงคล เตชะกำพุ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/139",
+    "tags": [
+      "management",
+      "business",
+      "principles",
+      "innovation",
+      "entrepreneurship"
+    ],
+    "scraped_at": "2026-03-21T23:08:46.965510"
+  },
+  {
+    "title": "Happy Retirement",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Happy Retirement.png",
+    "instructor": "อ.พนิดา ประพันธ์วัฒนะ, อ.พนิดา ประพันธ์วัฒนะ, ผู้อำนวยการศูนย์วิเคราะห์รายได้และปฏิบัติการลงทุน",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/141",
+    "tags": [
+      "management",
+      "business",
+      "happy",
+      "retirement"
+    ],
+    "scraped_at": "2026-03-21T23:08:54.239919"
+  },
+  {
+    "title": "ค้นปัง อ้างเป็น เก่ง Endnote",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ปก(cover) CHULA MOOC (5).png",
+    "instructor": "",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/142",
+    "tags": [
+      "endnote",
+      "ค้นปัง"
+    ],
+    "scraped_at": "2026-03-21T23:08:58.412801"
+  },
+  {
+    "title": "พลศาสตร์กระบวนการและการควบคุม",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "closed",
+    "image_url": "https://mooc.chula.ac.th/img/upload/พลศาสตร์กระบวนการและการควบคุม.png",
+    "instructor": "ศ. ดร.พรพจน์ เปี่ยมสมบูรณ์, ศ. ดร.พรพจน์ เปี่ยมสมบูรณ์, รศ. ดร.ประพันธ์ คูชลธารา, รศ. ดร.ประพันธ์ คูชลธารา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/143",
+    "tags": [
+      "digital",
+      "พลศาสตร์กระบวนการและการควบคุม"
+    ],
+    "scraped_at": "2026-03-21T23:09:02.238496"
+  },
+  {
+    "title": "ไตวายเฉียบพลันสำหรับประชาชน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ไตวายเฉียบพลัน.png",
+    "instructor": "ศ. นพ.ณัฐชัย ศรีสวัสดิ์, ศ. นพ.ณัฐชัย ศรีสวัสดิ์, ศูนย์ความเป็นเลิศทางการแพทย์ด้านโรคไตในภาวะวิกฤต, พญ.ณัฏฐา ล้ำเลิศกุล, พญ.ณัฏฐา ล้ำเลิศกุล, ศูนย์ความเป็นเลิศทางการแพทย์ด้านโรคไตในภาวะวิกฤต",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/144",
+    "tags": [
+      "health",
+      "medical"
+    ],
+    "scraped_at": "2026-03-21T23:09:06.048140"
+  },
+  {
+    "title": "เรื่องสิ่งแวดล้อมเรื่องของเรา: ขยะ ปัญหาสำคัญหรือทองคำของสังคม",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เรื่องสิ่งแวดล้อมเรื่องของเรา_ขยะ ปัญหาสำคัญหรือทองคำของสังคม.png",
+    "instructor": "ศ. ดร.พิสุทธิ์ เพียรมนกุล, ศ. ดร.พิสุทธิ์ เพียรมนกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/145",
+    "tags": [
+      "digital",
+      "environment",
+      "social",
+      "waste-management"
+    ],
+    "scraped_at": "2026-03-21T23:09:11.323614"
+  },
+  {
+    "title": "รอบรู้ สู้มะเร็งเต้านม",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/picture20220818073659.png",
+    "instructor": "รศ. พญ.สุกัญญา ศรีอัษฎาพร, รศ. พญ.สุกัญญา ศรีอัษฎาพร",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/146",
+    "tags": [
+      "health",
+      "medical"
+    ],
+    "scraped_at": "2026-03-21T23:09:15.275935"
+  },
+  {
+    "title": "หลักสูตรส่งเสริมการรู้เท่าทันสื่อ สารสนเทศ และดิจิทัล เฝ้าระวังและใช้สื่ออย่างสร้างสรรค์ในมิติวัฒนธรรม",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/cover_กระทรวงวัฒนธรรม.png",
+    "instructor": "กระทรวงวัฒนธรรม, กระทรวงวัฒนธรรม",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/147",
+    "tags": [
+      "culture",
+      "digital"
+    ],
+    "scraped_at": "2026-03-21T23:09:18.633348"
+  },
+  {
+    "title": "สุขภาพดีด้วยการออกกำลังกาย ลดโรค ลดเสี่ยง ชีวิตยืนยาว",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สุขภาพดีด้วยการออกกำลังกาย ลดโรค ลดเสี่ยง ชีวิตยืนยาว.png",
+    "instructor": "ผศ. ดร.สิทธา พงษ์พิบูลย์, ผศ. ดร.สิทธา พงษ์พิบูลย์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/148",
+    "tags": [
+      "health",
+      "medical",
+      "disease"
+    ],
+    "scraped_at": "2026-03-21T23:09:23.510269"
+  },
+  {
+    "title": "กินอย่างไรห่างไกลมะเร็ง",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/กินอย่างไรห่างไกลมะเร็ง.png",
+    "instructor": "ศ. ดร.ภญ.จงจิตร อังคทะวานิช, ศ. ดร.ภญ.จงจิตร อังคทะวานิช",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/149",
+    "tags": [
+      "health",
+      "medical"
+    ],
+    "scraped_at": "2026-03-21T23:09:28.278794"
+  },
+  {
+    "title": "การเจรจาต่อรองในเชิงธุรกิจ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การเจรจาต่อรองในเชิงธุรกิจ_New.png",
+    "instructor": "รศ. ดร.สมิทธิ์ บุญชุติมา, รศ. ดร.สมิทธิ์ บุญชุติมา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/150",
+    "tags": [
+      "management",
+      "business"
+    ],
+    "scraped_at": "2026-03-21T23:09:33.242483"
+  },
+  {
+    "title": "การนำเสนออย่างมีประสิทธิภาพ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การนำเสนออย่างมีประสิทธิภาพ.png",
+    "instructor": "รศ. ดร.สุกัญญา สมไพบูลย์, รศ. ดร.สุกัญญา สมไพบูลย์, ผศ. ดร.ธีรดา จงกลรัตนาภรณ์, ผศ. ดร.ธีรดา จงกลรัตนาภรณ์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/151",
+    "tags": [
+      "management",
+      "business"
+    ],
+    "scraped_at": "2026-03-21T23:09:38.387640"
+  },
+  {
+    "title": "การงบประมาณภาครัฐ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/cover_งบประมาณภาครัฐ.png",
+    "instructor": "ศ. ดร.จรัส สุวรรณมาลา, ศ. ดร.จรัส สุวรรณมาลา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/152",
+    "tags": [
+      "management",
+      "business"
+    ],
+    "scraped_at": "2026-03-21T23:09:42.021685"
+  },
+  {
+    "title": "การสร้าง Infographics: What & How?",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การสร้าง Infographic_What & How.png",
+    "instructor": "รศ. ดร.สมิทธิ์ บุญชุติมา, รศ. ดร.สมิทธิ์ บุญชุติมา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/153",
+    "tags": [
+      "infographics",
+      "what"
+    ],
+    "scraped_at": "2026-03-21T23:09:47.461703"
+  },
+  {
+    "title": "EMCC22 : I will survive in Emergency Medicine",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/หน้าปกวิชา EM.png",
+    "instructor": "ฝ่ายเวชศาสตร์ฉุกเฉิน, ฝ่ายเวชศาสตร์ฉุกเฉิน",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/154",
+    "tags": [
+      "health",
+      "medical",
+      "emcc",
+      "survive",
+      "emergency"
+    ],
+    "scraped_at": "2026-03-21T23:09:51.730878"
+  },
+  {
+    "title": "นาฏยกรรมสยาม ตอน ลิเก มรดกไทยในยุคสังคมเมือง",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/นาฏยกรรมสยาม ตอน ลิเกมรดกไทยในยุคสังคมเมือง.png",
+    "instructor": "รศ. ดร.อนุกูล โรจนสุขสมบูรณ์, รศ. ดร.อนุกูล โรจนสุขสมบูรณ์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/155",
+    "tags": [
+      "social",
+      "นาฏยกรรมสยาม"
+    ],
+    "scraped_at": "2026-03-21T23:09:55.216531"
+  },
+  {
+    "title": "พระนครศึกษา",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/พระนครศึกษา.png",
+    "instructor": "ศ. ดร.บัณฑิต จุลาสัย, ศ. ดร.บัณฑิต จุลาสัย",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/156",
+    "tags": [
+      "พระนครศึกษา",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:09:59.465352"
+  },
+  {
+    "title": "ผู้พิทักษ์ป่าต้นน้ำ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ผู้พิทักษ์ป่า.png",
+    "instructor": "ผศ.ชูพงศ์ ปัญจมะวัต, ผศ.ชูพงศ์ ปัญจมะวัต, ศูนย์การศึกษาทั่วไป, ดร.พงษ์ศักดิ์ วิทวัสชุติกุล, ดร.พงษ์ศักดิ์ วิทวัสชุติกุล, ที่ปรึกษาโครงการเอสซีจีรักษ์น้ำเพื่ออนาคต, คุณวิชญ์วิสิฐ ธิราชรัมย์, คุณวิชญ์วิสิฐ ธิราชรัมย์, เจ้าหน้าที่กิจการเพื่อสังคม",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/157",
+    "tags": [
+      "ผู้พิทักษ์ป่าต้นน้ำ",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:10:04.419712"
+  },
+  {
+    "title": "มหากาพย์ สังคมศึกษา น่ารู้: กฎหมายและสังคมวิทยา",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สังคม_กฎหมาย02.png",
+    "instructor": "อ. ดร.กนก จันทรา, อ. ดร.กนก จันทรา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/158",
+    "tags": [
+      "law",
+      "social"
+    ],
+    "scraped_at": "2026-03-21T23:10:08.577333"
+  },
+  {
+    "title": "มหากาพย์ สังคมศึกษา น่ารู้: เศรษฐศาสตร์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สังคม_เศรษฐศาสตร์.png",
+    "instructor": "อ. ดร.กนก จันทรา, อ. ดร.กนก จันทรา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/159",
+    "tags": [
+      "economics",
+      "social"
+    ],
+    "scraped_at": "2026-03-21T23:10:12.935802"
+  },
+  {
+    "title": "มหากาพย์ สังคมศึกษา น่ารู้: ศาสนาสากลและพระพุทธศาสนา",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สังคม_ศาสนา.png",
+    "instructor": "อ. ดร.กนก จันทรา, อ. ดร.กนก จันทรา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/160",
+    "tags": [
+      "social",
+      "มหากาพย์"
+    ],
+    "scraped_at": "2026-03-21T23:10:18.374706"
+  },
+  {
+    "title": "Solving Everyday Life Problems with Computational Thinking",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ปก(cover) Computational Thinking.png",
+    "instructor": "รศ. ดร.โปรดปราน บุณยพุกกณะ, รศ. ดร.โปรดปราน บุณยพุกกณะ, ผศ. ดร.นฤมล ประทานวณิช, ผศ. ดร.นฤมล ประทานวณิช",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/161",
+    "tags": [
+      "digital",
+      "solving",
+      "everyday",
+      "life",
+      "problems"
+    ],
+    "scraped_at": "2026-03-21T23:10:22.791019"
+  },
+  {
+    "title": "ความรู้เรื่องดวงตาสำหรับประชาชน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/picture20220306051718.png",
+    "instructor": "รศ. พญ.วิลาวัณย์ พวงศรีเจริญ, รศ. พญ.วิลาวัณย์ พวงศรีเจริญ, ผศ. ดร.เปรมจิต เศาณานนท์, ผศ. ดร.เปรมจิต เศาณานนท์, ผศ. (พิเศษ) นพ.สุภณัฐ อภิญญาวสีสุข, ผศ. (พิเศษ) นพ.สุภณัฐ อภิญญาวสีสุข",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/162",
+    "tags": [
+      "health",
+      "medical"
+    ],
+    "scraped_at": "2026-03-21T23:10:28.240273"
+  },
+  {
+    "title": "เรื่องสิ่งแวดล้อมเรื่องของเรา: มลพิษทางทะเล",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ปกวิชา มลพิษทางทะเล.png",
+    "instructor": "ศ. ดร.พิสุทธิ์ เพียรมนกุล, ศ. ดร.พิสุทธิ์ เพียรมนกุล, ศ. ดร.เผดิมศักดิ์ จารยะพันธุ์, ศ. ดร.เผดิมศักดิ์ จารยะพันธุ์, บัณฑิตวิทยาลัย, ศ. ดร.สุชนา ชวนิชย์, ศ. ดร.สุชนา ชวนิชย์, คุณหญิงทองทิพ รัตนะรัต, คุณหญิงทองทิพ รัตนะรัต, สถาบันปิโตรเลียมแห่งประเทศไทย, รศ. ดร.ธรณ์ ธำรงนาวาสวัสดิ์, รศ. ดร.ธรณ์ ธำรงนาวาสวัสดิ์, มหาวิทยาลัยเกษตรศาสตร์, ดร.วิจารย์ สิมาฉายา, ดร.วิจารย์ สิมาฉายา, สถาบันสิ่งแวดล้อมไทย, ดร.ณัฐวิญญ์ ชวเลิศพรศิยา, ดร.ณัฐวิญญ์ ชวเลิศพรศิยา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/163",
+    "tags": [
+      "digital",
+      "environment"
+    ],
+    "scraped_at": "2026-03-21T23:10:31.156011"
+  },
+  {
+    "title": "พอลิเมอร์: การสังเคราะห์ผ่านกลไกแบบอนุมูลอิสระ และการประยุกต์ใช้",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/หน้าปกวิชาพอลิเมอร์.png",
+    "instructor": "ศ. ดร.วรวีร์ โฮเว่น, ศ. ดร.วรวีร์ โฮเว่น",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/164",
+    "tags": [
+      "digital",
+      "พอลิเมอร์"
+    ],
+    "scraped_at": "2026-03-21T23:10:35.105493"
+  },
+  {
+    "title": "พสุธากัมปนาท",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/พสุธากัมปนาท.png",
+    "instructor": "ศ. ดร.สันติ ภัยหลบลี้, ศ. ดร.สันติ ภัยหลบลี้",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/165",
+    "tags": [
+      "digital",
+      "พสุธากัมปนาท"
+    ],
+    "scraped_at": "2026-03-21T23:10:39.731447"
+  },
+  {
+    "title": "การเขียนแสดงความคิดเห็น",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การเขียนแสดงความคิดเห็น (HD).png",
+    "instructor": "ทีมคณาจารย์สถาบันภาษาไทยสิรินธร, ทีมคณาจารย์สถาบันภาษาไทยสิรินธร",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/166",
+    "tags": [
+      "writing",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:10:46.085195"
+  },
+  {
+    "title": "ระบบหายใจกับการออกกำลังกาย",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ระบบหายใจกับการออกกำลังกาย.png",
+    "instructor": "รศ. ดร.วรรณพร ทองตะโก, รศ. ดร.วรรณพร ทองตะโก",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/167",
+    "tags": [
+      "health",
+      "medical"
+    ],
+    "scraped_at": "2026-03-21T23:10:51.587372"
+  },
+  {
+    "title": "วิธีการดูแลตนเองเบื้องต้นในผู้ป่วยโรคกระจกตาและผิวดวงตา",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/วิธีการดูแลตนเองเบื้องต้นในผู้ป่วยโรคกระจกตา.png",
+    "instructor": "รศ. พญ.วิลาวัณย์ พวงศรีเจริญ, รศ. พญ.วิลาวัณย์ พวงศรีเจริญ, ศ. พญ.งามจิตต์ เกษตรสุวรรณ, ศ. พญ.งามจิตต์ เกษตรสุวรรณ, รศ.(พิเศษ) พญ.อุษณีย์ เหรียญประยูร, รศ.(พิเศษ) พญ.อุษณีย์ เหรียญประยูร, อ. พญ.วรรณรัตน์ สาธิตพิฐกุล, อ. พญ.วรรณรัตน์ สาธิตพิฐกุล, อ. พญ.ธนัชพร กิตติพิบูลย์, อ. พญ.ธนัชพร กิตติพิบูลย์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/168",
+    "tags": [
+      "health",
+      "medical",
+      "disease"
+    ],
+    "scraped_at": "2026-03-21T23:10:57.842723"
+  },
+  {
+    "title": "对外泰语交际课 (Communicative Thai for Foreigners : Chinese version)",
+    "description": "About course",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สอนภาษาไทยให้คนจีน.png",
+    "instructor": "Pitchaya Vipaveenukul, Ph.D., Pitchaya Vipaveenukul, Ph.D., Thailand Foundation, Thailand Foundation",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/169",
+    "tags": [
+      "language",
+      "communicative",
+      "thai",
+      "foreigners",
+      "chinese"
+    ],
+    "scraped_at": "2026-03-21T23:11:02.280105"
+  },
+  {
+    "title": "외국인을위한태국어커뮤니케이션 (Communicative Thai for Foreigners : Korean version)",
+    "description": "About course",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สอนภาษาไทยให้คนเกาหลี.png",
+    "instructor": "Asst. Prof.Kamon Butsaban, Ph.D., Asst. Prof.Kamon Butsaban, Ph.D., Kerdsiri Suthanya, Kerdsiri Suthanya, Thailand Foundation, Thailand Foundation",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/170",
+    "tags": [
+      "language",
+      "communicative",
+      "thai",
+      "foreigners",
+      "korean"
+    ],
+    "scraped_at": "2026-03-21T23:11:06.920928"
+  },
+  {
+    "title": "Tiếng Thái giao tiếp chongười nước ngoài (Communicative Thai for Foreigners : Vietnamese version)",
+    "description": "About course",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สอนภาษาไทยให้คนเวียดนาม.png",
+    "instructor": "Tiwaree Kosittanakiat, Tiwaree Kosittanakiat, Thailand Foundation, Thailand Foundation",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/171",
+    "tags": [
+      "language",
+      "giao",
+      "chong",
+      "communicative",
+      "thai"
+    ],
+    "scraped_at": "2026-03-21T23:11:10.225160"
+  },
+  {
+    "title": "Le Thaïlandais à but communicatif pour les étrangers (Communicative Thai for Foreigners : French version)",
+    "description": "About course",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สอนภาษาไทยให้คนฝรั่งเศส.png",
+    "instructor": "Vanichcha Kanchanobhas, Ph.D., Vanichcha Kanchanobhas, Ph.D., Kantapon Intamart, Kantapon Intamart, Thailand Foundation, Thailand Foundation",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/172",
+    "tags": [
+      "language",
+      "landais",
+      "communicatif",
+      "pour",
+      "trangers"
+    ],
+    "scraped_at": "2026-03-21T23:11:14.283461"
+  },
+  {
+    "title": "Tailandés Comunicativo para Extranjeros (Communicative Thai for Foreigners : Spanish version)",
+    "description": "About course",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สอนภาษาไทยให้คนสเปน.png",
+    "instructor": "Asst. Prof.Penpisa Srivoranart, Ph.D., Asst. Prof.Penpisa Srivoranart, Ph.D., Asst. Prof.Sukij Poopuang, Ph.D., Asst. Prof.Sukij Poopuang, Ph.D., Thailand Foundation, Thailand Foundation",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/173",
+    "tags": [
+      "language",
+      "tailand",
+      "comunicativo",
+      "para",
+      "extranjeros"
+    ],
+    "scraped_at": "2026-03-21T23:11:18.410181"
+  },
+  {
+    "title": "Thai für alltägliche Kommunikation (Communicative Thai for Foreigners : German version)",
+    "description": "About course",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สอนภาษาไทยให้คนเยอรมัน.png",
+    "instructor": "Nantana Anuntkosol, Ph.D., Nantana Anuntkosol, Ph.D., Akra Chowchong, Ph.D., Akra Chowchong, Ph.D., Thailand Foundation, Thailand Foundation",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/174",
+    "tags": [
+      "language",
+      "thai",
+      "allt",
+      "gliche",
+      "kommunikation"
+    ],
+    "scraped_at": "2026-03-21T23:11:22.437209"
+  },
+  {
+    "title": "Разговорный тайский язык для иностранцев (Communicative Thai for Foreigners : Russian version)",
+    "description": "About course",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สอนภาษาไทยให้คนรัสเซีย.png",
+    "instructor": "Angsana Rueangdam, Ph.D., Angsana Rueangdam, Ph.D., Thailand Foundation, Thailand Foundation",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/175",
+    "tags": [
+      "language",
+      "communicative",
+      "thai",
+      "foreigners",
+      "russian"
+    ],
+    "scraped_at": "2026-03-21T23:11:26.187114"
+  },
+  {
+    "title": "外国人のためのタイ語会話 (Communicative Thai for Foreigners : Japanese version)",
+    "description": "About course",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สอนภาษาไทยให้คนญี่ปุ่น.png",
+    "instructor": "Asst. Prof.Asadayuth Chusri, Ph.D., Asst. Prof.Asadayuth Chusri, Ph.D., Thailand Foundation, Thailand Foundation",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/176",
+    "tags": [
+      "language",
+      "communicative",
+      "thai",
+      "foreigners",
+      "japanese"
+    ],
+    "scraped_at": "2026-03-21T23:11:29.973828"
+  },
+  {
+    "title": "Fellows Program in Aging, Hearing and Public Health for Health care professionals",
+    "description": "About course",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Fellows Program in Aging, Hearing and Public Health.png",
+    "instructor": "Dr. Nattawan Utoomprurkporn, M.D., Ph.D., Dr. Nattawan Utoomprurkporn, M.D., Ph.D.",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/177",
+    "tags": [
+      "health",
+      "medical",
+      "fellows",
+      "program",
+      "aging"
+    ],
+    "scraped_at": "2026-03-21T23:11:34.266887"
+  },
+  {
+    "title": "กฎหมายคุ้มครองข้อมูลส่วนบุคคลสำหรับผู้ปฏิบัติงานในหน่วยงานและองค์กรธุรกิจ (กรมการปกครอง)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/กฎหมายคุ้มครองข้อมูลส่วนบุคคลฯ (กรมการปกครอง).png",
+    "instructor": "รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, อ. ดร.พีรพัฒ โชคสุวัฒนสกุล, อ. ดร.พีรพัฒ โชคสุวัฒนสกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/178",
+    "tags": [
+      "data",
+      "business",
+      "law"
+    ],
+    "scraped_at": "2026-03-21T23:11:39.417249"
+  },
+  {
+    "title": "วิทยาการคำนวณ: การประยุกต์ใช้ความรู้และการใช้ MineCraft ในการเรียนการสอน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/วิทยาการคำนวณ_การประยุกต์ใช้ MineCraft.png",
+    "instructor": "รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.อติวงศ์ สุชาโต, คุณนพดล รัตนวิเศษรัตน์, คุณนพดล รัตนวิเศษรัตน์, Customer Success Manager, บริษัท ไมโครซอฟท์ (ประเทศไทย) จำกัด",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/179",
+    "tags": [
+      "digital",
+      "teaching",
+      "minecraft"
+    ],
+    "scraped_at": "2026-03-21T23:11:44.106735"
+  },
+  {
+    "title": "การวิเคราะห์การตัดสินใจและการจัดการความเสี่ยง",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การวิเคราะห์การตัดสินใจ.png",
+    "instructor": "รศ. ดร.วีระศักดิ์ ลิขิตเรืองศิลป์, รศ. ดร.วีระศักดิ์ ลิขิตเรืองศิลป์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/180",
+    "tags": [
+      "management",
+      "business"
+    ],
+    "scraped_at": "2026-03-21T23:11:48.774830"
+  },
+  {
+    "title": "โฆษณาและสื่อสารอย่างไรให้แบรนด์โกอินเตอร์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/โฆษณาและสื่อสารอย่างไรให้แบรนด์โกอินเตอร์_Final.png",
+    "instructor": "ศ. ดร.วรวรรณ องค์ครุฑรักษา, ศ. ดร.วรวรรณ องค์ครุฑรักษา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/181",
+    "tags": [
+      "management",
+      "business"
+    ],
+    "scraped_at": "2026-03-21T23:11:53.818117"
+  },
+  {
+    "title": "การบริหารความเสี่ยงองค์กร",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การบริหารความเสี่ยงองค์กร_new.png",
+    "instructor": "ดร.อวิรุทธ์ ฉัตรมาลาทอง, ดร.อวิรุทธ์ ฉัตรมาลาทอง, ผู้อำนวยการศูนย์บริหารความเสี่ยง",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/182",
+    "tags": [
+      "management",
+      "business"
+    ],
+    "scraped_at": "2026-03-21T23:11:58.652691"
+  },
+  {
+    "title": "การทดสอบสมรรถภาพการใช้ภาษาไทยสำหรับผู้พูดภาษาไทยเป็นภาษาต่างประเทศ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การทดสอบสมรรถภาพการใช้ภาษาไทยฯ_new.jpg",
+    "instructor": "ทีมคณาจารย์สถาบันภาษาไทยสิรินธร, ทีมคณาจารย์สถาบันภาษาไทยสิรินธร",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/183",
+    "tags": [
+      "thai-language",
+      "language"
+    ],
+    "scraped_at": "2026-03-21T23:12:01.937082"
+  },
+  {
+    "title": "การสร้างสื่อดิจิทัลเพื่อการมีส่วนร่วม",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การสร้างสื่อดิจิทัลเพื่อการมีส่วนร่วม.png",
+    "instructor": "ผศ. ดร.สกุลศรี ศรีสารคาม, ผศ. ดร.สกุลศรี ศรีสารคาม",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/184",
+    "tags": [
+      "digital",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:12:07.124911"
+  },
+  {
+    "title": "เทคนิคทางเภสัชกรรมและการเตรียมเภสัชภัณฑ์รูปแบบต่าง ๆ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เทคนิคทางเภสัชกรรมฯ.png",
+    "instructor": "",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/185",
+    "tags": [
+      "health",
+      "medical",
+      "pharmacy"
+    ],
+    "scraped_at": "2026-03-21T23:12:12.286654"
+  },
+  {
+    "title": "อ่าน เขียน พิมพ์ อักษรญี่ปุ่น คุณทำได้",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/KANA Can-do.png",
+    "instructor": "ผศ. ดร.อัษฎายุทธ ชูศรี, ผศ. ดร.อัษฎายุทธ ชูศรี",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/186",
+    "tags": [
+      "language",
+      "อ่าน"
+    ],
+    "scraped_at": "2026-03-21T23:12:15.985898"
+  },
+  {
+    "title": "Pre Calculus",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Pre Calculus.png",
+    "instructor": "ศ. ดร.ยศนันต์ มีมาก, ศ. ดร.ยศนันต์ มีมาก",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/187",
+    "tags": [
+      "digital",
+      "calculus"
+    ],
+    "scraped_at": "2026-03-21T23:12:20.272581"
+  },
+  {
+    "title": "เรื่องสิ่งแวดล้อมเรื่องของเรา: มลพิษทางทะเล (อส.)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/มลพิษทางทะเล_DNP.png",
+    "instructor": "ศ. ดร.พิสุทธิ์ เพียรมนกุล, ศ. ดร.พิสุทธิ์ เพียรมนกุล, ศ. ดร.เผดิมศักดิ์ จารยะพันธุ์, ศ. ดร.เผดิมศักดิ์ จารยะพันธุ์, บัณฑิตวิทยาลัย, ศ. ดร.สุชนา ชวนิชย์, ศ. ดร.สุชนา ชวนิชย์, คุณหญิงทองทิพ รัตนะรัต, คุณหญิงทองทิพ รัตนะรัต, สถาบันปิโตรเลียมแห่งประเทศไทย, รศ. ดร.ธรณ์ ธำรงนาวาสวัสดิ์, รศ. ดร.ธรณ์ ธำรงนาวาสวัสดิ์, มหาวิทยาลัยเกษตรศาสตร์, ดร.วิจารย์ สิมาฉายา, ดร.วิจารย์ สิมาฉายา, สถาบันสิ่งแวดล้อมไทย, ดร.ณัฐวิญญ์ ชวเลิศพรศิยา, ดร.ณัฐวิญญ์ ชวเลิศพรศิยา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/188",
+    "tags": [
+      "digital",
+      "environment"
+    ],
+    "scraped_at": "2026-03-21T23:12:23.673046"
+  },
+  {
+    "title": "เรื่องสิ่งแวดล้อมเรื่องของเรา: Shelldon ชวนน้องรักษ์โลก เรื่องมลพิษทางทะเล (อส.)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/shelldon_DNP.png",
+    "instructor": "ศ. ดร.พิสุทธิ์ เพียรมนกุล, ศ. ดร.พิสุทธิ์ เพียรมนกุล, ดร.ณัฐวิญญ์ ชวเลิศพรศิยา, ดร.ณัฐวิญญ์ ชวเลิศพรศิยา, ศ. ดร.สุชนา ชวนิชย์, ศ. ดร.สุชนา ชวนิชย์, ศ. ดร.เผดิมศักดิ์ จารยะพันธุ์, ศ. ดร.เผดิมศักดิ์ จารยะพันธุ์, บัณฑิตวิทยาลัย, รศ. ดร.ธรณ์ ธำรงนาวาสวัสดิ์, รศ. ดร.ธรณ์ ธำรงนาวาสวัสดิ์, มหาวิทยาลัยเกษตรศาสตร์, ดร.วิจารย์ สิมาฉายา, ดร.วิจารย์ สิมาฉายา, สถาบันสิ่งแวดล้อมไทย, คุณหญิง ทองทิพ รัตนะรัต, คุณหญิง ทองทิพ รัตนะรัต, สถาบันปิโตรเลียมแห่งประเทศไทย",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/189",
+    "tags": [
+      "digital",
+      "environment",
+      "shelldon"
+    ],
+    "scraped_at": "2026-03-21T23:12:27.954612"
+  },
+  {
+    "title": "เรื่องสิ่งแวดล้อมเรื่องของเรา: ขยะ ปัญหาสำคัญหรือทองคำของสังคม (อส.)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ขยะ_DNP.png",
+    "instructor": "ศ. ดร.พิสุทธิ์ เพียรมนกุล, ศ. ดร.พิสุทธิ์ เพียรมนกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/190",
+    "tags": [
+      "digital",
+      "environment",
+      "social",
+      "waste-management"
+    ],
+    "scraped_at": "2026-03-21T23:12:32.064193"
+  },
+  {
+    "title": "เรื่องสิ่งแวดล้อมเรื่องของเรา: Environment 4.0 (อส.)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Environment 4.0_DNP.png",
+    "instructor": "ศ. ดร.พิสุทธิ์ เพียรมนกุล, ศ. ดร.พิสุทธิ์ เพียรมนกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/191",
+    "tags": [
+      "digital",
+      "environment"
+    ],
+    "scraped_at": "2026-03-21T23:12:35.335389"
+  },
+  {
+    "title": "เรื่องสิ่งแวดล้อมเรื่องของเรา: ปรับเปลี่ยนกระบวนทัศน์ จัดการพลาสติก (อส.)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/พลาสติก_DNP.png",
+    "instructor": "ศ. ดร.พิสุทธิ์ เพียรมนกุล, ศ. ดร.พิสุทธิ์ เพียรมนกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/192",
+    "tags": [
+      "digital",
+      "environment"
+    ],
+    "scraped_at": "2026-03-21T23:12:38.853436"
+  },
+  {
+    "title": "Strategic Communication Plan",
+    "description": "About course",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Strategic Communication.png",
+    "instructor": "Assoc. Prof.Smith Boonchutima, Ph.D., Assoc. Prof.Smith Boonchutima, Ph.D.",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/193",
+    "tags": [
+      "management",
+      "business",
+      "communication"
+    ],
+    "scraped_at": "2026-03-21T23:12:42.614528"
+  },
+  {
+    "title": "Introduction to Data Analytics and Big Data (PTT OR)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Intro to Data Analytics and Big Data_PTT OR.png",
+    "instructor": "ผศ. ดร.ณัฐวุฒิ หนูไพโรจน์, ผศ. ดร.ณัฐวุฒิ หนูไพโรจน์, ศ. ดร.ประภาส จงสถิตย์วัฒนา, ศ. ดร.ประภาส จงสถิตย์วัฒนา, รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.เกริก ภิรมย์โสภา, รศ. ดร.เกริก ภิรมย์โสภา, ผศ. ดร.สุกรี สินธุภิญโญ, ผศ. ดร.สุกรี สินธุภิญโญ, รศ. ดร.วีระ เหมืองสิน, รศ. ดร.วีระ เหมืองสิน, รศ. ดร.พีรพล เวทีกูล, รศ. ดร.พีรพล เวทีกูล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/194",
+    "tags": [
+      "data analytics",
+      "digital",
+      "data"
+    ],
+    "scraped_at": "2026-03-21T23:12:47.291338"
+  },
+  {
+    "title": "เคล็ดวิชาค้นคว้า กระบวนท่านำเสนอผลงาน (PTT OR)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เคล็ดวิชาค้นคว้า กระบวนท่านำเสนอผลงาน_PTT OR.png",
+    "instructor": "รศ.จินดารัตน์ เบอรพันธุ์, รศ.จินดารัตน์ เบอรพันธุ์, ผศ. ดร.อรนุช เศวตรัตนเสถียร, ผศ. ดร.อรนุช เศวตรัตนเสถียร, ผศ. ดร.พิมพ์รำไพ เปรมสมิทธ์, ผศ. ดร.พิมพ์รำไพ เปรมสมิทธ์, รศ. ดร.สมศักดิ์ ศรีบริสุทธิ์สกุล, รศ. ดร.สมศักดิ์ ศรีบริสุทธิ์สกุล, ผศ. ดร.เสาวภา หลิมวิจิตร, ผศ. ดร.เสาวภา หลิมวิจิตร, ผศ. ดร.วชิราภรณ์ คลังธนบูรณ์, ผศ. ดร.วชิราภรณ์ คลังธนบูรณ์, อ.เนณุภา สุภเวชย์, อ.เนณุภา สุภเวชย์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/195",
+    "tags": [
+      "เคล็ดวิชาค้นคว้า",
+      "กระบวนท่านำเสนอผลงาน"
+    ],
+    "scraped_at": "2026-03-21T23:12:50.387184"
+  },
+  {
+    "title": "ปลุกพลังความคิดสร้างสรรค์ (PTT OR)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ปลุกพลังความคิดสร้างสรรค์_PTT OR.png",
+    "instructor": "อ.ธงชัย โรจน์กังสดาล, อ.ธงชัย โรจน์กังสดาล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/196",
+    "tags": [
+      "ปลุกพลังความคิดสร้างสรรค์",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:12:53.885359"
+  },
+  {
+    "title": "Exploring Digital Technology Landscape (PTT OR)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Exploring Digital Technology landscape (PTT OR).jpeg",
+    "instructor": "ผศ. ดร.นฤมล ประทานวณิช, ผศ. ดร.นฤมล ประทานวณิช",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/197",
+    "tags": [
+      "digital",
+      "exploring",
+      "technology",
+      "landscape"
+    ],
+    "scraped_at": "2026-03-21T23:12:56.918656"
+  },
+  {
+    "title": "Solving Everyday Life Problems with Computational Thinking (PTT OR)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Computational Thinking (PTT OR).png",
+    "instructor": "รศ. ดร.โปรดปราน บุณยพุกกณะ, รศ. ดร.โปรดปราน บุณยพุกกณะ, ผศ. ดร.นฤมล ประทานวณิช, ผศ. ดร.นฤมล ประทานวณิช",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/198",
+    "tags": [
+      "digital",
+      "solving",
+      "everyday",
+      "life",
+      "problems"
+    ],
+    "scraped_at": "2026-03-21T23:13:00.827141"
+  },
+  {
+    "title": "การส่งเสริมการเรียนรู้ด้วยการนำตนเอง (PTT OR)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การส่งเสริมการเรียนรู้ด้วยการนำตนเอง (PTT OR).jpeg",
+    "instructor": "รศ. ดร.สุวิธิดา จรุงเกียรติกุล, รศ. ดร.สุวิธิดา จรุงเกียรติกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/199",
+    "tags": [
+      "learning",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:13:04.077134"
+  },
+  {
+    "title": "ก้าวแรกสู่การสร้างคุณค่าด้วยข้อมูล (PTT OR)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ก้าวแรกสู่การสร้างคุณค่าด้วยข้อมูล_PTTOR.png",
+    "instructor": "รศ. ดร.โปรดปราน บุณยพุกกณะ, รศ. ดร.โปรดปราน บุณยพุกกณะ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/200",
+    "tags": [
+      "digital",
+      "data"
+    ],
+    "scraped_at": "2026-03-21T23:13:08.052196"
+  },
+  {
+    "title": "การพัฒนาทักษะชีวิต (PTT OR)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การพัฒนาทักษะชีวิต_PTTOR.png",
+    "instructor": "ผศ. ดร.ธนสิน ชุตินธรานนท์, ผศ. ดร.ธนสิน ชุตินธรานนท์, อ. ดร.รับขวัญ ภูษาแก้ว, อ. ดร.รับขวัญ ภูษาแก้ว, หัวหน้าศูนย์แนะแนว, อ. ดร.อัจฉราวรรณ จันทร์เพ็ญศรี, อ. ดร.อัจฉราวรรณ จันทร์เพ็ญศรี, กรรมการและเลขานุการมูลนิธิพัฒนาทักษะชีวิต",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/201",
+    "tags": [
+      "การพัฒนาทักษะชีวิต",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:13:12.799641"
+  },
+  {
+    "title": "เพื่อนร่วมเล่นสำหรับเด็กปฐมวัย (สพฐ.)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เพื่อนร่วมเล่นสำหรับเด็กปฐมวัย_สพฐ..png",
+    "instructor": "รศ. ดร.ศศิลักษณ์ ขยันกิจ, รศ. ดร.ศศิลักษณ์ ขยันกิจ, ผศ. ดร.ปนัฐษรณ์ จารุชัยนิวัฒน์, ผศ. ดร.ปนัฐษรณ์ จารุชัยนิวัฒน์, อ. ดร.อุไรวาส ธำรงอรรถ, อ. ดร.อุไรวาส ธำรงอรรถ, อ. ดร.ณฐิณี เจียรกุล, อ. ดร.ณฐิณี เจียรกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/202",
+    "tags": [
+      "children",
+      "สพฐ"
+    ],
+    "scraped_at": "2026-03-21T23:13:17.258830"
+  },
+  {
+    "title": "การฝึกอบรมหลักสูตรกฎหมายคุ้มครองข้อมูลส่วนบุคคล สำหรับผู้ปฏิบัติงาน ภายใต้โครงการจ้างกำกับ ดูแล ติดตาม ให้คำแนะนำในการใช้แพลตฟอร์มภาครัฐฯ สำหรับหน่วยงานภาครัฐให้เป็นไปตามการปฏิบัติตามกฎหมายคุ้มครองข้อมูลส่วนบุคคล",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การฝึกอบรมหลักสูตรกฎหมายคุ้มครองข้อมูลส่วนบุคคล_เฟส 2 Edit.png",
+    "instructor": "รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/203",
+    "tags": [
+      "data",
+      "law"
+    ],
+    "scraped_at": "2026-03-21T23:13:20.652290"
+  },
+  {
+    "title": "สะเก็ดเงิน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สะเก็ดเงิน.png",
+    "instructor": "ผศ. พญ.ไอณภัค บุญทวียุวัฒน์, ผศ. พญ.ไอณภัค บุญทวียุวัฒน์, ผศ. นพ.สิทธิชัย อุกฤษฏชน, ผศ. นพ.สิทธิชัย อุกฤษฏชน, ผศ.(พิเศษ) พญ.พัชญา บุญชยาอนันต์, ผศ.(พิเศษ) พญ.พัชญา บุญชยาอนันต์, รศ.(พิเศษ) พญ.เกศรินทร์ ถานะภิรมย์, รศ.(พิเศษ) พญ.เกศรินทร์ ถานะภิรมย์, ผศ. นพ.พร ทิสยากร, ผศ. นพ.พร ทิสยากร",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/204",
+    "tags": [
+      "health",
+      "medical"
+    ],
+    "scraped_at": "2026-03-21T23:13:24.613692"
+  },
+  {
+    "title": "ผิวหนังและแสงอาทิตย์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ผิวหนังและแสงอาทิตย์.png",
+    "instructor": "ผศ. พญ.ไอณภัค บุญทวียุวัฒน์, ผศ. พญ.ไอณภัค บุญทวียุวัฒน์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/205",
+    "tags": [
+      "health",
+      "medical"
+    ],
+    "scraped_at": "2026-03-21T23:13:28.995811"
+  },
+  {
+    "title": "การฝึกอบรมหลักสูตรกฎหมายคุ้มครองข้อมูลส่วนบุคคล สำหรับผู้ปฏิบัติงาน ภายใต้โครงการเพิ่มประสิทธิภาพและขยายการให้บริการแพลตฟอร์มภาครัฐเพื่อรองรับการปฏิบัติตามกฎหมายคุ้มครองข้อมูลส่วนบุคคล",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การฝึกอบรมหลักสูตรกฎหมายคุ้มครองข้อมูลส่วนบุคคล_เฟส 3.png",
+    "instructor": "รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/206",
+    "tags": [
+      "data",
+      "law"
+    ],
+    "scraped_at": "2026-03-21T23:13:33.386342"
+  },
+  {
+    "title": "เรียนรู้พื้นฐานการโค้ดผ่านการทำโปรแกรมแบบบล็อก",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เรียนรู้พื้นฐานการโค้ดผ่านการทำโปรแกรมแบบบล็อก.png",
+    "instructor": "รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.อติวงศ์ สุชาโต, ผศ. ดร.พรรณราย ศิริเจริญ, ผศ. ดร.พรรณราย ศิริเจริญ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/207",
+    "tags": [
+      "digital",
+      "programming"
+    ],
+    "scraped_at": "2026-03-21T23:13:37.213569"
+  },
+  {
+    "title": "สร้างสรรค์ไม่รู้จบกับ Canva ศิลปะการใช้ AI ในการออกแบบสื่อประชาสัมพันธ์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สร้างสรรค์ไม่รู้จบกับ Canva.png",
+    "instructor": "ดร.อวิรุทธ์ ฉัตรมาลาทอง, ดร.อวิรุทธ์ ฉัตรมาลาทอง, Canvassador, Canva",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/208",
+    "tags": [
+      "digital",
+      "ai",
+      "design",
+      "art"
+    ],
+    "scraped_at": "2026-03-21T23:13:41.630540"
+  },
+  {
+    "title": "กฎหมายคุ้มครองข้อมูลส่วนบุคคลสำหรับเจ้าหน้าที่ผู้ปฏิบัติงานในหน่วยงานและองค์กรธุรกิจ (สำหรับหน่วยงานภาครัฐ รุ่น 1)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/PDPA ปลัดกระทรวงมหาดไทย (รุ่น 1).png",
+    "instructor": "รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/209",
+    "tags": [
+      "data",
+      "business",
+      "law"
+    ],
+    "scraped_at": "2026-03-21T23:13:44.871367"
+  },
+  {
+    "title": "กฎหมายคุ้มครองข้อมูลส่วนบุคคลสำหรับเจ้าหน้าที่ผู้ปฏิบัติงานในหน่วยงานและองค์กรธุรกิจ (สำหรับหน่วยงานภาครัฐ รุ่น 2)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/PDPA กรมเจรจา (รุ่น 2).png",
+    "instructor": "รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/210",
+    "tags": [
+      "data",
+      "business",
+      "law"
+    ],
+    "scraped_at": "2026-03-21T23:13:49.126192"
+  },
+  {
+    "title": "เปิดโลกภาษาไทย : เล่าเรื่องวรรณคดี",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เปิดโลกภาษาไทย เล่าเรื่องวรรณคดี.png",
+    "instructor": "ผศ.สุพัตรา อุตมัง, ผศ.สุพัตรา อุตมัง, อาจารย์ประจำกลุ่มสาระการเรียนรู้ภาษาไทย",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/211",
+    "tags": [
+      "language",
+      "thai-language"
+    ],
+    "scraped_at": "2026-03-21T23:13:53.604848"
+  },
+  {
+    "title": "อันตรายจากสารเคมีและการบริหารจัดการความปลอดภัยในห้องปฏิบัติการเคมี",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/อันตรายจากสารเคมีและการบริหารจัดการความปลอดภัยในห้องปฏิบัติการเคมี.png",
+    "instructor": "รศ. ดร.สุรชัย พรภคกุล, รศ. ดร.สุรชัย พรภคกุล, ดร.องอาจ ธเนศนิตย์, ดร.องอาจ ธเนศนิตย์, ศูนย์ความปลอดภัย อาชีวอนามัยและสิ่งแวดล้อม, ดร.ขวัญนภัส สรโชติ, ดร.ขวัญนภัส สรโชติ, ศูนย์ความปลอดภัย อาชีวอนามัยและสิ่งแวดล้อม",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/212",
+    "tags": [
+      "health",
+      "medical",
+      "safety",
+      "chemistry"
+    ],
+    "scraped_at": "2026-03-21T23:13:57.227217"
+  },
+  {
+    "title": "การตลาดในศตวรรษที่ 21 (PTT OR)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การตลาดในศตวรรษที่ 21_PTT OR.png",
+    "instructor": "ผศ. ดร.กฤตินี พงษ์ธนเลิศ, ผศ. ดร.กฤตินี พงษ์ธนเลิศ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/213",
+    "tags": [
+      "management",
+      "business",
+      "marketing"
+    ],
+    "scraped_at": "2026-03-21T23:14:01.902369"
+  },
+  {
+    "title": "HRM From Theories to Practices (PTT OR)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/HRM_PTT OR.png",
+    "instructor": "รศ. ดร.เดชา เดชะวัฒนไพศาล, รศ. ดร.เดชา เดชะวัฒนไพศาล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/214",
+    "tags": [
+      "management",
+      "business",
+      "theories",
+      "practices"
+    ],
+    "scraped_at": "2026-03-21T23:14:05.781949"
+  },
+  {
+    "title": "Principles of Innovation and Entrepreneurship: VIE (PTT OR)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/VIE_PTT OR.png",
+    "instructor": "ศ.กิตติคุณ น.สพ. ดร.มงคล เตชะกำพุ, ศ.กิตติคุณ น.สพ. ดร.มงคล เตชะกำพุ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/215",
+    "tags": [
+      "management",
+      "business",
+      "principles",
+      "innovation",
+      "entrepreneurship"
+    ],
+    "scraped_at": "2026-03-21T23:14:09.045604"
+  },
+  {
+    "title": "Unlock English",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Unlock English.png",
+    "instructor": "ผศ. ดร.เริงฤดี มณีภัคธร, ผศ. ดร.เริงฤดี มณีภัคธร, สถาบันภาษา",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/216",
+    "tags": [
+      "english",
+      "language",
+      "unlock"
+    ],
+    "scraped_at": "2026-03-21T23:14:13.530745"
+  },
+  {
+    "title": "เปิดโลกชีววิทยา : เคมีในสิ่งมีชีวิต",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เปิดโลกชีววิทยา - เคมีในสิ่งมีชีวิต.png",
+    "instructor": "ผศ. ดร.ศุภณัฐ ไพโรหกุล, ผศ. ดร.ศุภณัฐ ไพโรหกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/217",
+    "tags": [
+      "digital",
+      "biology",
+      "chemistry"
+    ],
+    "scraped_at": "2026-03-21T23:14:18.034519"
+  },
+  {
+    "title": "เปิดโลกสังคมศาสตร์ : ศาสนาสำคัญของโลก",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เปิดโลกสังคมศาสตร์ - ศาสนาสำคัญของโลก.png",
+    "instructor": "อ.วันทนา ทวีคุณธรรม, อ.วันทนา ทวีคุณธรรม, กลุ่มสาระการเรียนรู้สังคมศึกษา ศาสนาและวัฒนธรรม",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/218",
+    "tags": [
+      "social",
+      "ศาสนาสำคัญของโลก"
+    ],
+    "scraped_at": "2026-03-21T23:14:21.852171"
+  },
+  {
+    "title": "โครงการจ้างเหมาบริการการจัดการข้อมูลส่วนบุคคลของสำนักงานเขตพื้นที่การศึกษาทั้งหมด 245 เขต ให้สอดคล้องกับพระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 สำหรับสำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/โครงการจ้างเหมาบริการ PDPA สพฐ..png",
+    "instructor": "รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/219",
+    "tags": [
+      "management",
+      "education",
+      "data"
+    ],
+    "scraped_at": "2026-03-21T23:14:26.335712"
+  },
+  {
+    "title": "เปิดโลกฟิสิกส์ : กลศาสตร์การเคลื่อนที่",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เปิดโลกฟิสิกส์ - กลศาสตร์การเคลื่อนที่.png",
+    "instructor": "อ.น้ำฝน นาสวาสดิ์, อ.น้ำฝน นาสวาสดิ์, กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/220",
+    "tags": [
+      "digital",
+      "physics"
+    ],
+    "scraped_at": "2026-03-21T23:14:32.646113"
+  },
+  {
+    "title": "เปิดโลกสังคมศาสตร์ : ภูมิศาสตร์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เปิดโลกสังคมศาสตร์ - ภูมิศาสตร์.png",
+    "instructor": "อ. ดร.กนก จันทรา, อ. ดร.กนก จันทรา, กลุ่มสาระการเรียนรู้สังคมศึกษา ศาสนาและวัฒนธรรม",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/221",
+    "tags": [
+      "social",
+      "ภูมิศาสตร์"
+    ],
+    "scraped_at": "2026-03-21T23:14:36.991277"
+  },
+  {
+    "title": "เปิดโลกเคมี : โครงสร้างอะตอมและพันธะเคมี",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เปิดโลกเคมี - โครงสร้างอะตอมและพันธะเคมี.png",
+    "instructor": "รศ. ดร.พร้อมพงศ์ เพียรพินิจธรรม, รศ. ดร.พร้อมพงศ์ เพียรพินิจธรรม",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/222",
+    "tags": [
+      "digital",
+      "chemistry"
+    ],
+    "scraped_at": "2026-03-21T23:14:41.521616"
+  },
+  {
+    "title": "เปิดโลกสังคมศาสตร์ : หน้าที่พลเมืองและกฎหมาย",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เปิดโลกสังคมศาสตร์ - หน้าที่พลเมืองและกฎหมาย.png",
+    "instructor": "อ. ดร.สิริภัทร ชื่นค้า, อ. ดร.สิริภัทร ชื่นค้า, กลุ่มสาระการเรียนรู้สังคมศึกษา ศาสนาและวัฒนธรรม",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/223",
+    "tags": [
+      "law",
+      "social"
+    ],
+    "scraped_at": "2026-03-21T23:14:44.896616"
+  },
+  {
+    "title": "เปิดโลกเคมี : สารประกอบอินทรีย์และพอลิเมอร์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เปิดโลกเคมี_สารประกอบอินทรีย์และพอลิเมอร์.png",
+    "instructor": "รศ. ดร.โรจน์ฤทธิ์ โรจนธเนศ, รศ. ดร.โรจน์ฤทธิ์ โรจนธเนศ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/224",
+    "tags": [
+      "digital",
+      "chemistry"
+    ],
+    "scraped_at": "2026-03-21T23:14:48.376256"
+  },
+  {
+    "title": "เปิดโลกสังคมศาสตร์ : เศรษฐศาสตร์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เปิดโลกสังคมศาสตร์_เศรษฐศาสตร์.png",
+    "instructor": "ผศ. ดร.ศรัณย์พร ยินดีสุข, ผศ. ดร.ศรัณย์พร ยินดีสุข, กลุ่มสาระการเรียนรู้สังคมศึกษา ศาสนาและวัฒนธรรม",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/225",
+    "tags": [
+      "economics",
+      "social"
+    ],
+    "scraped_at": "2026-03-21T23:14:52.488535"
+  },
+  {
+    "title": "ทันตกรรมผู้สูงอายุขั้นสูง 1",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ทันตกรรมผู้สูงอายุขั้นสูง 1.png",
+    "instructor": "รศ. ทพญ. ดร.อัญชลี วัชรักษะ, รศ. ทพญ. ดร.อัญชลี วัชรักษะ, ประธานและอาจารย์ประจำหลักสูตรทันตกรรมผู้สูงอายุและการดูแลผู้ป่วยพิเศษ, ศ. นพ.วีรศักดิ์ เมืองไพศาล, ศ. นพ.วีรศักดิ์ เมืองไพศาล, มหาวิทยาลัยมหิดล, อ. ภญ.ชิดชนก รุ่งเรือง, อ. ภญ.ชิดชนก รุ่งเรือง, อ. นพ. ดร.ชาวิท ตันวีระชัยสกุล, อ. นพ. ดร.ชาวิท ตันวีระชัยสกุล, อ. ทพญ.ปณัทชา วีระพล, อ. ทพญ.ปณัทชา วีระพล, ผศ. พญ.พิม ตีระจินดา, ผศ. พญ.พิม ตีระจินดา, อ. ดร.วรัญญา เตชะสุขถาวร, อ. ดร.วรัญญา เตชะสุขถาวร, ผศ. ทพ.สรรพัชญ์ นามะโน, ผศ. ทพ.สรรพัชญ์ นามะโน",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/226",
+    "tags": [
+      "health",
+      "medical",
+      "elderly",
+      "dentistry"
+    ],
+    "scraped_at": "2026-03-21T23:14:56.920826"
+  },
+  {
+    "title": "การบริหารงานก่อสร้าง",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การบริหารงานก่อสร้าง.png",
+    "instructor": "ศ. ดร.วีระศักดิ์ ลิขิตเรืองศิลป์, ศ. ดร.วีระศักดิ์ ลิขิตเรืองศิลป์, รศ. ดร.ชารินี ลิ้มสวัสดิ์, รศ. ดร.ชารินี ลิ้มสวัสดิ์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/227",
+    "tags": [
+      "management",
+      "business"
+    ],
+    "scraped_at": "2026-03-21T23:15:01.550551"
+  },
+  {
+    "title": "การช่วยเหลือผู้เรียนตามความหลากหลายในห้องเรียนยุคปัจจุบัน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การช่วยเหลือผู้เรียนตามความหลากหลายในห้องเรียนยุคปัจจุบัน.png",
+    "instructor": "รศ. ดร.ปิยวรรณ วิเศษสุวรรณภูมิ, รศ. ดร.ปิยวรรณ วิเศษสุวรรณภูมิ, รศ. ดร.กมลวรรณ ตังธนกานนท์, รศ. ดร.กมลวรรณ ตังธนกานนท์, ผศ. ดร.ชนิศา ตันติเฉลิม, ผศ. ดร.ชนิศา ตันติเฉลิม, ผศ. ดร.ชนัญชิดา ทุมมานนท์, ผศ. ดร.ชนัญชิดา ทุมมานนท์, ผศ. ดร.วาทินี อมรไพศาลเลิศ, ผศ. ดร.วาทินี อมรไพศาลเลิศ, ผศ.ดุสิดา ทินมาลา, ผศ.ดุสิดา ทินมาลา, อ. ดร.นพรัตน์ ศรีเจริญ, อ. ดร.นพรัตน์ ศรีเจริญ, รศ. ดร.เจษฎ์ โทณะวณิก, รศ. ดร.เจษฎ์ โทณะวณิก, นักวิชาการด้านกฎหมาย, ผศ. ดร.กิตติคุณ วิวัฒน์ภิญโญ, ผศ. ดร.กิตติคุณ วิวัฒน์ภิญโญ, สำนักวิชาแพทยศาสตร์, มหาวิทยาลัยวลัยลักษณ์, คุณจิราภา เดือนเพ็ญศรี, คุณจิราภา เดือนเพ็ญศรี, มหาวิทยาลัยมหิดล, คุณเจตสุดา แก้ววิมล, คุณเจตสุดา แก้ววิมล, โรงเรียนนานาชาติ St. Andrews, คุณตีรณา กิจสนาโยธิน, คุณตีรณา กิจสนาโยธิน, โรงเรียนนานาชาติ St. Andrews, คุณชนิตา วิเศษสุวรรณ, คุณชนิตา วิเศษสุวรรณ, โรงเรียนนานาชาติ St. Andrews",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/228",
+    "tags": [
+      "การช่วยเหลือผู้เรียนตามความหลากหลายในห้องเรียนยุคปัจจุบัน",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:15:05.207127"
+  },
+  {
+    "title": "การใช้เครื่องมือ AI ใน Canva เพื่อเพิ่มประสิทธิภาพการทำงานและการออกแบบ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Canva 2.png",
+    "instructor": "ดร.อวิรุทธ์ ฉัตรมาลาทอง, ดร.อวิรุทธ์ ฉัตรมาลาทอง, Canvassador, Canva",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/229",
+    "tags": [
+      "digital",
+      "ai",
+      "design"
+    ],
+    "scraped_at": "2026-03-21T23:15:09.204224"
+  },
+  {
+    "title": "การบริหารความเสี่ยงองค์กร (กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การบริหารความเสี่ยงองค์กร - MNRE.png",
+    "instructor": "ดร.อวิรุทธ์ ฉัตรมาลาทอง, ดร.อวิรุทธ์ ฉัตรมาลาทอง, ผู้อำนวยการศูนย์บริหารความเสี่ยง",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/230",
+    "tags": [
+      "management",
+      "business",
+      "environment"
+    ],
+    "scraped_at": "2026-03-21T23:15:13.281020"
+  },
+  {
+    "title": "ก้าวแรกสู่การสร้างคุณค่าด้วยข้อมูล (กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ก้าวแรกสู่การสร้างคุณค่าด้วยข้อมูล - MNRE.png",
+    "instructor": "รศ. ดร.โปรดปราน บุณยพุกกณะ, รศ. ดร.โปรดปราน บุณยพุกกณะ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/231",
+    "tags": [
+      "digital",
+      "environment",
+      "data"
+    ],
+    "scraped_at": "2026-03-21T23:15:17.028584"
+  },
+  {
+    "title": "ฝึกออกเสียงภาษาอังกฤษให้ปังด้วย Tongue Twisters",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Language",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ฝึกออกเสียงภาษาอังกฤษให้ปังด้วย Tongue Twisters.png",
+    "instructor": "อ. ดร.สุมณี ปิ่นเวหาส์, อ. ดร.สุมณี ปิ่นเวหาส์, กลุ่มการสอนภาษาอังกฤษสำหรับสังคมศาสตร์และมนุษยศาสตร์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/235",
+    "tags": [
+      "language",
+      "english",
+      "tongue",
+      "twisters"
+    ],
+    "scraped_at": "2026-03-21T23:15:30.661856"
+  },
+  {
+    "title": "สิทธิในสิทธิบัตรและบทบาทในการวิจัยและธุรกิจสตาร์ตอัปด้านเศรษฐกิจชีวภาพ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สิทธิในสิทธิบัตรฯ.png",
+    "instructor": "ผศ. ดร.ชมภูนุช กลิ่นวงษ์, ผศ. ดร.ชมภูนุช กลิ่นวงษ์, ดร.มนต์ณัฐ ธีระชาติ, ดร.มนต์ณัฐ ธีระชาติ, Partner, Ananda Intellectual Property Limited",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/236",
+    "tags": [
+      "management",
+      "business",
+      "research",
+      "economics"
+    ],
+    "scraped_at": "2026-03-21T23:15:36.279038"
+  },
+  {
+    "title": "เพื่อนร่วมเล่นสำหรับเด็กปฐมวัย",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เพื่อนร่วมเล่นสำหรับเด็กปฐมวัย.png",
+    "instructor": "รศ. ดร.ศศิลักษณ์ ขยันกิจ, รศ. ดร.ศศิลักษณ์ ขยันกิจ, ผศ. ดร.ปนัฐษรณ์ จารุชัยนิวัฒน์, ผศ. ดร.ปนัฐษรณ์ จารุชัยนิวัฒน์, อ. ดร.อุไรวาส ธำรงอรรถ, อ. ดร.อุไรวาส ธำรงอรรถ, อ. ดร.ณฐิณี เจียรกุล, อ. ดร.ณฐิณี เจียรกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/237",
+    "tags": [
+      "children",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:15:40.700416"
+  },
+  {
+    "title": "สร้างสรรค์ไม่รู้จบกับ Canva ศิลปะการใช้ AI ในการออกแบบสื่อประชาสัมพันธ์ (กฟภ.)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/สร้างสรรค์ไม่รู้จบกับ Canva_PEA.png",
+    "instructor": "ดร.อวิรุทธ์ ฉัตรมาลาทอง, ดร.อวิรุทธ์ ฉัตรมาลาทอง, Canvassador, Canva",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/238",
+    "tags": [
+      "digital",
+      "ai",
+      "design",
+      "art"
+    ],
+    "scraped_at": "2026-03-21T23:15:45.518145"
+  },
+  {
+    "title": "ปลุกพลังความคิดสร้างสรรค์ (การบินไทย)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ปลุกพลังความคิดสร้างสรรค์ (การบินไทย).png",
+    "instructor": "อ.ธงชัย โรจน์กังสดาล, อ.ธงชัย โรจน์กังสดาล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/239",
+    "tags": [
+      "ปลุกพลังความคิดสร้างสรรค์",
+      "การบินไทย"
+    ],
+    "scraped_at": "2026-03-21T23:15:48.521199"
+  },
+  {
+    "title": "Critical Thinking for Business (การบินไทย)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Critical Thinking for Business (การบินไทย).png",
+    "instructor": "รศ. ดร.เดชา เดชะวัฒนไพศาล, รศ. ดร.เดชา เดชะวัฒนไพศาล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/240",
+    "tags": [
+      "management",
+      "business",
+      "critical",
+      "thinking"
+    ],
+    "scraped_at": "2026-03-21T23:15:52.870859"
+  },
+  {
+    "title": "การสื่อสารในเชิงธุรกิจ (การบินไทย)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การสื่อสารในเชิงธุรกิจ (การบินไทย).png",
+    "instructor": "ผศ. ดร.ธีรดา จงกลรัตนาภรณ์, ผศ. ดร.ธีรดา จงกลรัตนาภรณ์",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/241",
+    "tags": [
+      "management",
+      "business",
+      "communication"
+    ],
+    "scraped_at": "2026-03-21T23:15:57.551299"
+  },
+  {
+    "title": "Strategic Communication Plan (Thai Airways)",
+    "description": "About course",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Strategic Communication Plan (Thai Airways).png",
+    "instructor": "Assoc. Prof.Smith Boonchutima, Ph.D., Assoc. Prof.Smith Boonchutima, Ph.D.",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/242",
+    "tags": [
+      "management",
+      "business",
+      "communication"
+    ],
+    "scraped_at": "2026-03-21T23:16:02.059230"
+  },
+  {
+    "title": "Introduction to Data Analytics and Big Data (การบินไทย)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Introduction to Data Analytics and Big Data (การบินไทย).png",
+    "instructor": "ผศ. ดร.ณัฐวุฒิ หนูไพโรจน์, ผศ. ดร.ณัฐวุฒิ หนูไพโรจน์, ศ. ดร.ประภาส จงสถิตย์วัฒนา, ศ. ดร.ประภาส จงสถิตย์วัฒนา, รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.เกริก ภิรมย์โสภา, รศ. ดร.เกริก ภิรมย์โสภา, ผศ. ดร.สุกรี สินธุภิญโญ, ผศ. ดร.สุกรี สินธุภิญโญ, รศ. ดร.วีระ เหมืองสิน, รศ. ดร.วีระ เหมืองสิน, ศ. ดร.พีรพล เวทีกูล, ศ. ดร.พีรพล เวทีกูล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/243",
+    "tags": [
+      "data analytics",
+      "digital",
+      "data"
+    ],
+    "scraped_at": "2026-03-21T23:16:05.484711"
+  },
+  {
+    "title": "การเขียนรายงานสรุปข้อมูล",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การเขียนรายงานสรุปข้อมูล.png",
+    "instructor": "คุณธนิสา สังขจันทร์, คุณธนิสา สังขจันทร์, สถาบันภาษาไทยสิรินธร, คุณกมลรัตน์ สืบเสาะ, คุณกมลรัตน์ สืบเสาะ, สถาบันภาษาไทยสิรินธร, คุณปาณิสรา เลาหล่าย, คุณปาณิสรา เลาหล่าย, สถาบันภาษาไทยสิรินธร",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/244",
+    "tags": [
+      "writing",
+      "data"
+    ],
+    "scraped_at": "2026-03-21T23:16:11.456375"
+  },
+  {
+    "title": "หลักสูตรกฎหมายคุ้มครองข้อมูลส่วนบุคคลสำหรับผู้ปฏิบัติงานภายใต้โครงการแพลตฟอร์มเพื่อสนับสนุนการปฏิบัติตามกฎหมายคุ้มครองข้อมูลส่วนบุคคลสำหรับภาคเอกชน (สคส.)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/หลักสูตร PDPA สำหรับผู้ปฏิบัติงานภายใต้โครงการฯ (สคส.).png",
+    "instructor": "รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/245",
+    "tags": [
+      "data",
+      "law"
+    ],
+    "scraped_at": "2026-03-21T23:16:15.182729"
+  },
+  {
+    "title": "กฎหมายคุ้มครองข้อมูลส่วนบุคคลสำหรับผู้ปฏิบัติงานในหน่วยงานและองค์กรธุรกิจ (รุ่นที่ 7)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/กฎหมาย PDPA (รุ่นที่ 7).png",
+    "instructor": "รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, รศ. ดร.ปิยะบุตร บุญอร่ามเรือง, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.ปิติ เอี่ยมจำรูญลาภ, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/246",
+    "tags": [
+      "data",
+      "business",
+      "law"
+    ],
+    "scraped_at": "2026-03-21T23:16:18.741421"
+  },
+  {
+    "title": "ธรรมาภิบาลและการกํากับดูแลปัญญาประดิษฐ์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ธรรมาภิบาลและการกํากับดูแลปัญญาประดิษฐ์.png",
+    "instructor": "ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/247",
+    "tags": [
+      "digital",
+      "ai"
+    ],
+    "scraped_at": "2026-03-21T23:16:21.928606"
+  },
+  {
+    "title": "การดูแลสุนัขและแมวสูงวัย",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/การดูแลสุนัขและแมวสูงวัย.png",
+    "instructor": "พระธนุสรณ์ จิรสรโณ (ครูบาม่อน), พระธนุสรณ์ จิรสรโณ (ครูบาม่อน), รศ. น.สพ. ดร.ศุภวิวัธน์ พงษ์เลาหพันธุ์, รศ. น.สพ. ดร.ศุภวิวัธน์ พงษ์เลาหพันธุ์, ผศ. น.สพ. ดร.กิตติพงษ์ ทาจำปา, ผศ. น.สพ. ดร.กิตติพงษ์ ทาจำปา, ผศ. น.สพ. ดร.ศิราม สุวรรณวิภัช, ผศ. น.สพ. ดร.ศิราม สุวรรณวิภัช, รศ. สพ.ญ. ดร.นลินี ตันติวนิช, รศ. สพ.ญ. ดร.นลินี ตันติวนิช, รศ. สพ.ญ. ดร.ชาลิกา หวังดี, รศ. สพ.ญ. ดร.ชาลิกา หวังดี, ผศ. สพ.ญ. ดร.จุฑามาส เบ็ญจนิรัตน์, ผศ. สพ.ญ. ดร.จุฑามาส เบ็ญจนิรัตน์, ผศ. สพ.ญ. ดร.นิภัทรา สวนไพรินทร์, ผศ. สพ.ญ. ดร.นิภัทรา สวนไพรินทร์, ผศ. สพ.ญ. ดร.ศิริรัตน์ รัตนภุชพงศ์, ผศ. สพ.ญ. ดร.ศิริรัตน์ รัตนภุชพงศ์, ฝ่ายวิชาการ, ผศ. สพ.ญ. ดร.น้ำผึ้ง สื่อมโนธรรม, ผศ. สพ.ญ. ดร.น้ำผึ้ง สื่อมโนธรรม, สพ.ญ.ฐิตา เตโชฬาร, สพ.ญ.ฐิตา เตโชฬาร, โรงพยาบาลสัตว์ กรุงเทพฯ, กภ. สพ.ญ.ฤทัยทิพย์ อุปริพุทธิ, กภ. สพ.ญ.ฤทัยทิพย์ อุปริพุทธิ",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/248",
+    "tags": [
+      "health",
+      "medical"
+    ],
+    "scraped_at": "2026-03-21T23:16:27.355005"
+  },
+  {
+    "title": "พันธุศาสตร์จากพื้นฐานสู่การประยุกต์ทางการแพทย์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/พันธุศาสตร์จากพื้นฐานสู่การประยุกต์ทางการแพทย์.png",
+    "instructor": "รศ. ดร.ปฐมวดี ญาณทัศนีย์จิต, รศ. ดร.ปฐมวดี ญาณทัศนีย์จิต",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/249",
+    "tags": [
+      "health",
+      "medical",
+      "medicine"
+    ],
+    "scraped_at": "2026-03-21T23:16:31.678097"
+  },
+  {
+    "title": "อยู่กับเอไอ อะไรต้องรู้ต้องเข้าใจ",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/อยู่กับเอไอ อะไรต้องรู้ต้องเข้าใจ.png",
+    "instructor": "รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.อติวงศ์ สุชาโต",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/250",
+    "tags": [
+      "digital",
+      "อยู่กับเอไอ"
+    ],
+    "scraped_at": "2026-03-21T23:16:36.141795"
+  },
+  {
+    "title": "ความรู้พื้นฐานเกี่ยวกับ AI และ ML",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ความรู้พื้นฐานเกี่ยวกับ AI และ ML.png",
+    "instructor": "รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.อติวงศ์ สุชาโต",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/251",
+    "tags": [
+      "digital",
+      "ai"
+    ],
+    "scraped_at": "2026-03-21T23:16:39.778493"
+  },
+  {
+    "title": "รู้จักโครงข่ายประสาทเทียม",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/รู้จักโครงข่ายประสาทเทียม.png",
+    "instructor": "รศ. ดร.อติวงศ์ สุชาโต, รศ. ดร.อติวงศ์ สุชาโต",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/252",
+    "tags": [
+      "digital",
+      "รู้จักโครงข่ายประสาทเทียม"
+    ],
+    "scraped_at": "2026-03-21T23:16:42.880632"
+  },
+  {
+    "title": "ปัญญาประดิษฐ์เชิงสร้างสรรค์และกระบวนการสร้างคำสั่ง",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/ปัญญาประดิษฐ์เชิงสร้างสรรค์และกระบวนการสร้างคำสั่ง.png",
+    "instructor": "รศ. ดร.วีระ เหมืองสิน, รศ. ดร.วีระ เหมืองสิน",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/253",
+    "tags": [
+      "digital",
+      "ai"
+    ],
+    "scraped_at": "2026-03-21T23:16:46.291382"
+  },
+  {
+    "title": "Chula AI-10 กรอบสมรรถนะด้านเอไอสําหรับทุกคน",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/Chula AI-10 กรอบสมรรถนะด้านเอไอสําหรับทุกคน.png",
+    "instructor": "ผศ. ดร.นฤมล ประทานวณิช, ผศ. ดร.นฤมล ประทานวณิช",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/254",
+    "tags": [
+      "digital",
+      "ai",
+      "chula"
+    ],
+    "scraped_at": "2026-03-21T23:16:50.067979"
+  },
+  {
+    "title": "หลักการทางชีววิทยาระดับโมเลกุล",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/หลักการทางชีววิทยาระดับโมเลกุล_new.png",
+    "instructor": "ผศ. ดร.สุภาวดี อุ้มทอง, ผศ. ดร.สุภาวดี อุ้มทอง, รศ. ดร. พญ.รังสิมา เหรียญตระกูล, รศ. ดร. พญ.รังสิมา เหรียญตระกูล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/255",
+    "tags": [
+      "health",
+      "medical",
+      "biology"
+    ],
+    "scraped_at": "2026-03-21T23:16:53.697745"
+  },
+  {
+    "title": "เทคนิคทางชีววิทยาระดับโมเลกุลและการประยุกต์",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/เทคนิคทางชีววิทยาระดับโมเลกุลและการประยุกต์.png",
+    "instructor": "ผศ. ดร.สุภาวดี อุ้มทอง, ผศ. ดร.สุภาวดี อุ้มทอง, รศ. ดร. พญ.รังสิมา เหรียญตระกูล, รศ. ดร. พญ.รังสิมา เหรียญตระกูล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/256",
+    "tags": [
+      "health",
+      "medical",
+      "biology"
+    ],
+    "scraped_at": "2026-03-21T23:16:56.533609"
+  },
+  {
+    "title": "จะเริ่มทำวิจัยต้องรู้อะไรบ้าง",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Medical & Health",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/จะเริ่มทำวิจัยต้องรู้อะไรบ้าง.png",
+    "instructor": "ดร.พิมพเยาว์ สดใส, ดร.พิมพเยาว์ สดใส",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/257",
+    "tags": [
+      "health",
+      "medical",
+      "research"
+    ],
+    "scraped_at": "2026-03-21T23:17:00.403961"
+  },
+  {
+    "title": "งานฐานทรัพยากรท้องถิ่น อพ.สธ.",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Arts & Self Development",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/งานฐานทรัพยากรท้องถิ่น อพ.สธ..png",
+    "instructor": "ผศ. ดร.นพดล กิตนะ, ผศ. ดร.นพดล กิตนะ, เลขานุการศูนย์แม่ข่ายประสานงาน อพ.สธ., รศ. ดร.พงษ์ชัย ดำรงโรจน์วัฒนา, รศ. ดร.พงษ์ชัย ดำรงโรจน์วัฒนา, รศ. ดร.ชัชวาล ใจซื่อกุล, รศ. ดร.ชัชวาล ใจซื่อกุล, ผศ. ดร.ภาณุพงศ์ ธรรมโชติ จรูญโรจน์, ผศ. ดร.ภาณุพงศ์ ธรรมโชติ จรูญโรจน์, คุณชตพรรษ ชวนประสิทธิ์, คุณชตพรรษ ชวนประสิทธิ์, ศูนย์แม่ข่ายประสานงาน อพ.สธ., คุณสุทธิณี เหลาแตว, คุณสุทธิณี เหลาแตว, ศูนย์แม่ข่ายประสานงาน อพ.สธ., คุณศรารัตน์ ทานะมัย, คุณศรารัตน์ ทานะมัย, ศูนย์แม่ข่ายประสานงาน อพ.สธ., คุณชวิน แสงไชย, คุณชวิน แสงไชย, ศูนย์แม่ข่ายประสานงาน อพ.สธ.",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/258",
+    "tags": [
+      "งานฐานทรัพยากรท้องถิ่น",
+      "เกี่ยวกับรายวิชา"
+    ],
+    "scraped_at": "2026-03-21T23:17:04.717998"
+  },
+  {
+    "title": "ธรรมาภิบาลและการกํากับดูแลปัญญาประดิษฐ์ (กลาโหม)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Digital & Technology",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/1.png",
+    "instructor": "ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล, ผศ. ดร.พีรพัฒ โชคสุวัฒนสกุล",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/259",
+    "tags": [
+      "digital",
+      "ai"
+    ],
+    "scraped_at": "2026-03-21T23:17:08.400443"
+  },
+  {
+    "title": "การบริหารความเสี่ยงองค์กร (กลาโหม)",
+    "description": "เกี่ยวกับรายวิชา",
+    "category": "Business & Management",
+    "price": 0,
+    "status": "open",
+    "image_url": "https://mooc.chula.ac.th/img/upload/2 กลาโหม.png",
+    "instructor": "ดร.อวิรุทธ์ ฉัตรมาลาทอง, ดร.อวิรุทธ์ ฉัตรมาลาทอง, ผู้อำนวยการศูนย์บริหารความเสี่ยง",
+    "university": "Chulalongkorn",
+    "url": "https://mooc.chula.ac.th/course-detail/260",
+    "tags": [
+      "management",
+      "business"
+    ],
+    "scraped_at": "2026-03-21T23:17:11.801660"
+  }
+]

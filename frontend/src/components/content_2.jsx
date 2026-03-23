@@ -1,74 +1,65 @@
-import "./Content_2.css";
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import "./Content_2.css"
+import { Link } from "react-router-dom"
+import { UNI_NAMES } from "../constants/universities"
 
-function Content_2() {
-  const [courses, setCourses] = useState([]);
-  
-    useEffect(() => {
-    fetch("http://localhost:3000/api/courses")
-      .then(async (res) => {
-        const data = await res.json();
-        if (!res.ok) throw new Error(data?.message || "Failed to fetch courses");
-        return data;
-      })
-      .then((data) => {
-        setCourses(Array.isArray(data?.data) ? data.data : []); // data จาก backend
-      })
-      .catch((err) => {
-        console.error("Failed to load courses:", err);
-        setCourses([]);
-      });
-    }, []);
-    
+function Content_2({ courses = [], isRecommended = false }) {
+  const handleOpen = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer")
+  }
+
   return (
     <div className="content-2">
-      <h3 className="title">Course Recommendation</h3>
-            <div className="cards">
-              {courses.slice(0,4).map((course) => (
-                <Link to={`/course/${course.id}`} className="card" key={course.id}>
-                  <div
-                    className="image-card"
-                    src={course.thumdnailUrl || "https://res.cloudinary.com/dygjtp2be/image/upload/v1774030276/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%A0%E0%B8%B2%E0%B8%9E_cga0pm.jpg" }
-                    onError={(e) => {
-                          e.target.src = "https://res.cloudinary.com/dygjtp2be/image/upload/v1774030276/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%A0%E0%B8%B2%E0%B8%9E_cga0pm.jpg";
-                    }} 
-                  ></div>
+      <h3 className="title">
+        {isRecommended ? "แนะนำสำหรับคุณ ✨" : "คอร์สล่าสุด"}
+      </h3>
 
-                  <div className="content-card">
-                    <h4 className="course-title">{course.courseName}</h4>
-
-                    <ul className="ul-card">
-                      <li>
-                        <div className="card-show">
-                          <p className="rating">
-                            ⭐ {course.averageRating ?? "-"} ({course.totalReviews ?? 0} reviews)
-                          </p>
-                          <p className="text">
-                          Categories : {course.category?.name}
-                          </p>
-                          <p className="text">
-                          Price : {course.price === null ? "Free" : `${course.price} Baht`}
-                          </p>
-                        </div>
-
-                        <div className="card-hidden">
-                          <p>Level : {course.level}</p>
-                          {course.organization &&
-                            <p>Organization : {course.organization}</p>
-                          }
-                          <p>University : {course.university}</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </Link>
-              ))}
+      <div className="cards">
+        {courses.length === 0 ? (
+          <p style={{ color: "#888", padding: "20px 0" }}>กำลังโหลด...</p>
+        ) : (
+          courses.map((course) => (
+            <div
+              className="card"
+              key={course.id}
+              onClick={() => handleOpen(course.url)}
+              style={{ cursor: "pointer" }}
+            >
+              <div
+                className="image-card"
+                style={{
+                  backgroundImage: course.thumbnailUrl
+                    ? `url(${course.thumbnailUrl})`
+                    : "none",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundColor: "#e9ecef",
+                }}
+              />
+              <div className="content-card">
+                <h4 className="course-title">{course.title}</h4>
+                <div className="card-badges">
+                  <span className="badge badge-category">{course.category}</span>
+                  <span className="badge badge-uni">
+                    {UNI_NAMES[course.university] || course.university || "-"}
+                  </span>
+                </div>
+                <span className={`price-badge ${course.price === 0 ? "free" : "paid"}`}>
+                  {course.price === 0 ? "ฟรี" : `${course.price} ฿`}
+                </span>
+              </div>
             </div>
-      <Link to="/course" className="btn-more-card"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffffff"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
-      <p>View More</p>
+          ))
+        )}
+      </div>
+
+      <Link to="/course" className="btn-more-card">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff">
+          <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+        </svg>
+        <p>ดูคอร์สทั้งหมด</p>
       </Link>
     </div>
-  );
+  )
 }
-export default Content_2;
+
+export default Content_2

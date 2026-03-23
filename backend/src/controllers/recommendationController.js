@@ -1,52 +1,36 @@
-import prisma from "../lib/prisma.js";
+import {
+  getPersonalizedCourses,
+  getRecommendedCourses as fetchSimilarCourses,
+} from "../service/recommendation.service.js"
 
+// GET /api/recommendations/:userId
+// แนะนำคอร์สตาม UserInterest ของ user
 export const getRecommendedCourses = async (req, res) => {
   try {
+    const { userId } = req.params
+    const limit = parseInt(req.query.limit) || 12
 
-    const userId = req.params.userId;
+    const courses = await getPersonalizedCourses(userId, limit)
 
-    // 1. หา user
-    const user = await prisma.user.findUnique({
-      where: { id: userId }
-    });
-
-    if (!user) {
-      return res.status(404).json({
-        success: false,
-        message: "User not found"
-      });
-    }
-
-    // 2. เอา interests ของ user
-    const interests = user.interests;
-
-    // 3. หาคอร์สที่ category ตรงกับ interest
-    const courses = await prisma.course.findMany({
-      where: {
-        category: {
-          in: interests
-        }
-      },
-      include: {
-        modules: true,
-        keywords: true
-      },
-      take: 6
-    });
-
-    res.json({
-      success: true,
-      data: courses
-    });
-
+    res.json({ success: true, data: courses })
   } catch (error) {
-
-    console.error(error);
-
-    res.status(500).json({
-      success: false,
-      message: "Error getting recommendations"
-    });
-
+    console.error(error)
+    res.status(500).json({ success: false, message: "Error getting recommendations" })
   }
-};
+}
+
+// GET /api/recommendations/similar/:courseId
+// หาคอร์สที่คล้ายกันด้วย embedding
+export const getSimilarCourses = async (req, res) => {
+  try {
+    const { courseId } = req.params
+    const limit = parseInt(req.query.limit) || 8
+
+    const courses = await fetchSimilarCourses(courseId, limit)
+
+    res.json({ success: true, data: courses })
+  } catch (error) {
+    console.error(error)
+    res.status(500).json({ success: false, message: "Error getting similar courses" })
+  }
+}

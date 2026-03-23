@@ -1,17 +1,17 @@
 import api from "./api"
 
-// ดึง course ทั้งหมด
-export const getCourses = () => {
-  return api.get("/courses")
+// ดึงคอร์สทั้งหมด พร้อม filter และ search
+export const getCourses = (params = {}) => {
+  return api.get("/courses", { params })
+  // params: { search, category, university, page, limit }
 }
 
-// ดึง course ตาม id
-export const getCourseById = (id) => {
-  return api.get(`/courses/${id}`)
-  
+// ดึง category ทั้งหมด
+export const getCategories = () => {
+  return api.get("/courses/categories")
 }
 
-// popular courses
-export const getPopularCourses = () => {
-  return api.get("/courses/popular")
+// ดึง university ทั้งหมด
+export const getUniversities = () => {
+  return api.get("/courses/universities")
 }

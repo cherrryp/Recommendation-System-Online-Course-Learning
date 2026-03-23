@@ -1,0 +1,615 @@
+[
+  {
+    "title": "703116 การถ่ายภาพและภาพเคลื่อนไหว",
+    "description": "หลักการ แนวคิด เทคนิค และกระบวนการถ่ายภาพนิ่งและภาพเคลื่อนไหว การลำดับภาพและเสียง การปรับตั้งค่าของอุปกรณ์ถ่ายภาพนิ่งและภาพเคลื่อนไหว การใช้มุมกล้องและการจัดองค์ประกอบ การปรับแต่งภาพนิ่งและภาพเคลื่อนไหว ด้วยโปรแกรมคอมพิวเตอร์",
+    "category": "Engineering & Technology",
+    "price": 2850.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/703116.png",
+    "instructor": "ดร.นฤพนธ์ คมสัน",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474388",
+    "tags": [
+      "engineering",
+      "computer",
+      "programming",
+      "photography"
+    ],
+    "scraped_at": "2026-03-21T23:31:18.744559"
+  },
+  {
+    "title": "703222 การออกแบบภาพประกอบ",
+    "description": "การออกแบบภาพประกอบจากเรื่องราวและบทความที่กาหนด เพื่อพัฒนาทักษะในการสื่อความหมายด้วยภาพ ฝึกปฏิบัติการออกแบบภาพประกอบด้วยเทคนิคและอุปกรณ์ต่างๆ ให้ความเหมาะสมกับสื่อประเภทต่างๆ ที่มีในปัจจุบัน",
+    "category": "Arts & Design",
+    "price": 2850.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/703222.png",
+    "instructor": "ผศ.ดร.ชวลิต ดวงอุทา",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474390",
+    "tags": [
+      "design"
+    ],
+    "scraped_at": "2026-03-21T23:31:22.105760"
+  },
+  {
+    "title": "703333 การออกแบบเว็บไซต์และแอพลิเคชัน",
+    "description": "ประวัติความเป็นมาและวิวัฒนาการของการออกแบบเว็บไซต์และแอปพลิเคชัน หลักการออกแบบโดยคำนึงถึงผู้ใช้งานเป็นหลัก การจัดการระบบข้อมูล โครงสร้างการวางแผนการออกแบบเว็บไซต์และแอปพลิเคชัน ฝึกปฏิบัติการเขียนภาษาคอมพิวเตอร์เพื่อการออกแบบเว็บไซต์และแอปพลิเคชันขั้นพื้นฐาน",
+    "category": "Engineering & Technology",
+    "price": 2850.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/703333.png",
+    "instructor": "ผศ.ดร.ลินดา อินทราลักษณ์",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474393",
+    "tags": [
+      "engineering",
+      "computer",
+      "management",
+      "writing",
+      "data",
+      "design",
+      "language"
+    ],
+    "scraped_at": "2026-03-21T23:31:25.113455"
+  },
+  {
+    "title": "830323 หลักเศรษฐกิจพอเพียง",
+    "description": "การเปลี่ยนแปลงเศรษฐกิจในบริบทประวัติศาสตร์ไทย พัฒนาการของแนวคิดเศรษฐกิจพอเพียง ความหมาย ความสำคัญ และเป้าหมายของหลักเศรษฐกิจพอเพียง การนำไปใช้ในการพัฒนาประเทศ เพื่อให้เกิดการพัฒนาอย่างยั่งยืน ทั้งภาคการเกษตร ภาคอุตสาหกรรม และภาคบริการโดยอธิบายผ่านกรณีศึกษา และหลักเศรษฐกิจพอเพียงกับประเด็นร่วมสมัย",
+    "category": "Language & Communication",
+    "price": 2700.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/830323.png",
+    "instructor": "ผศ.ดร.รัดเกล้า เปรมประสิทธิ์",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474394",
+    "tags": [
+      "language",
+      "communication",
+      "history",
+      "economics",
+      "agriculture"
+    ],
+    "scraped_at": "2026-03-21T23:31:27.866509"
+  },
+  {
+    "title": "703113 คอมพิวเตอร์กราฟิก",
+    "description": "โปรแกรมคอมพิวเตอร์เพื่อการออกแบบกราฟิกสำหรับงานศิลปะประยุกต์ การฝึกปฏิบัติการสร้างสรรค์ผลงานในลักษณะสองมิติ",
+    "category": "Engineering & Technology",
+    "price": 2850.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/703113.png",
+    "instructor": "ผศ.ดร.ชญานิศ ชื่นใจชน",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474386",
+    "tags": [
+      "engineering",
+      "computer",
+      "programming",
+      "design",
+      "graphic-design",
+      "art"
+    ],
+    "scraped_at": "2026-03-21T23:31:30.820592"
+  },
+  {
+    "title": "709637 สถาปัตยกรรมกับเทคโนโลยีโลกเสมือนจริง",
+    "description": "ความรู้ในหลักการเทคโนโลยีโลกเสมือนจริงในงานสถาปัตยกรรม การประยุกต์ใช้งานกับ การออกแบบและการนำเสนอผลงาน โปรแกรมที่เกี่ยวข้อง และการบริหารจัดการข้อมูลในแบบ จำลองโลกเสมือน Principles of immersive technology in architecture; implementation on design process and presentation; related software and information management",
+    "category": "Engineering & Technology",
+    "price": 11000.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/709637.jpg",
+    "instructor": "รศ.ดร.สิริมาส เฮงรัศมี",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/472342",
+    "tags": [
+      "engineering",
+      "management",
+      "design",
+      "architecture",
+      "technology",
+      "programming",
+      "data"
+    ],
+    "scraped_at": "2026-03-21T23:31:33.892779"
+  },
+  {
+    "title": "651511 การบริหารจัดการและมาตรฐานห้องปฏิบัติการเทคนิคการแพทย์",
+    "description": "หลักการออกแบบและบริหารจัดการทางห้องปฏิบัติการเทคนิคการแพทย์ ธรรมาภิบาล การบริหารทรัพยากรบุคคล การเงิน การประกันคุณภาพ การบริหารความเสี่ยง ความปลอดภัยของห้องปฏิบัติการและระบบสารสนเทศทางห้องปฏิบัติการ หลักการการสอบทวนและการทวนสอบวิธีตรวจวิเคราะห์ทางห้องปฏิบัติการทางการแพทย์ในปัจจุบัน แนวทางและเทคนิคการประเมินวิธีวิเคราะห์และการควบคุมคุณภาพของปฏิบัติการ วิธีการทางสถิติและโปรแกรมที่ใช้ในการวิเคราะห์ข้อมูลการสอบทวน การทวนสอบ การควบคุมคุณภาพและการประกันคุณภาพอย่างต่อเนื่อง การประเมินคุณภาพทาง ห้องปฏิบัติการ มาตรฐานห้องปฏิบัติการทางการแพทย์ระดับชาติและระดับสากล การจัดการข้อมูลทางห้องปฏิบัติการสำหรับงานวิจัย Principles of laboratory design and management, good governance, human resources management, finance, quality assurance, risk management, laboratory safety, laboratory information system, state of the art of method validation and verification principles in clinical laboratory analysis, guidelines and techniques for evaluation of analytical method, statistical analysis methodology and software used for data analysis in method validation, verification, internal quality control, continuous quality  improvement, quality assessment of clinical laboratory, national and international medical laboratory standard, laboratory data management for research",
+    "category": "Natural Science & Mathematics",
+    "price": 6800.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/651511.jpg",
+    "instructor": "รศ.ดร.วันวิสาข์ ตรีบุพชาติสกุล",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/471798",
+    "tags": [
+      "research",
+      "mathematics",
+      "medical",
+      "management",
+      "finance",
+      "design",
+      "art",
+      "data"
+    ],
+    "scraped_at": "2026-03-21T23:31:37.124641"
+  },
+  {
+    "title": "254271 พื้นฐานทางการเขียนโปรแกรม",
+    "description": "แนวคิดตของภาษาคอมพิวเตอร์และการเขียนโปรแกรม อัลกอริทึมพื้นฐานที่แสดงโดย ผังงานและรหัสเทียม พื้นฐานการเขียนโปรแกรมที่ครอบคลุมเรื่อง ตัวแปร ชนิดข้อมูลมูลฐาน ตัวกระทำการ ตรรกะพื้นฐาน นิพจน์ การรับข้อมูล การแสดงผล และคำสั่งควบคุม อาร์เรย์ อาร์เรย์หลายมิติ และ ชนิดข้อมูลแบบกำหนดเอง การอ้างอิงด้วยตำแหน่ง ฟังก์ชันและการเรียกฟังก์ชัน ฟังก์ชันเวียนบังเกิด และการจัดการกับแฟ้มข้อมูลเบื้องต้น",
+    "category": "Natural Science & Mathematics",
+    "price": 2850.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/254271.png",
+    "instructor": "ผศ.ดร.เกรียงศักดิ์ เตมีย์",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474381",
+    "tags": [
+      "mathematics",
+      "computer",
+      "management",
+      "writing",
+      "programming",
+      "data",
+      "language"
+    ],
+    "scraped_at": "2026-03-21T23:31:40.194263"
+  },
+  {
+    "title": "230401 กฎหมายแรงงาน",
+    "description": "หลักกฎหมายแรงงาน วิวัฒนาการของกฎหมายแรงงานในมิติของสังคม เศรษฐกิจ การเมือง และเทคโนโลยีตามหลักการพัฒนาแรงงานและสังคมอย่างยั่งยืน สัญญาจ้างแรงงาน กฎหมาย คุ้มครองแรงงานส าหรับลูกจ้างทั้งที่เป็นไทยและต่างด้าว กฎหมายว่าด้วยแรงงานสัมพันธ์ การระงับข้อพิพาทแรงงาน การพิจารณาคดีที่เกี่ยวกับแรงงาน รวมตลอดถึงกฎหมายอื่น ๆ ที่เกี่ยวข้อง",
+    "category": "Engineering & Technology",
+    "price": 2700.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/230401.png",
+    "instructor": "ผศ.ดร.จักรี อดุลนิรัตน์",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474380",
+    "tags": [
+      "engineering",
+      "technology",
+      "law",
+      "labor-law",
+      "economics",
+      "social"
+    ],
+    "scraped_at": "2026-03-21T23:31:43.173735"
+  },
+  {
+    "title": "208001 การเขียนภาษาไทยเพื่อการสื่อสาร",
+    "description": "วิธีการเขียน ย่อหน้า โวหาร และเรื่องราว ฝึกการใช้ภาษาเขียนให้เหมาะสมกับบุคคลตามโอกาสและสถานที่ เพื่อให้สื่อสารได้อย่างมีประสิทธิภาพและสร้างสรรค์",
+    "category": "Language & Communication",
+    "price": 2700.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/208001.png",
+    "instructor": "ดร.ธัช มั่นต่อการ",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474377",
+    "tags": [
+      "language",
+      "communication",
+      "writing",
+      "thai-language"
+    ],
+    "scraped_at": "2026-03-21T23:31:45.944081"
+  },
+  {
+    "title": "312303 จลนพลศาสตร์และการออกแบบเครื่องปฏิกรณ์ทางวิศวกรรมเคมี",
+    "description": "จลนพลศาสตร์ของปฏิกิริยาของสารเนื้อเดียวและปฏิกิริยาของสารที่ไม่เป็นเนื้อเดียว การเร่งปฏิกิริยา ข้อมูลของปฏิกิริยาแบบกะ หลักพื้นฐานการออกแบบเครื่องปฏิกรณ์กรณีอุณหภูมิคงที่และไม่คงที่ การออกแบบสำหรับปฏิกิริยาเชิงเดี่ยวและปฏิกิริยาเชิงซ้อน ผลของความดันและอุณหภูมิที่มีต่อจลนพลศาสตร์ เคมี การสร้างแบบจำลองของการถ่ายโอนพลังงานและสมดุลโมลในเครื่องปฏิกรณ์เคมีชนิดต่างๆ และการโช้โปรแกรมทำแบบจำลองเครื่องปฏิกรณ์ทางวิศวกรรมเคมี",
+    "category": "Natural Science & Mathematics",
+    "price": 2850.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/312303.png",
+    "instructor": "ดร.สุทธิพงษ์ ทรงประวัติ",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474383",
+    "tags": [
+      "mathematics",
+      "engineering",
+      "programming",
+      "energy",
+      "data",
+      "design",
+      "chemistry"
+    ],
+    "scraped_at": "2026-03-21T23:31:49.192531"
+  },
+  {
+    "title": "551516 อนามัยสิ่งแวดล้อมและอาชีวอนามัย",
+    "description": "หลักการและแนวคิดทางนิเวศวิทยาและอนามัยสิ่งแวดล้อม หลักการและแนวคิดสุขาภิบาลอาหารและความปลอดภัย การควบคุมแมลงและสัตว์นำโรค ระบบการกำจัดขยะมูลฝอยและสิ่งปฏิกูล การจัดสุขาภิบาลที่พักอาศัย และสภาพสิ่งแวดล้อม นโยบายด้านสิ่งแวดล้อม การเปลี่ยนแปลงสภาพอากาศในสิ่งแวดล้อมต่อสุขภาพ แนวคิดและหลักการการประเมินความเสี่ยงด้านอนามัยสิ่งแวดล้อม และการประเมินผลกระทบด้านอนามัยสิ่งแวดล้อม แนวคิดและความส าคัญของงานอาชีวอนามัยและความปลอดภัย สิ่งแวดล้อมในการทำงานที่ก่อให้เกิดอันตรายต่อสุขภาพ หลักการควบคุมและป้องกัน อันตรายในสถานประกอบการ การป้องกันโรคที่แพร่กระจายกับฝอยอากาศ หลักการประเมินกายรศาสตร์ ประเด็นปัญหาใหม่ทางด้านอนามัยสิ่งแวดล้อมและอาชีวอนามัยและความปลอดภัย การเตรียมการและรองรับภัยพิบัติ Principle and concept of ecology and environmental health, principle and concept of food sanitation and food safety, insects and animals carrier control, solid waste management system, housing sanitation and environmental pollution, environmental policy, climate change and health, airborne transmission, concept and principle in risk assessment in environmental health, environmental impact assessment, concept and importance of occupational health and safety, hazardous working environments,  principle of control and prevention of hazards due to working environment, airborne transmission protection, ergonomic assessment, new problem issues in environmental health and occupational health, preparatory and supporting disaster",
+    "category": "Health & Medicine",
+    "price": 11500.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/551516.jpg",
+    "instructor": "ดร.กนกทิพย์ จักษุ",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/472553",
+    "tags": [
+      "health",
+      "management",
+      "environment"
+    ],
+    "scraped_at": "2026-03-21T23:31:52.509800"
+  },
+  {
+    "title": "703241 คอมพิวเตอร์กราฟิกสามมิติ",
+    "description": "ขั้นตอนพื้นฐานการสร้างโมเดลสามมิติและแอนิเมชันสามมิติ การสร้างพื้นผิว การจัดแสง การประมวลภาพสามมิติสำหรับภาพนิ่งและแอนิเมชัน ฝึกปฏิบัติการ ประยุกต์ใช้ในการออกแบบสื่อประเภทต่างๆ",
+    "category": "Engineering & Technology",
+    "price": 2850.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/703241.png",
+    "instructor": "นางสาวนิภัสรา บุรีเพีย",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474391",
+    "tags": [
+      "engineering",
+      "computer",
+      "animation",
+      "design",
+      "graphic-design"
+    ],
+    "scraped_at": "2026-03-21T23:31:55.750974"
+  },
+  {
+    "title": "703331 การออกแบบตัวละครสำหรับภาพเคลื่อนไหว",
+    "description": "ศึกษาและปฏิบัติงานการออกแบบฉากและตัวละครสำหรับการสร้างภาพเคลื่อนไหว การกำหนดบุคลิกลักษณะเฉพาะให้ตัวละคร ให้สอดคล้องกับการเขียนเรื่อง บทภาพเคลื่อนไหว โดยประยุกต์ใช้เครื่องมือด้านคอมพิวเตอร์กราฟิกสองมิติและสามมิติ",
+    "category": "Engineering & Technology",
+    "price": 2850.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/703331.png",
+    "instructor": "ผศ.ดร.ชวลิต ดวงอุทา",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474392",
+    "tags": [
+      "engineering",
+      "computer",
+      "writing",
+      "design",
+      "graphic-design"
+    ],
+    "scraped_at": "2026-03-21T23:31:58.775937"
+  },
+  {
+    "title": "551521 การส่งเสริมสุขภาพ",
+    "description": "แนวคิด หลักการการส่งเสริมสุขภาพ กลยุทธการส่งเสริมสุขภาพ วิธีการส่งเสริมสุขภาพรายบุคคลและรายกลุ่ม แนวคิดเกี่ยวกับความรอบรู้ด้านสุขภาพ ความเหลื่อมล้ำทางด้านสังคมและสุขภาพ การส่งเสริมสุขภาพในชุมชน การส่งเสริมสุขภาพในสถานที่ทำงาน การส่งเสริมเสริมสุขภาพในโรงเรียน การส่งเสริมสุขภาพตามกลุ่มวัย วิถีชีวิตสุขภาพและความเป็นอยู่ที่ดี การสร้างศักยภาพของชุมชนในการส่งเสริมสุขภาพ การวางแผนและประเมินผลการส่งเสริมสุขภาพ การสร้างนวัตกรรมส่งเสริมสุขภาพ สมรรถนะของนักสาธารณสุขในการทำงานส่งเสริมสุขภาพภายใต้หลัก การทำงานระหว่างวิชาชีพ Concepts and principles of health promotion, health promotion strategy, method of health promoting in individual and group, principle of health literacy, social and health inequality, health promotion in the community, health promotion in the workplace, health promotion in the schools, promoting healthy by age groups, healthy lifestyle and well- being, development competencies of communities for health promotion, planning and evaluation of health promotion, health promotion innovative,  competency of public health professionals in health promotion, health promotion practice through inter-professional collaboration",
+    "category": "Law & Social Science",
+    "price": 11500.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/551521.jpg",
+    "instructor": "ผศ.ดร.ศันสนีย์ เมฆรุ่งเรืองวงศ์",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/472554",
+    "tags": [
+      "health",
+      "law",
+      "social",
+      "public-health",
+      "innovation"
+    ],
+    "scraped_at": "2026-03-21T23:32:01.918789"
+  },
+  {
+    "title": "261581 ฟิสิกส์เชิงคำนวณ",
+    "description": "การเขียนโปรแกรม ความคลาดเคลื่อนและความไม่แน่นอนของการคำนวณ ระบบสมการอนุพันธ์ ระเบียบวิธีเชิงตัวเลขสําหรับเมตริกซ์ สมการอนุพันธ์ย่อย พลศาสตร์ของโมเลกุล วิธีมอนติคาร์โล ปัญหาทางฟิสิกส์ที่น่าสนใจในปัจจุบัน Programming, errors and uncertainties in computations, system of differential equations, numerical methods for matrices, partial differential equations, molecular dynamics, Monte Carlo methods, physics problems of current interest",
+    "category": "Natural Science & Mathematics",
+    "price": 7500.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/261581.jpg",
+    "instructor": "รศ.ดร.สุดารัตน์ ชาติสุทธิ",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/471931",
+    "tags": [
+      "programming",
+      "mathematics",
+      "physics",
+      "writing"
+    ],
+    "scraped_at": "2026-03-21T23:32:05.027855"
+  },
+  {
+    "title": "205361 ภาษาอังกฤษธุรกิจ",
+    "description": "การใช้ภาษาอังกฤษเชิงธุรกิจ คำศัพท์เชิงธุรกิจ การสรุปความ การเขียนบันทึกข้อความจดหมายเชิงธุรกิจ การอธิบายกราฟ จดหมายสมัครงาน ประวัติย่อส่วนตัว กระบวนการสมัครงาน และการสัมภาษณ์งาน",
+    "category": "Language & Communication",
+    "price": 2700.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/205361.png",
+    "instructor": "ดร.อิศรา คงมี",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474376",
+    "tags": [
+      "language",
+      "communication",
+      "english",
+      "writing",
+      "business"
+    ],
+    "scraped_at": "2026-03-21T23:32:08.370232"
+  },
+  {
+    "title": "230300 ตราสารเปลี่ยนมือ",
+    "description": "ศึกษากฎหมายเกี่ยวกับตั๋วเงิน บัญชีเดินสะพัด อันได้แก่ หลักทั่วไปเกี่ยวกับตั๋วเงิน ตั๋วแลกเงิน การออกและการสลักหลังตั๋วแลกเงิน การรับรองและอาวัล เป็นต้น ตามประมวลกฎหมายแพ่งและพาณิชย์ บรรพ 3 รวมทั้งศึกษาถึงตราสารเปลี่ยนมือประเภทต่าง ๆ",
+    "category": "Law & Social Science",
+    "price": 2700.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/230300.png",
+    "instructor": "ผู้ช่วยศาสตราจารย์จินตนา พนมชัยชยวัฒน์",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474379",
+    "tags": [
+      "law",
+      "social",
+      "accounting"
+    ],
+    "scraped_at": "2026-03-21T23:32:11.392999"
+  },
+  {
+    "title": "551515 การบริหารสาธารณสุข",
+    "description": "แนวคิดระบบสุขภาพ การกระจายอำนาจในระบบสุขภาพ กฎหมายสาธารณสุข แนวคิดและกระบวนการนโยบายสุขภาพ หลักการและกระบวนการบริหารสาธารณสุข ภาวะผู้นำ หลักธรรมาภิบาลของผู้บริหาร จรรยาบรรณวิชาชีพสาธารณสุข การบริหารทรัพยากรมนุษย์ การบริหารการเงินและงบประมาณ การบริหารเวชภัณฑ์ พัสดุ และครุภัณฑ์ การบริหารระบบสารสนเทศ การประกันคุณภาพทางสาธารณสุข การสร้างเครือข่ายและการทำงานร่วมกันระหว่างเครือข่ายสุขภาพ เทคนิคใหม่ ๆ ที่ใช้ในการบริหาร การนำหลักการบริหารสาธารณสุขมาประยุกต์ใช้ในการวางแผนพัฒนางานสาธารณสุข Concept of health system, decentralization in health system, public health laws, concept and process of health policy, principles and processes of public health administration, leadership, good governance for administrator, ethics for public health professional, human resources management, budgeting and financial management, medical supply inventory and durable article management, information system management, quality assurance in public health, networking and network coordination, new  administrative techniques, application of principle of public health administration in developing a plan for public health works",
+    "category": "Business & Management",
+    "price": 11500.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/551515.jpg",
+    "instructor": "ผศ.ดร.วุฒิชัย จริยา",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/472552",
+    "tags": [
+      "health",
+      "medical",
+      "management",
+      "business",
+      "networking",
+      "public-health",
+      "natural-resources",
+      "finance"
+    ],
+    "scraped_at": "2026-03-21T23:32:14.587536"
+  },
+  {
+    "title": "703115 การออกแบบกราฟิกสร้างสรรค์",
+    "description": "การออกแบบกราฟิกเพื่อสื่อความหมาย โดยนำทฤษฎีเกี่ยวกับสัญลักษณ์ หรือสัญศาสตร์มาประยุกต์ใช้ การใช้ระบบกริดและตาราง กระบวนการสร้างแนวคิดในงานออกแบบกราฟิก การสร้างกรอบแนวทางการออกแบบ และรูปแบบการออกแบบกราฟิกที่เหมาะกับยุคสมัย สามารถนำไปใช้ให้เกิดผลสัมฤทธิ์ทางการออกแบบและสื่อความหมายในงานต่างๆ ได้อย่างเหมาะสม",
+    "category": "Arts & Design",
+    "price": 2850.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/703115.png",
+    "instructor": "ผศ.ดร.ชญานิศ ชื่นใจชน ดร.นฤพนธ์ คมสัน",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474387",
+    "tags": [
+      "design",
+      "graphic-design"
+    ],
+    "scraped_at": "2026-03-21T23:32:17.777635"
+  },
+  {
+    "title": "837307 เบบี้ยูนิคอน สตาร์ท อัพ",
+    "description": "การกำหนดแนวคิดในการทำธุรกิจ วิสัยทัศน์ พันธกิจ ค่านิยม เป้าหมาย วัตถุประสงค์ การวิเคราะห์ตลาดและกลุ่มเป้าหมาย การพัฒนาผลิตภัณฑ์หรือบริการ การตลาด การประเมินผล การประเมินความเสี่ยงด้านธุรกิจ การคิดเชิงออกแบบ เทคโนโลยีสำหรับการทำธุรกิจ แนวคิดการสร้างนวัตกรรม และแนวทางการพัฒนานวัตกรรมออกสู่เชิงพาณิชย์ผ่านกลไกต่าง",
+    "category": "Engineering & Technology",
+    "price": 4500.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/837307.png",
+    "instructor": "นายพงศ์ศิร คงแถวทอง",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474665",
+    "tags": [
+      "engineering",
+      "technology",
+      "innovation",
+      "marketing",
+      "design",
+      "business"
+    ],
+    "scraped_at": "2026-03-21T23:32:20.583930"
+  },
+  {
+    "title": "706511 ความเข้าใจ และการผลิตงานศิลปะและงานออกแบบจากความต้องการของผู้ใช้งาน",
+    "description": "ความสัมพันธ์ระหว่างการรับรู้ ความสามารถและข้อจำกัดของร่างกายมนุษย์ ลักษณะการสร้างชิ้นงานศิลปะ และงานออกแบบอย่างเหมาะสม ตั้งแต่ระดับความงามในชิ้นงานศิลปะหรือผลิตภัณฑ์ถึงการออกแบบบริการ ความสามารถในการสื่อสารระหว่างสิ่งประดิษฐ์และสภาพแวดล้อมกับการรับรู้ของมนุษย์ การรับรู้ระดับซับซ้อนในการใช้งานชิ้นงานออกแบบ กระบวนการการสร้างสรรค์งานศิลปะ และการออกแบบโดยได้รับความร่วมมือจากผู้ใช้งานในระดับต่างๆ Understanding relationships between human perception, physical abilities, limitations, and appropriate product design and service. Communication ability and communicating between a work of design, built environment and participatorory in human perception; complexity of perception on design functions and levels of userโ€s participation in design processes",
+    "category": "Arts & Design",
+    "price": 10000.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/706511.jpg",
+    "instructor": "ผศ.ดร.ธีรวุฒิ บุญยศักดิ์เสรี",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/473395",
+    "tags": [
+      "environment",
+      "communication",
+      "design",
+      "art"
+    ],
+    "scraped_at": "2026-03-21T23:32:23.593026"
+  },
+  {
+    "title": "355434 ผู้ประกอบการธุรกิจสื่อ",
+    "description": "ความหมาย บทบาทของการเป็นผู้ประกอบการทางด้านสื่อ และการจัดการสถานประกอบการอุตสาหกรรมสื่อทุกแขนงทั้งสื่อสิ่งพิมพ์ สื่อกระจายภาพ และเสียง สื่อดิจิทัล และสื่ออื่น ๆ ตลอดจนศึกษาโครงสร้างการ บริหาร และการดำเนินงานขององค์กรผลิตสื่ออิเล็กทรอนิกส์ในส่วนต่าง ๆ เช่น การบริหารงานนโยบาย องค์กร การจัดระบบการจัดรายการ การวิเคราะห์กลุ่มผู้รับสารเป้าหมาย การจัดการด้านธุรกิจ การตลาด และแนวทางการเป็นผู้ประกอบการเพื่อสร้างความคิดริเริ่มที่จะประกอบธุรกิจสื่อของตนเอง",
+    "category": "Engineering & Technology",
+    "price": 2700.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/355434.png",
+    "instructor": "รศ.ดร.ทิพรัตน์ สิทธิวงศ์",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474385",
+    "tags": [
+      "engineering",
+      "entrepreneurship",
+      "management",
+      "digital",
+      "marketing",
+      "business"
+    ],
+    "scraped_at": "2026-03-21T23:32:26.744668"
+  },
+  {
+    "title": "303206 วิศวกรรมไฟฟ้าเบื้องต้น",
+    "description": "หลักการเบื้องต้นการวิเคราะห์วงจรไฟฟ้าแบบกระแสตรงและแบบกระแสสลับ แรงดันกระแส กำลังไฟฟ้า หม้อแปลงไฟฟ้ากำลัง แนะนำเครื่องจักรกลไฟฟ้า เครื่องกำเนิดไฟฟ้า มอเตอร์ไฟฟ้า และการใช้งานของเครื่องจักรกลไฟฟ้า หลักการระบบไฟฟ้ากำลังแบบหนึ่งเฟส และแบบสามเฟส วิธีการส่งกำลังไฟฟ้า แนะนำเครื่องมือวัดทางไฟฟ้าพื้นฐาน",
+    "category": "Engineering & Technology",
+    "price": 3800.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/303206.png",
+    "instructor": "ผศ.ดร.จิรวดี ผลประเสริฐ",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474382",
+    "tags": [
+      "engineering"
+    ],
+    "scraped_at": "2026-03-21T23:32:29.644152"
+  },
+  {
+    "title": "355345 สื่อการเรียนรู้เสมือนจริง",
+    "description": "หลักการ แนวคิด ทฤษฎี รูปแบบ องค์ประกอบ ของเทคโนโลยีภาพเสมือนจริงการแก้ปัญหาการเรียนรู้ด้วยการออกแบบ และสร้างสรรค์สื่อภาพเสมือนจริง และการประเมินคุณค่าของสื่อภาพเสมือนจริงด้วยกระบวนการวิจัย",
+    "category": "Engineering & Technology",
+    "price": 2700.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/355345.png",
+    "instructor": "รศ.ดร.ทิพรัตน์ สิทธิวงศ์",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474384",
+    "tags": [
+      "engineering",
+      "technology",
+      "design",
+      "research"
+    ],
+    "scraped_at": "2026-03-21T23:32:32.406587"
+  },
+  {
+    "title": "001273 คณิตศาสตร์และสถิติในชีวิตประจำวัน",
+    "description": "การวัด การหาพื้นที่ผิวและปริมาตรของรูปทรงเรขาคณิต คณิตศาสตร์การเงินเบื้องต้น การสำรวจข้อมูล วิธีการเก็บรวบรวมข้อมูล การวิเคราะห์ข้อมูลและการนำเสนอข้อมูลเพื่อการทำวิจัยเบื้องต้น การประยุกต์ใช้ความน่าจะเป็นเพื่อการวางแผนและตัดสินใจทางธุรกิจเบื้องต้น",
+    "category": "Natural Science & Mathematics",
+    "price": 2850.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/001273_1.png",
+    "instructor": "ผศ.ดร.กัลยา บุญหล้า",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474375",
+    "tags": [
+      "mathematics",
+      "data-analytics",
+      "finance",
+      "data",
+      "business",
+      "statistics",
+      "research"
+    ],
+    "scraped_at": "2026-03-21T23:32:35.321196"
+  },
+  {
+    "title": "837105 ความมั่นคงของมนุษย์ ความขัดแย้ง และความเสื่อมถอยทางสังคม",
+    "description": "กรอบแนวคิดและประเด็นของความมั่นคงแบบใหม่หลังช่วงสงครามเย็นในมิติที่หลากหลาย ความมั่นคงมนุษย์ สังคมสูงวัย สิทธิมนุษยชน การถือครองที่ดิน ความไร้รัฐ ความหลากหลายทางเพศ สิทธิLGBT จริยธรรมและศีลธรรม แรงงาน การเมืองโรคระบาด การเมืองบนท้องถนน การเคลื่อนไหวทางสังคม องค์กรนอกภาครัฐ องค์กรที่จัดตั้งโดยรัฐ มวลชน ประชาชน ประชานิยม รากหญ้า กลุ่มคนลงโทษผู้กระทำผิดโดยพลการ",
+    "category": "Law & Social Science",
+    "price": 4500.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/837105.png",
+    "instructor": "ผศ.ดร.นภิสา ไวฑูรเกียรติ นายกฤษณะ โชติสุทธิ์ ผศ.(พิเศษ) ดร.Katsuyuki Takahashi",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474664",
+    "tags": [
+      "law",
+      "social",
+      "labor-law"
+    ],
+    "scraped_at": "2026-03-21T23:32:38.656815"
+  },
+  {
+    "title": "551523 การจัดการสุขภาพผู้สูงอายุในระบบบริการสุขภาพ",
+    "description": "ความหมาย ความสำคัญ สถานการณ์ และนโยบายที่เกี่ยวข้องกับผู้สูงอายุทั้งในระดับโลกและระดับประเทศ กระบวนการของการชรา ความท้าทายของการชราภาพ ปัจจัยสังคมกำหนดสุขภาพของผู้สูงอายุ มุมมองของสังคมต่อผู้สูงอายุ การจัดการที่พักอาศัยและสิ่งแวดล้อมสำหรับผู้สูงอายุ ปัจจัยที่มีผลต่อการคงไว้แบบแผนสุขภาพของผู้สูงอายุ ความจำเป็นทางสุขภาพและพฤติกรรมแสวงหาการรักษาของผู้สูงอายุ การสูงวัยอย่างมีพลัง กองทุนการดูแลผู้สูงอายุระยะยาวที่มีภาวะพึ่งพิง มาตรฐานและแนวทางการให้บริการผู้สูงอายุที่มีภาวะพึ่งพาในสถานดูแลระยะยาว  มาตรฐานแนวทางการให้บริการสถานดูแลผู้สูงอายุที่บ้านในชุมชน Meaning, importance, situation and policy relevant to older adults both nationally and globally, ageing process, ageing challenges, social determinants of health of ageing, perspectives of ageing, managing home and community environment for the older adult, factors associated with functional health for the older adult, health need and health seeking behavior in older adult, active aging, long term care fund for dependent older adult, standard and service guideline for dependent older in  long-term care institution, standard and service guideline for the older adult in community",
+    "category": "Business & Management",
+    "price": 11500.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/551523.jpg",
+    "instructor": "ผศ.ดร.วราภรณ์ ยังเอี่ยม",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/472555",
+    "tags": [
+      "health",
+      "management",
+      "business",
+      "environment",
+      "social"
+    ],
+    "scraped_at": "2026-03-21T23:32:41.951134"
+  },
+  {
+    "title": "703117 พื้นฐานมัลติมีเดียและแอนิเมชัน",
+    "description": "ประวัติศาสตร์ ทฤษฎีการออกแบบมัลติมีเดียและแอนิเมชันขั้นพื้นฐาน ภาพรวมของการศึกษาในหลักสูตรศิลปกรรมศาสตรบัณฑิต สาขาวิชาการออกแบบสื่อนวัตกรรม พัฒนาการของอุตสาหกรรมมัลติมีเดียและแอนิเมชัน ฝึกปฏิบัติการใช้โปรแกรมคอมพิวเตอร์เพื่อการออกแบบมัลติมีเดียและแอนิเมชัน สร้างแอนิเมชันด้วยเทคนิคดั้งเดิม",
+    "category": "Engineering & Technology",
+    "price": 2850.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/703117.png",
+    "instructor": "นางสาวนิภัสรา บุรีเพีย ผศ.ดร.ลินดา อินทราลักษณ์",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474389",
+    "tags": [
+      "engineering",
+      "history",
+      "computer",
+      "animation",
+      "education",
+      "curriculum",
+      "innovation",
+      "programming"
+    ],
+    "scraped_at": "2026-03-21T23:32:44.834363"
+  },
+  {
+    "title": "553613 ชีวสถิติขั้นสูงสำหรับการวิจัยทางสาธารณสุข",
+    "description": "การวิเคราะห์การถดถอยเชิงพหุคูณ การวิเคราะห์การถดถอยโลจิสติก การวิเคราะห์จำแนกประเภท การวิเคราะห์อัตรารอดชีพ การวิเคราะห์องค์ประกอบ โมเดลสมการโครงสร้างการวิเคราะห์เส้นทาง โมเดลเชิงเส้นระดับลดหลั่น การวิเคราะห์พหุระดับ ทักษะการใช้โปรแกรมสำเร็จรูปในการวิเคราะห์ข้อมูล การวิพากษ์การใช้สถิติในงานวิจัยทางสาธารณสุข การประยุกต์ใช้ในการวิเคราะห์และสังเคราะห์กับข้อมูลปัญหาสาธารณสุขในสถานการณ์ปัจจุบัน Multiple regression analysis, logistic regression analysis, discriminant analysis, survival ratio analysis, factor analysis, structural equation model (SEM), path  analysis, hierarchical linear models (HLM), multilevel analysis, skills in computer software use for data analysis and criticizing statistics in public health research, application on analysis and synthesis with public health information in current situation",
+    "category": "Natural Science & Mathematics",
+    "price": 23700.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/553613.jpg",
+    "instructor": "รศ.ดร.อรวรรณ กีรติสิโรจน์",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/471295",
+    "tags": [
+      "statistics",
+      "research",
+      "mathematics",
+      "health",
+      "data",
+      "data-analytics",
+      "public-health",
+      "programming"
+    ],
+    "scraped_at": "2026-03-21T23:32:47.900221"
+  },
+  {
+    "title": "553614 การส่งเสริมสุขภาพในระดับนานาชาติ",
+    "description": "แนวคิดและหลักการสร้างเสริมสุขภาพในระดับโลก การส่งเสริมสุขภาพบุคคลและกลุ่มการส่งเสริมสุขภาพในชุมชน นวัตกรรมการส่งเสริมสุขภาพในระดับนานาชาติ วิถีชีวิตสุขภาพ กิจกรรมทางกาย การจัดการความเครียด อาหารส่งเสริมสุขภาพ แอลกอฮอล์ บุหรี่ และการแก้ปัญหา แนวโน้มประเด็นการส่งเสริมสุขภาพในระดับนานาชาติการประยุกต์ใช้องค์ความรู้ ในการสังเคราะห์แนวทางการส่งเสริมสุขภาพ เพื่อแก้ไขปัญหาสาธารณสุขในสถานการณ์ปัจจุบัน Concept and principle in global health promotion, health promotion for individual and group, health promotion in community, international innovation of health promotion, healthy life-style, physical activity, stress management, health promoting foods, alcohol, cigarette and problem solving, trend in international health promotion, knowledge application in synthesis of health promotion guideline for preventing public health problems in current situation",
+    "category": "Business & Management",
+    "price": 23700.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/553614.jpg",
+    "instructor": "ผศ.ดร.ศันสนีย์ เมฆรุ่งเรืองวงศ์",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/471294",
+    "tags": [
+      "health",
+      "management",
+      "business",
+      "innovation",
+      "public-health"
+    ],
+    "scraped_at": "2026-03-21T23:32:51.092117"
+  },
+  {
+    "title": "224371 ภาษาอังกฤษสำหรับการนำเที่ยว",
+    "description": "ภาษาอังกฤษในวิชาชีพซึ่งจำเป็นต่อการนำเที่ยวสถานที่ทางประวัติศาสตร์และโบราณคดีอย่างมีประสิทธิผลทั้งในประเทศ ไทยและต่างประเทศ การใช้ภาษาอังกฤษในการตอบข้อซักถามเกี่ยวกับศิลปะ งานฝีมือ วัฒนธรรมและวิถีชีวิตไทย",
+    "category": "Arts & Design",
+    "price": 2700.0,
+    "status": "open",
+    "image_url": "https://lifelong.nu.ac.th/img/cover/224371.png",
+    "instructor": "ดร.อิศรา คงมี",
+    "university": "NU",
+    "url": "https://lifelong.nu.ac.th/course/474378",
+    "tags": [
+      "design",
+      "history",
+      "english",
+      "culture",
+      "art",
+      "language"
+    ],
+    "scraped_at": "2026-03-21T23:32:54.248381"
+  }
+]

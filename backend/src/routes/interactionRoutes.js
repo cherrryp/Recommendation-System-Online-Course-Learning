@@ -1,8 +1,9 @@
-import express from "express";
-import { recordInteraction } from "../controllers/interactionController.js"; 
-const router = express.Router();
+import express from "express"
+import { recordInteraction } from "../controllers/interactionController.js"
+import { verifyToken } from "../middleware/auth.js"
 
-// POST: /api/interactions
-router.post("/", recordInteraction);
+const router = express.Router()
 
-export default router;
+router.post("/", verifyToken, recordInteraction)
+
+export default router
