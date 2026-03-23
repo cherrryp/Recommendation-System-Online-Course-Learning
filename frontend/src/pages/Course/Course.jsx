@@ -200,7 +200,7 @@ function Course() {
 
       {recommended.length > 0 && (
         <div className="recommended-section">
-          <h3>แนะนำสำหรับคุณ ✨</h3>
+          <h3>แนะนำสำหรับคุณ</h3>
           <div className="courseAll recommended">
             {recommended.map((c) => (
               <CourseCard key={c.id} course={c} bookmarked={bookmarks.has(c.id)}

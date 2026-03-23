@@ -1,7 +1,7 @@
 import prisma from "../lib/prisma.js"
 
 // ดึงคอร์สทั้งหมด พร้อม filter และ search
-export const getAllCourses = async ({ search, category, university, page = 1, limit = 20, minPrice, maxPrice }) => {
+export const getAllCourses = async ({ search, category, university, page = 1, limit = 20 }) => {
   const skip = (page - 1) * limit
 
   const where = {
@@ -13,13 +13,7 @@ export const getAllCourses = async ({ search, category, university, page = 1, li
       ],
     }),
     ...(category && { category: { equals: category, mode: "insensitive" } }),
-    ...(university && { university: { equals: university, mode: "insensitive" } }),
-    ...((minPrice !== undefined || maxPrice !== undefined) && {
-      price: {
-        ...(minPrice !== undefined && { gte: minPrice }),
-        ...(maxPrice !== undefined && { lte: maxPrice }),
-      },
-    }),
+    ...(university && { university: { equals: university, mode: "insensitive" } })
   }
 
   const [courses, total] = await Promise.all([

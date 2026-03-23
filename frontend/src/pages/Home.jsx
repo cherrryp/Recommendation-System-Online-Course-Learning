@@ -19,21 +19,22 @@ function Home() {
 
       // login → recommendation
       getRecommendations(userId, 4)
-        .then(res => {
+        .then((r) => setCourses(r.data.data || []))
+        // .then(res => { 
 
-          const mapped = res.data.recommendations.map(c => ({
-            id: c.course_id,
-            title: c.course_name_en || c.course_name_th,
-            category: c.category,
-            university: c.university,
-            price: 0,
-            url: "#",
-            thumbnailUrl: ""
-          }))
+        //   const mapped = res.data.recommendations.map(c => ({
+        //     id: c.course_id,
+        //     title: c.course_name_en || c.course_name_th,
+        //     category: c.category,
+        //     university: c.university,
+        //     price: 0,
+        //     url: "#",
+        //     thumbnailUrl: ""
+        //   }))
 
-          setCourses(mapped)
+        //   setCourses(mapped)
 
-        })
+        // })
         .catch(() => loadLatest())
 
     } else {
@@ -48,7 +49,8 @@ function Home() {
   const loadLatest = () => {
 
     getCourses({ page: 1, limit: 4 })
-      .then(res => setCourses(res.data.courses || []))
+      .then((r) => setCourses(r.data.courses || []))
+      //.then(res => setCourses(res.data.courses || []))
       .catch(() => setCourses([]))
 
   }

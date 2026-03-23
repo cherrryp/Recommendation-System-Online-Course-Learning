@@ -41,7 +41,7 @@ function Content_2({ courses = [], isRecommended = false }) {
   return (
     <div className="content-2">
       <h3 className="title">
-        {isRecommended ? "แนะนำสำหรับคุณ ✨" : "คอร์สล่าสุด"}
+        {isRecommended ? "แนะนำสำหรับคุณ" : "คอร์สล่าสุด"}
       </h3>
 
       <div className="cards">

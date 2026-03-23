@@ -137,7 +137,7 @@ function Profile() {
 
         {/* Bookmarks */}
         <div className="bookmarks-section">
-          <h2>คอร์สที่บันทึกไว้ 🔖</h2>
+          <h2>คอร์สที่บันทึกไว้</h2>
           {bookmarks.length === 0 ? (
             <p>ยังไม่มีคอร์สที่บันทึกไว้</p>
           ) : (

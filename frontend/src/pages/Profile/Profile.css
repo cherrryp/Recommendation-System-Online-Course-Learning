@@ -130,8 +130,7 @@
 }
 
 .hr {
-  border: 1.5px solid #d8d8d8;
-  margin: 15px 0;
+  display: none;
 }
 
 .cards {
@@ -183,4 +182,26 @@
   font-size: 13px;
   color: #555;
   margin: 2px 0;
+}
+
+.bookmarks-section a.course-card {
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  outline: none;
+}
+
+.bookmarks-section a.course-card * {
+  text-decoration: none;
+}
+
+.course-card {
+  outline: none;
+}
+
+.course-card:focus,
+.course-card:active,
+.course-card:focus-visible {
+  outline: none;
+  box-shadow: none;
 }
