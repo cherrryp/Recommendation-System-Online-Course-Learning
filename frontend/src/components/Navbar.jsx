@@ -1,18 +1,29 @@
 import "./Navbar.css"
 import Logo from "../assets/logo.png"
 import { Link } from "react-router-dom"  
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 
 function Navbar() {
   const token = localStorage.getItem("token")
   const user = JSON.parse(localStorage.getItem("user") || "null")
   const [openMenu, setOpenMenu] = useState(false)
+  const menuRef = useRef()
 
   const handleLogout = () => {
     localStorage.removeItem("token")
     localStorage.removeItem("user")
     window.location.href = "/"
   }
+
+  useEffect(() => {
+  const handleClickOutside = (e) => {
+    if (menuRef.current && !menuRef.current.contains(e.target)) {
+      setOpenMenu(false)
+    }
+  }
+  document.addEventListener("mousedown", handleClickOutside)
+  return () => document.removeEventListener("mousedown", handleClickOutside)
+}, [])
 
 return (
     <div className="menu">
@@ -27,7 +38,7 @@ return (
             <li><Link to="/course" className="menu-a">Course</Link></li>
             <li className="btn-lr">
             {token && user ? (
-              <div className="account-menu">
+              <div className="account-menu" ref={menuRef}>
                 <button 
                   className={`account-btn3 ${openMenu ? "active" : ""}`}
                   onClick={() => setOpenMenu(!openMenu)}
@@ -45,6 +56,7 @@ return (
                     <Link to="/profile" className="dropdown-item">
                       Profile
                     </Link>
+                    <div className="divider"></div> 
                     <button className="dropdown-item logout" onClick={handleLogout}>
                       Logout
                     </button>
