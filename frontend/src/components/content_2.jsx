@@ -4,8 +4,9 @@ import { UNI_NAMES } from "../constants/universities"
 
 import { useState, useEffect } from "react"
 import { toggleBookmark, getBookmarks } from "../api/BookmarkApi"
+import { useBookmark } from "../context/BookmarkContext"
 
-const UNI_HOVER_IMAGES = {
+export const UNI_HOVER_IMAGES = {
   Chulalongkorn: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248855/563000010687901_iw03ss.jpg",
   CMU: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248857/unnamed_bguhc3.png",
   KKU: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774249715/KKU_SLA_Logo.svg_yzfddp.png",
@@ -20,7 +21,7 @@ const UNI_HOVER_IMAGES = {
   TU: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248856/logo01_ooeuuf.jpg",
 }
 
-const encodeImg = (url) => {
+export const encodeImg = (url) => {
   if (!url) return null
   try {
     const u = new URL(url)
@@ -37,29 +38,14 @@ const encodeImg = (url) => {
 // const encodeImg = (url) => url ? encodeURI(url) : null
 
 function Content_2({ courses = [], isRecommended = false }) {
-  const [bookmarks, setBookmarks] = useState(new Set())
+  const { bookmarks, toggle } = useBookmark()
 
   const user = JSON.parse(localStorage.getItem("user") || "null")
   const userId = user?.id
 
-  // โหลด bookmark ของ user
-  useEffect(() => {
-    if (!userId) return
-    getBookmarks(userId).then((r) => {
-      setBookmarks(new Set((r.data.data || []).map((c) => c.id)))
-    })
-  }, [userId])
-
-  const handleBookmark = async (e, courseId) => {
-    e.stopPropagation() // ไม่ให้ trigger handleOpen
-    if (!userId) return alert("กรุณาเข้าสู่ระบบก่อน")
-    const res = await toggleBookmark(userId, courseId)
-    const { bookmarked } = res.data
-    setBookmarks((prev) => {
-      const next = new Set(prev)
-      bookmarked ? next.add(courseId) : next.delete(courseId)
-      return next
-    })
+  const handleBookmark = (e, courseId) => {
+    e.stopPropagation()
+    toggle(courseId)
   }
 
   const handleOpen = (url) => {

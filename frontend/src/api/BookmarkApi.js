@@ -9,8 +9,3 @@ export const toggleBookmark = (userId, courseId) => {
 export const getBookmarks = (userId) => {
   return api.get(`/bookmarks/${userId}`)
 }
-
-// เช็คว่า bookmark ไหม
-export const checkBookmark = (userId, courseId) => {
-  return api.get(`/bookmarks/check/${userId}/${courseId}`)
-}

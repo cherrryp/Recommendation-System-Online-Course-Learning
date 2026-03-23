@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import Navbar from "../../components/Navbar.jsx"
-import { getBookmarks } from "../../api/BookmarkApi"
+import { getBookmarks, toggleBookmark } from "../../api/BookmarkApi"
 import "./Profile.css"
+import {UNI_HOVER_IMAGES, encodeImg} from "../../components/content_2.jsx"
 
 import { UNI_NAMES } from "../../constants/universities"
 
@@ -142,30 +143,77 @@ function Profile() {
             <p>ยังไม่มีคอร์สที่บันทึกไว้</p>
           ) : (
             <div className="cards">
-              {bookmarks.map((course) => (
-                <a
-                  key={course.id}
-                  href={course.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="course-card"
-                >
+              {bookmarks.map((course) => {
+                const fallbackImg = UNI_HOVER_IMAGES[course.university]
+                const displayImg = encodeImg(course.thumbnailUrl) || fallbackImg
+
+                return (
                   <div
-                    className="image-card"
-                    style={{
-                      backgroundImage: `url(${course.thumbnailUrl || "/placeholder.png"})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
+                    className="card-all"
+                    key={course.id}
+                    onClick={() => window.open(course.url, "_blank", "noopener,noreferrer")}
+                    style={{ cursor: "pointer" }}
+                    onMouseEnter={(e) => {
+                      const imgEl = e.currentTarget.querySelector(".image-card-all")
+                      if (fallbackImg && imgEl) imgEl.style.backgroundImage = `url(${fallbackImg})`
                     }}
-                  />
-                  <div className="content-card">
-                    <h4 className="course-title">{course.title}</h4>
-                    <p className="text">{course.category}</p>
-                    <p className="text">{UNI_NAMES[course.university] || course.university}</p>
-                    <p className="text">{course.price === 0 ? "ฟรี" : `${course.price} บาท`}</p>
+                    onMouseLeave={(e) => {
+                      const imgEl = e.currentTarget.querySelector(".image-card-all")
+                      if (imgEl) imgEl.style.backgroundImage = displayImg ? `url(${displayImg})` : "none"
+                    }}
+                  >
+                    <div
+                      className="image-card-all"
+                      style={{
+                        backgroundImage: displayImg ? `url(${displayImg})` : "none",
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        backgroundColor: "#e9ecef",
+                        transition: "all 0.3s ease",
+                      }}
+                    />
+                    <div className="content-card-all">
+                      <h4 className="course-title">{course.title}</h4>
+                      <div className="card-badges">
+                        <span className="badge badge-category">{course.category}</span>
+                        <span className="badge badge-uni">
+                          {UNI_NAMES[course.university] || course.university || "-"}
+                        </span>
+                      </div>
+                      <div className="card-footer">
+                        <span className={`price-badge ${course.price === 0 ? "free" : "paid"}`}>
+                          {course.price === 0 ? "ฟรี" : `${course.price} ฿`}
+                        </span>
+                        <button
+                          className="btn-bookmark bookmarked"
+                          onClick={async (e) => {
+                            e.stopPropagation()
+                            const res = await toggleBookmark(userId, course.id)
+                            if (!res.data.bookmarked) {
+                              await toggle(course.id)
+                              setBookmarks((prev) => prev.filter((c) => c.id !== course.id))
+                            }
+                          }}
+                          title="ยกเลิก bookmark"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16"
+                            viewBox="0 0 24 24"
+                            fill="#6c63ff"
+                            stroke="#6c63ff"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                </a>
-              ))}
+                )
+              })}
             </div>
           )}
         </div>

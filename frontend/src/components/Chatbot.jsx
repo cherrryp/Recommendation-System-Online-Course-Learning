@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react"
 import "./Chatbot.css"
 import { UNI_NAMES } from "../constants/universities"
-import { getBookmarks, toggleBookmark } from "../api/BookmarkApi"
+import { useBookmark } from "../context/BookmarkContext"
 
 const UNI_HOVER_IMAGES = {
   Chulalongkorn: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248855/563000010687901_iw03ss.jpg",
@@ -74,24 +74,17 @@ function Chatbot() {
       { label: "✅ คอร์สฟรี", value: "ขอคอร์สฟรีหน่อย" },
     ],
   }])
+
+  const { bookmarks, toggle } = useBookmark()
   const [input, setInput] = useState("")
   const [loading, setLoading] = useState(false)
   const [lastIntent, setLastIntent] = useState(null)
   const [lastPage, setLastPage] = useState(1)
-  const [bookmarks, setBookmarks] = useState(new Set())
   const bottomRef = useRef(null)
 
   const user = JSON.parse(localStorage.getItem("user") || "null")
   const userId = user?.id
   const token = localStorage.getItem("token")
-
-  useEffect(() => {
-    if (userId) {
-      getBookmarks(userId).then((r) => {
-        setBookmarks(new Set((r.data.data || []).map((c) => c.id)))
-      })
-    }
-  }, [userId])
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" })
@@ -179,14 +172,7 @@ function Chatbot() {
   }
 
   const handleBookmark = async (courseId) => {
-    if (!userId) return alert("กรุณาเข้าสู่ระบบก่อน")
-    const res = await toggleBookmark(userId, courseId)
-    const { bookmarked } = res.data
-    setBookmarks((prev) => {
-      const next = new Set(prev)
-      bookmarked ? next.add(courseId) : next.delete(courseId)
-      return next
-    })
+    await toggle(courseId)
   }
 
   const clearChat = () => {

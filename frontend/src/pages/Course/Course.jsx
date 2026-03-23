@@ -6,6 +6,7 @@ import { getRecommendations } from "../../api/RecommendationApi"
 import { recordInteraction } from "../../api/interactionApi"
 import { UNI_NAMES } from "../../constants/universities"
 import "./Course.css"
+import { useBookmark } from "../../context/BookmarkContext"
 
 const UNI_HOVER_IMAGES = {
   Chulalongkorn: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248855/563000010687901_iw03ss.jpg",
@@ -122,7 +123,6 @@ function Course() {
   const [recommended, setRecommended] = useState([])
   const [categories, setCategories] = useState([])
   const [universities, setUniversities] = useState([])
-  const [bookmarks, setBookmarks] = useState(new Set())
   const [loading, setLoading] = useState(true)
 
   const [search, setSearch] = useState("")
@@ -136,18 +136,13 @@ function Course() {
   
   const user = JSON.parse(localStorage.getItem("user") || "null")
   const userId = user?.id
+  
+  const { bookmarks, toggle } = useBookmark()
 
   useEffect(() => {
     getCategories().then((r) => setCategories(r.data.data || []))
     getUniversities().then((r) => setUniversities(r.data.data || []))
   }, [])
-
-  useEffect(() => {
-    if (!userId) return
-    getBookmarks(userId).then((r) => {
-      setBookmarks(new Set((r.data.data || []).map((c) => c.id)))
-    })
-  }, [userId])
 
   useEffect(() => {
     if (!userId) return
@@ -176,15 +171,11 @@ function Course() {
   }
 
   const handleBookmark = async (courseId) => {
-    if (!userId) return alert("กรุณาเข้าสู่ระบบก่อน")
-    const res = await toggleBookmark(userId, courseId)
-    const { bookmarked } = res.data
-    setBookmarks((prev) => {
-      const next = new Set(prev)
-      bookmarked ? next.add(courseId) : next.delete(courseId)
-      return next
-    })
-    if (bookmarked) recordInteraction({ userId, courseId, action: "bookmark" }).catch(() => {})
+    const bookmarked = await toggle(courseId)
+
+    if (bookmarked) {
+      recordInteraction({ userId, courseId, action: "bookmark" }).catch(() => {})
+    }
   }
 
   const handleSearch = (e) => { e.preventDefault(); setSearch(searchInput) }
