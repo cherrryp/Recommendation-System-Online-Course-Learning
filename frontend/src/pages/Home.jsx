@@ -5,61 +5,42 @@ import Footer from "../components/Footer.jsx"
 import Content_1 from "../components/Content_1.jsx"
 import Content_2 from "../components/content_2.jsx"
 import { getRecommendations } from "../api/RecommendationApi"
-import { getCourses } from "../api/courseApi"
+import { getCourses, getPopularCourses } from "../api/courseApi"
 
 function Home() {
-  const [courses, setCourses] = useState([])
+  const [recommended, setRecommended] = useState([])
+  const [popular, setPopular] = useState([])
+  const [latest, setLatest] = useState([])
 
   const user = JSON.parse(localStorage.getItem("user") || "null")
   const userId = user?.id
 
   useEffect(() => {
+    // popular ดึงเสมอ
+    getPopularCourses(8).then((r) => setPopular(r.data.data || []))
 
-    if (userId) {
-
-      // login → recommendation
-      getRecommendations(userId, 8)
-        .then((r) => setCourses(r.data.data || []))
-        // .then(res => { 
-
-        //   const mapped = res.data.recommendations.map(c => ({
-        //     id: c.course_id,
-        //     title: c.course_name_en || c.course_name_th,
-        //     category: c.category,
-        //     university: c.university,
-        //     price: 0,
-        //     url: "#",
-        //     thumbnailUrl: ""
-        //   }))
-
-        //   setCourses(mapped)
-
-        // })
-        .catch(() => loadLatest())
-
-    } else {
-
-      // ไม่ login → คอร์สล่าสุด
-      loadLatest()
-
-    }
-
-  }, [userId])
-
-  const loadLatest = () => {
-
+    // latest ดึงเสมอ
     getCourses({ page: 1, limit: 8 })
-      .then((r) => setCourses(r.data.courses || []))
-      //.then(res => setCourses(res.data.courses || []))
-      .catch(() => setCourses([]))
+      .then((r) => setLatest(r.data.courses || []))
+      .catch(() => {})
 
-  }
+    // recommended เฉพาะตอน login
+    if (userId) {
+      getRecommendations(userId, 8)
+        .then((r) => setRecommended(r.data.data || []))
+        .catch(() => {})
+    }
+  }, [userId])
 
   return (
     <div>
       <Navbar />
       <Content_1 />
-      <Content_2 courses={courses} isRecommended={!!userId} />
+      {userId && recommended.length > 0 && (
+        <Content_2 courses={recommended} title="แนะนำสำหรับคุณ" />
+      )}
+      <Content_2 courses={popular} title="คอร์สยอดนิยม" />
+      <Content_2 courses={latest} title="คอร์สล่าสุด" />
       <Rating />
       <Footer />
     </div>

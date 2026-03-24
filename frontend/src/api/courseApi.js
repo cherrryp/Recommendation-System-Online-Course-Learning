@@ -15,3 +15,8 @@ export const getCategories = () => {
 export const getUniversities = () => {
   return api.get("/courses/universities")
 }
+
+// ดึง Popular Course
+export const getPopularCourses = (limit = 8) => {
+  return api.get("/courses/popular", { params: { limit } })
+}

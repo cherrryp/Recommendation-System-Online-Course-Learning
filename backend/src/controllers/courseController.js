@@ -3,6 +3,7 @@ import {
   getCourseById as fetchCourseById,
   getAllCategories,
   getAllUniversities,
+  getPopularCourses,
 } from "../service/course.service.js"
 
 // GET /api/courses
@@ -58,5 +59,17 @@ export const getCourseById = async (req, res) => {
   } catch (error) {
     console.error(error)
     res.status(500).json({ success: false, message: "Error fetching course" })
+  }
+}
+
+// GET /api/courses/popular
+export const getPopular = async (req, res) => {
+  try {
+    const limit = parseInt(req.query.limit) || 8
+    const courses = await getPopularCourses(limit)
+    res.json({ success: true, data: courses })
+  } catch (error) {
+    console.error(error)
+    res.status(500).json({ success: false, message: "Error fetching popular courses" })
   }
 }

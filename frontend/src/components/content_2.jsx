@@ -2,6 +2,7 @@ import "./Content_2.css"
 import { Link } from "react-router-dom"
 import { UNI_NAMES } from "../constants/universities"
 import { useBookmark } from "../context/BookmarkContext"
+import { recordInteraction } from "../api/interactionApi"
 
 export const UNI_HOVER_IMAGES = {
   Chulalongkorn: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248855/563000010687901_iw03ss.jpg",
@@ -32,16 +33,20 @@ export const encodeImg = (url) => {
   }
 }
 
-function Content_2({ courses = [], isRecommended = false }) {
+function Content_2({ courses = [], title = "คอร์สล่าสุด" }) {
   const { bookmarks, toggle } = useBookmark()
+  const user = JSON.parse(localStorage.getItem("user") || "null")
+  const userId = user?.id
+
+  const handleOpen = (course) => {
+    if (userId) recordInteraction(userId, course.id, "click").catch(() => {})
+    window.open(course.url, "_blank", "noopener,noreferrer")
+  }
 
   const handleBookmark = (e, courseId) => {
     e.stopPropagation()
+    if (userId) recordInteraction(userId, courseId, "bookmark").catch(() => {})
     toggle(courseId)
-  }
-
-  const handleOpen = (url) => {
-    window.open(url, "_blank", "noopener,noreferrer")
   }
 
   return (
@@ -49,7 +54,7 @@ function Content_2({ courses = [], isRecommended = false }) {
       {/* Header row */}
       <div className="section-header">
         <h3 className="section-title">
-          {isRecommended ? "แนะนำสำหรับคุณ" : "คอร์สล่าสุด"}
+          { title }
         </h3>
         <Link to="/course" className="btn-see-all">
           ดูทั้งหมด
@@ -75,7 +80,7 @@ function Content_2({ courses = [], isRecommended = false }) {
                 <div
                   className="scroll-card"
                   key={course.id}
-                  onClick={() => handleOpen(course.url)}
+                  onClick={() => handleOpen(course)}
                 >
                   <div
                     className="scroll-card-img"

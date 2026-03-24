@@ -166,19 +166,24 @@ function Course() {
   useEffect(() => { setCurrentPage(1) }, [search, selectedCategory, selectedUniversity, priceFilter])
 
   const handleOpen = (course) => {
-    if (userId) recordInteraction({ userId, courseId: course.id, action: "click" }).catch(() => {})
+    if (userId) recordInteraction(userId, course.id, "click").catch(() => {})
     window.open(course.url, "_blank", "noopener,noreferrer")
   }
 
   const handleBookmark = async (courseId) => {
     const bookmarked = await toggle(courseId)
-
-    if (bookmarked) {
-      recordInteraction({ userId, courseId, action: "bookmark" }).catch(() => {})
+    if (bookmarked && userId) {
+      recordInteraction(userId, courseId, "bookmark").catch(() => {})
     }
   }
 
-  const handleSearch = (e) => { e.preventDefault(); setSearch(searchInput) }
+  const handleSearch = (e) => {
+    e.preventDefault()
+    setSearch(searchInput)
+    if (userId && searchInput.trim()) {
+      recordInteraction(userId, null, "search").catch(() => {})
+    }
+  }
 
   const resetFilters = () => {
     setSearch(""); setSearchInput("")

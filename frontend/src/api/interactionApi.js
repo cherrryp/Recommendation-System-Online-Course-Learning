@@ -13,7 +13,7 @@ export const recordCourseInteraction = async (userId, courseId, action = "view")
     // และ Token จะถูกแนบไปใน Header ให้เองจาก Interceptor
     const response = await api.post("/interactions", {
       userId,
-      courseId,
+      courseId: courseId || undefined,
       action,
     });
 
