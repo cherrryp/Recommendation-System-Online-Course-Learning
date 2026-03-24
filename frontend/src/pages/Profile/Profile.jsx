@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar.jsx"
 import { getBookmarks } from "../../api/BookmarkApi"
 import { useBookmark } from "../../context/BookmarkContext.jsx"
 import "./Profile.css"
-import {UNI_HOVER_IMAGES, encodeImg} from "../../components/content_2.jsx"
+import { UNI_HOVER_IMAGES, encodeImg } from "../../components/CourseCard"
 
 import { UNI_NAMES } from "../../constants/universities"
 
