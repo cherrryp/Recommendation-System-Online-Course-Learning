@@ -96,6 +96,7 @@ model UserInteraction {
   userId    String
   courseId  String?
   action    InteractionType
+  keyword   String?
   createdAt DateTime        @default(now())
   course    Course?         @relation(fields: [courseId], references: [id], onDelete: Cascade)
   user      User            @relation(fields: [userId], references: [id], onDelete: Cascade)

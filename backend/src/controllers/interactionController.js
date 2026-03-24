@@ -13,9 +13,17 @@ export const recordInteraction = async (req, res) => {
 
     // search ไม่ต้องมี courseId
     if (action === "search") {
+      const { keyword } = req.body
+
       await prisma.userInteraction.create({
-        data: { userId, action },
-      }).catch(() => {}) // ถ้า courseId null อาจ fail ตาม schema → catch ไว้
+        data: { userId, action, keyword: keyword ?? null }
+      })
+
+      // upsert UserInterest เพื่อ recommend + popular
+      if (keyword) {
+        await updateUserInterest(userId, null, "search", keyword)
+      }
+
       return res.json({ success: true, isSpam: false })
     }
 

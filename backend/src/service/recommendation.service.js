@@ -83,19 +83,23 @@ export const getPersonalizedCourses = async (userId, limit = 12) => {
 
 // อัปเดต UserInterest เมื่อ user interact กับคอร์ส
 // weight: bookmark = 3, click = 1, search = 1
-export const updateUserInterest = async (userId, courseId, action) => {
+export const updateUserInterest = async (userId, courseId, action, searchKeyword) => {
   const WEIGHT = { bookmark: 3, click: 1, search: 1 }
   const score = WEIGHT[action] || 1
 
-  // ดึง keyword ของคอร์สนั้น
-  const keywords = await prisma.courseKeyword.findMany({
-    where: { courseId },
-    select: { keyword: true },
-  })
+  let keywords = []
+
+  if (searchKeyword) {
+    keywords = [{ keyword: searchKeyword }]
+  } else {
+    keywords = await prisma.courseKeyword.findMany({
+      where: { courseId },
+      select: { keyword: true },
+    })
+  }
 
   if (!keywords.length) return
 
-  // upsert UserInterest ทีละ keyword
   await Promise.all(
     keywords.map((k) =>
       prisma.userInterest.upsert({

@@ -181,7 +181,7 @@ function Course() {
     e.preventDefault()
     setSearch(searchInput)
     if (userId && searchInput.trim()) {
-      recordInteraction(userId, null, "search").catch(() => {})
+      recordInteraction(userId, null, "search", searchInput.trim()).catch(() => {})
     }
   }
 

@@ -7,7 +7,9 @@ import api from "./api";
  * @param {string} action - ประเภทการกระทำ เช่น "view", "click", "enroll" (ค่าเริ่มต้นคือ "view")
  * @returns {Promise<Object>} - ข้อมูล Response จาก Backend
  */
-export const recordCourseInteraction = async (userId, courseId, action = "view") => {
+
+export const recordCourseInteraction = async (userId, courseId, action = "view", keyword) => {
+  
   try {
     // ใช้ api.post ได้เลย BaseURL จะถูกเติมให้เป็น /api/interactions อัตโนมัติ
     // และ Token จะถูกแนบไปใน Header ให้เองจาก Interceptor
@@ -15,6 +17,7 @@ export const recordCourseInteraction = async (userId, courseId, action = "view")
       userId,
       courseId: courseId || undefined,
       action,
+      keyword: keyword || undefined,
     });
 
     // คืนค่า data ที่ได้จาก backend (ในนั้นจะมี success, message, data)
