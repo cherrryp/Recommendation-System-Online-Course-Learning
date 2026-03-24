@@ -1,0 +1,33 @@
+.course-section {
+  padding: 60px 20px;
+}
+
+.course-section > * {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.view-more {
+  font-size: 0.9rem;
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.section-header h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.view-more {
+  background: none;
+  border: none;
+  color: #6c63ff;
+  cursor: pointer;
+}

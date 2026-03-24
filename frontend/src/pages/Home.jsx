@@ -18,7 +18,7 @@ function Home() {
     if (userId) {
 
       // login → recommendation
-      getRecommendations(userId, 4)
+      getRecommendations(userId, 8)
         .then((r) => setCourses(r.data.data || []))
         // .then(res => { 
 
@@ -48,7 +48,7 @@ function Home() {
 
   const loadLatest = () => {
 
-    getCourses({ page: 1, limit: 4 })
+    getCourses({ page: 1, limit: 8 })
       .then((r) => setCourses(r.data.courses || []))
       //.then(res => setCourses(res.data.courses || []))
       .catch(() => setCourses([]))
