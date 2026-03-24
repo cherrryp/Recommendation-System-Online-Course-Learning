@@ -1,7 +1,7 @@
 import prisma from "../lib/prisma.js"
 import { trackCourseInteraction } from "../service/interaction.service.js"
 import { updateUserInterest } from "../service/recommendation.service.js"
-
+import { translateToEng } from "../service/translate.service.js"
 
 export const recordInteraction = async (req, res) => {
   try {
@@ -16,12 +16,12 @@ export const recordInteraction = async (req, res) => {
       const { keyword } = req.body
 
       await prisma.userInteraction.create({
-        data: { userId, action, keyword: keyword ?? null }
+        data: { userId, action, keyword: keyword ?? null } // log ภาษาไทยเก็บไว้
       })
 
-      // upsert UserInterest เพื่อ recommend + popular
       if (keyword) {
-        await updateUserInterest(userId, null, "search", keyword)
+        const engKeyword = await translateToEng(keyword) // แปลก่อน upsert
+        await updateUserInterest(userId, null, "search", engKeyword)
       }
 
       return res.json({ success: true, isSpam: false })
