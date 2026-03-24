@@ -94,10 +94,10 @@ model Bookmark {
 model UserInteraction {
   id        String          @id @default(uuid())
   userId    String
-  courseId  String
+  courseId  String?
   action    InteractionType
   createdAt DateTime        @default(now())
-  course    Course          @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  course    Course?         @relation(fields: [courseId], references: [id], onDelete: Cascade)
   user      User            @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
