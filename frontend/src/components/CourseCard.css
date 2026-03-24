@@ -1,0 +1,139 @@
+.badge {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.badge-open {
+  background-color: #eef7f0;
+  color: #2e7d32;
+  font-size: 12px;
+  padding: 3px 8px;
+}
+
+.badge-closed {
+  background-color: #fbecec;
+  color: #c62828;
+  font-size: 12px;
+  padding: 3px 8px;
+}
+
+.card-badges,
+.card-uni {
+  height: 28px; /* fix ทีละแถว */
+  display: flex;
+  align-items: center;
+}
+
+.card-uni {
+  margin-top: 6px;
+}
+
+.card-badges .badge {
+  max-width: 100%;
+}
+
+.card-badges .badge-category {
+  max-width: 100%;
+}
+
+.card-badges .badge-uni {
+  max-width: 100%;
+}
+
+.card-badges::after {
+  content: "";
+  flex-basis: 100%; /* บังคับขึ้นบรรทัดใหม่ */
+}
+
+.card-footer,
+.scroll-card-footer {
+  display: flex;
+  justify-content: space-between; /* สำคัญ */
+  align-items: center;
+  margin-top: auto; /* ปรับ footer ให้เท่ากัน */
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-actions > * {
+  flex-shrink: 0; 
+}
+
+.btn-bookmark {
+  background: #f3f3f3;
+  border-radius: 6px;
+  transition: 0.2s;
+  width: 32px;
+  height: 32px;
+  min-width: 32px; /* กัน flex บีบ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-bookmark:hover {
+  background: #e0e0ff;
+}
+
+.btn-bookmark svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.card-all,
+.scroll-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* สำคัญ */
+}
+
+.content-card-all,
+.scroll-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  
+  grid-auto-rows: 1fr;
+}
+
+.course-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  height: 56px; /* 🔥 ล็อค 2 แถว */
+}
+
+.meta-row {
+  height: 25px; /* 🔥 ความสูงต่อแถว */
+  display: flex;
+  align-items: center;
+}
+
+/* กันข้อความยาว */
+.meta-row .badge {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

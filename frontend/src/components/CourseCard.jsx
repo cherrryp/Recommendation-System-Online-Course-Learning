@@ -1,4 +1,5 @@
 import { UNI_NAMES } from "../constants/universities"
+import "./CourseCard.css"
 
 export const UNI_HOVER_IMAGES = {
   Chulalongkorn: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248855/563000010687901_iw03ss.jpg",
@@ -67,29 +68,62 @@ function CourseCard({ course, bookmarked, onBookmark, onOpen, variant = "grid" }
       />
       <div className={bodyClass}>
         <h4 className={titleClass}>{course.title}</h4>
-        <div className={badgesClass}>
-          <span className="badge badge-category">{course.category}</span>
-          <span className="badge badge-uni">{UNI_NAMES[course.university] || course.university || "-"}</span>
+
+        {/* แถวบน */}
+        <div className="card-meta">
+            <div className="meta-row">
+                <span className="badge badge-category">
+                {course.category}
+                </span>
+            </div>
+
+            <div className="meta-row">
+                <span className="badge badge-uni">
+                {UNI_NAMES[course.university] || course.university || "-"}
+                </span>
+            </div>
         </div>
+
+        {/* แถวล่าง */}
         <div className={footerClass}>
-          <span className={`price-badge ${course.price === 0 ? "free" : "paid"}`}>
-            {course.price === 0 ? "ฟรี" : `${course.price} ฿`}
-          </span>
-          <button
-            className={`btn-bookmark ${bookmarked ? "bookmarked" : ""}`}
-            onClick={(e) => { e.stopPropagation(); onBookmark(course.id) }}
-            title={bookmarked ? "ยกเลิก bookmark" : "บันทึก"}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-              fill={bookmarked ? "#6c63ff" : "none"}
-              stroke={bookmarked ? "#6c63ff" : "#aaa"}
-              strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-            >
-              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
-            </svg>
-          </button>
+            
+            {/* ซ้าย */}
+            <span className={`badge ${course.status === "open" ? "badge-open" : "badge-closed"}`}>
+                {course.status === "open" ? "กำลังเปิด" : "ปิดอยู่"}
+            </span>
+
+            {/* ขวา */}
+            <div className="card-actions">
+                <span className={`price-badge ${course.price === 0 ? "free" : "paid"}`}>
+                {course.price === 0 ? "ฟรี" : `${course.price} ฿`}
+                </span>
+
+                <button
+                    className={`btn-bookmark ${bookmarked ? "bookmarked" : ""}`}
+                    onClick={(e) => {
+                        e.stopPropagation()
+                        onBookmark(course.id)
+                    }}
+                    >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill={bookmarked ? "#6c63ff" : "none"}
+                        stroke={bookmarked ? "#6c63ff" : "#aaa"}
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                    >
+                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                    </svg>
+                </button>
+            </div>
+
         </div>
       </div>
+      
     </div>
   )
 }
