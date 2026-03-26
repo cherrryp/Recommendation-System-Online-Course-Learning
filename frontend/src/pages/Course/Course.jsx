@@ -80,6 +80,7 @@ function Course() {
     setSearch(""); setSearchInput("")
     setSelectedCategory(""); setSelectedUniversity(""); setPriceFilter("")
   }
+  
 
   return (
     <div className="course">

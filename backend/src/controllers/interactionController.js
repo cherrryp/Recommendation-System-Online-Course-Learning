@@ -20,8 +20,13 @@ export const recordInteraction = async (req, res) => {
       })
 
       if (keyword) {
-        const engKeyword = await translateToEng(keyword) // แปลก่อน upsert
-        await updateUserInterest(userId, null, "search", engKeyword)
+        if (keyword) {
+          console.log("1. keyword รับมา:", keyword)        // ← เพิ่ม
+          const engKeyword = await translateToEng(keyword)
+          console.log("2. แปลแล้ว:", engKeyword)           // ← เพิ่ม
+          await updateUserInterest(userId, null, "search", engKeyword)
+          console.log("3. upsert เสร็จ")                   // ← เพิ่ม
+}
       }
 
       return res.json({ success: true, isSpam: false })
