@@ -1,36 +1,32 @@
 import { useEffect, useState } from "react"
 import { useParams, useNavigate } from "react-router-dom"
-import { getCourseById, updateCourse, getCategories } from "../../api/adminApi"
+import { getCourseById, updateCourse } from "../../api/adminApi"
 
 function CourseDetail() {
   const { id } = useParams()
   const navigate = useNavigate()
   const [course, setCourse] = useState(null)
-  const [categories, setCategories] = useState([])
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState(null)
   const [success, setSuccess] = useState(false)
 
   const [form, setForm] = useState({
-    courseName: "",
-    level: "",
-    price: "",
-    categoryId: "",
-    courseDescription: ""
+    title: "", description: "", price: 0,
+    category: "", status: "open",
   })
 
   useEffect(() => {
-    Promise.all([getCourseById(id), getCategories()])
-      .then(([courseRes, catRes]) => {
-        setCourse(courseRes.data)
-        setCategories(catRes.data)
+    getCourseById(id)
+      .then((res) => {
+        const c = res.data.data  
+        setCourse(c)
         setForm({
-          courseName: courseRes.data.courseName ?? "",
-          level: courseRes.data.level ?? "",
-          price: courseRes.data.price ?? "",
-          categoryId: courseRes.data.categoryId ?? "",
-          courseDescription: courseRes.data.courseDescription ?? ""
+          title: c.title ?? "",
+          description: c.description ?? "",
+          price: c.price ?? 0,
+          category: c.category ?? "",
+          status: c.status ?? "open",
         })
       })
       .catch(() => setError("Failed to load"))
@@ -60,53 +56,39 @@ function CourseDetail() {
 
   return (
     <div style={{ padding: "24px" }}>
-
-      {/* Header */}
       <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "24px" }}>
         <button onClick={() => navigate(-1)} style={backBtn}>← Back</button>
-        <h1 style={{ margin: 0 }}>Course Detail</h1>
+        <h1 style={{ margin: 0 }}>แก้ไขคอร์ส</h1>
       </div>
 
-      {/* Info */}
       <div style={card}>
         <h2 style={sectionTitle}>ข้อมูลคอร์ส</h2>
-
         <div style={grid}>
           <div>
-            <label style={labelStyle}>Course Name</label>
-            <input name="courseName" value={form.courseName} onChange={handleChange} style={input} />
+            <label style={labelStyle}>ชื่อคอร์ส</label>
+            <input name="title" value={form.title} onChange={handleChange} style={input} />
           </div>
           <div>
-            <label style={labelStyle}>Level</label>
-            <select name="level" value={form.level} onChange={handleChange} style={input}>
-              <option value="beginner">Beginner</option>
-              <option value="intermediate">Intermediate</option>
-              <option value="advanced">Advanced</option>
-            </select>
+            <label style={labelStyle}>หมวดหมู่</label>
+            <input name="category" value={form.category} onChange={handleChange} style={input} />
           </div>
           <div>
-            <label style={labelStyle}>Price (฿)</label>
-            <input name="price" type="number" value={form.price} onChange={handleChange} style={input} placeholder="0 = Free" />
+            <label style={labelStyle}>ราคา (฿)</label>
+            <input name="price" type="number" value={form.price} onChange={handleChange} style={input} />
           </div>
           <div>
-            <label style={labelStyle}>Category</label>
-            <select name="categoryId" value={form.categoryId} onChange={handleChange} style={input}>
-              {categories.map(cat => (
-                <option key={cat.id} value={cat.id}>{cat.name}</option>
-              ))}
+            <label style={labelStyle}>สถานะ</label>
+            <select name="status" value={form.status} onChange={handleChange} style={input}>
+              <option value="open">เปิด</option>
+              <option value="closed">ปิด</option>
             </select>
           </div>
         </div>
 
         <div style={{ marginTop: "16px" }}>
           <label style={labelStyle}>Description</label>
-          <textarea
-            name="courseDescription"
-            value={form.courseDescription}
-            onChange={handleChange}
-            rows={5}
-            style={{ ...input, width: "100%", resize: "vertical", boxSizing: "border-box" }}
-          />
+          <textarea name="description" value={form.description} onChange={handleChange}
+            rows={5} style={{ ...input, width: "100%", resize: "vertical", boxSizing: "border-box" }} />
         </div>
 
         <div style={{ display: "flex", alignItems: "center", gap: "12px", marginTop: "20px" }}>
@@ -117,17 +99,15 @@ function CourseDetail() {
         </div>
       </div>
 
-      {/* Read-only info */}
       <div style={{ ...card, marginTop: "20px" }}>
         <h2 style={sectionTitle}>ข้อมูลเพิ่มเติม</h2>
         <div style={grid}>
-          <InfoRow label="Organization" value={course.organization ?? "-"} />
           <InfoRow label="University" value={course.university ?? "-"} />
-          <InfoRow label="Target Group" value={course.targetGroup ?? "-"} />
-          <InfoRow label="Created At" value={new Date(course.createdAt).toLocaleDateString()} />
+          <InfoRow label="Instructor" value={course.instructor ?? "-"} />
+          <InfoRow label="Keywords" value={course.keywords?.map(k => k.keyword).join(", ") || "-"} />
+          <InfoRow label="Created At" value={new Date(course.createdAt).toLocaleDateString("th-TH")} />
         </div>
       </div>
-
     </div>
   )
 }

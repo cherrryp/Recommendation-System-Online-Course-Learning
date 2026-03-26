@@ -11,7 +11,7 @@ function UserDetail() {
 
   useEffect(() => {
     getUserById(id)
-      .then(res => setUser(res.data))
+      .then(res => setUser(res.data.data))
       .catch(() => setError("Failed to load user"))
       .finally(() => setLoading(false))
   }, [id])
@@ -47,8 +47,8 @@ function UserDetail() {
               {user.role}
             </span>
           } />
-          <InfoRow label="Education" value={user.educationLevel ?? "-"} />
-          <InfoRow label="วันเกิด" value={user.birthDate ? new Date(user.birthDate).toLocaleDateString() : "-"} />
+          {/* <InfoRow label="Education" value={user.educationLevel ?? "-"} /> */}
+          {/* <InfoRow label="วันเกิด" value={user.birthDate ? new Date(user.birthDate).toLocaleDateString() : "-"} /> */}
           <InfoRow label="สมัครเมื่อ" value={new Date(user.createdAt).toLocaleDateString()} />
         </div>
       </div>
@@ -61,6 +61,33 @@ function UserDetail() {
           : <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
               {user.interests.map(i => (
                 <span key={i.keyword} style={tag}>{i.keyword}</span>
+              ))}
+            </div>
+        }
+      </div>
+
+      {/* Stats */}
+      <div style={{ ...card, marginTop: "20px" }}>
+        <h2 style={sectionTitle}>สถิติการใช้งาน</h2>
+        <div style={grid}>
+          <InfoRow label="Interactions" value={user._count?.interactions ?? 0} />
+          <InfoRow label="Bookmarks" value={user._count?.bookmarks ?? 0} />
+        </div>
+      </div>
+
+      {/* Interests พร้อม score */}
+      <div style={{ ...card, marginTop: "20px" }}>
+        <h2 style={sectionTitle}>ความสนใจ</h2>
+        {user.interests.length === 0
+          ? <p style={empty}>ไม่มีข้อมูลความสนใจ</p>
+          : <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+              {user.interests.map(i => (
+                <span key={i.keyword} style={tag}>
+                  {i.keyword}
+                  <span style={{ marginLeft: "6px", opacity: 0.6, fontSize: "11px" }}>
+                    {i.score}
+                  </span>
+                </span>
               ))}
             </div>
         }

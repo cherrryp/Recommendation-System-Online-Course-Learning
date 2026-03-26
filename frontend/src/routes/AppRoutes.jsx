@@ -14,6 +14,9 @@ import AdminRoute from "../components/AdminRoute"
 import Dashboard from "../pages/admin/Dashboard"
 import UserManagement from "../pages/admin/UserManagement"
 import CourseManagement from "../pages/admin/CourseManagement"
+import CourseDetail from "../pages/admin/CourseDetail"
+
+
 
 
 function AppRoutes() {
@@ -48,6 +51,7 @@ function AppRoutes() {
           <Route path="users" element={<UserManagement />} />
           <Route path="courses" element={<CourseManagement />} />
           <Route path="users/:id" element={<UserDetail />} />
+          <Route path="courses/:id" element={<CourseDetail />} />
 
         </Route>
 
