@@ -6,20 +6,25 @@ const BookmarkContext = createContext()
 export const BookmarkProvider = ({ children }) => {
   const [bookmarks, setBookmarks] = useState(new Set())
 
-  const user = JSON.parse(localStorage.getItem("user") || "null")
-  const userId = user?.id
+  // อ่าน userId ตอนใช้งานจริง ไม่ใช่ตอน mount
+  const getUserId = () => {
+    const user = JSON.parse(localStorage.getItem("user") || "null")
+    return user?.id
+  }
 
   useEffect(() => {
+    const userId = getUserId()
     if (!userId) return
     getBookmarks(userId).then((r) => {
       setBookmarks(new Set((r.data.data || []).map((c) => c.id)))
     })
-  }, [userId])
+  }, [])  
 
   const toggle = async (courseId) => {
-    const isSaved = bookmarks.has(courseId)
+    const userId = getUserId()  // ← อ่านใหม่ทุกครั้งที่กด
+    if (!userId) return false
 
-    // confirm ก่อนลบ
+    const isSaved = bookmarks.has(courseId)
     if (isSaved) {
       const ok = window.confirm("ต้องการยกเลิก bookmark ใช่ไหม?")
       if (!ok) return false
@@ -27,13 +32,11 @@ export const BookmarkProvider = ({ children }) => {
 
     const res = await toggleBookmark(userId, courseId)
     const { bookmarked } = res.data
-
     setBookmarks((prev) => {
       const next = new Set(prev)
       bookmarked ? next.add(courseId) : next.delete(courseId)
       return next
     })
-
     return bookmarked
   }
 

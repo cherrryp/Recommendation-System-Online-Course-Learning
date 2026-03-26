@@ -11,7 +11,7 @@ export const toggle = async (req, res) => {
 
     res.json({
       success: true,
-      bookmarked: result.bookmarked, // ✅ ชัดขึ้น
+      bookmarked: result.bookmarked, // ชัดขึ้น
     })
   } catch (error) {
     console.error(error)
