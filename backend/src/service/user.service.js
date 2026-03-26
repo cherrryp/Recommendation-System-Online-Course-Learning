@@ -52,19 +52,26 @@ export const getUserInterests = async (userId) => {
 
 // ตั้ง interest ใหม่ทั้งหมด (user เลือกเองจากหน้า profile)
 export const setUserInterests = async (userId, keywords) => {
-  // ลบ interest เดิมทั้งหมด
-  await prisma.userInterest.deleteMany({ where: { userId } })
+  const normalized = keywords.map((k) => k.toLowerCase().trim())
 
-  // สร้างใหม่ตาม keyword ที่เลือก
-  if (!keywords.length) return []
-
-  await prisma.userInterest.createMany({
-    data: keywords.map((keyword) => ({
+  // ลบเฉพาะ keyword ที่ user เอาออก
+  await prisma.userInterest.deleteMany({
+    where: {
       userId,
-      keyword: keyword.toLowerCase().trim(),
-      score: 1,
-    })),
+      keyword: { notIn: normalized },
+    },
   })
+
+  // upsert เฉพาะตัวใหม่ที่เพิ่งเลือก (ไม่แตะ score เดิม)
+  await Promise.all(
+    normalized.map((keyword) =>
+      prisma.userInterest.upsert({
+        where: { userId_keyword: { userId, keyword } },
+        update: {},          // ไม่แตะ score เดิมเลย
+        create: { userId, keyword, score: 1 },  // ถ้าใหม่จริงค่อย set 1
+      })
+    )
+  )
 
   return await getUserInterests(userId)
 }

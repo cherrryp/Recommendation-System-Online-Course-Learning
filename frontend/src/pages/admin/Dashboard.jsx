@@ -175,7 +175,7 @@ function Dashboard() {
               <div key={i} className="row-item">
                 <span className="rank">#{i + 1}</span>
                 <span className="course-name">{c.title}</span>
-                <strong>{c.count} 🔖</strong>
+                <strong>{c.count}</strong>
               </div>
             ))
           }
