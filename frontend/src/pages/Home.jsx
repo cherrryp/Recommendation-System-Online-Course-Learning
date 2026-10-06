@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar.jsx"
 import Rating from "../components/rating.jsx"
 import Footer from "../components/Footer.jsx"
 import Content_1 from "../components/Content_1.jsx"
-import Content_2 from "../components/content_2.jsx"
+import Content_2 from "../components/Content_2.jsx"
 import { getRecommendations } from "../api/RecommendationApi"
 import { getCourses, getPopularCourses } from "../api/courseApi"
 
