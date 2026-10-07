@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import logo from "../../assets/Logo.png"
 import "./Register.css"
+import { API_BASE_URL } from "../../config"
 
 function Register() {
   const [username, setUsername] = useState("")
@@ -13,7 +14,7 @@ function Register() {
 
   const handleRegister = async (e) => {
     e.preventDefault()
-    const res = await fetch("http://localhost:3000/api/auth/register", {
+    const res = await fetch(`${API_BASE_URL}/auth/register`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, email, password, fname, lname }),

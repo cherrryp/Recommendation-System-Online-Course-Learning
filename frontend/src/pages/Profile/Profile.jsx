@@ -7,6 +7,7 @@ import "./Profile.css"
 import { UNI_HOVER_IMAGES, encodeImg } from "../../components/CourseCard"
 
 import { UNI_NAMES } from "../../constants/universities"
+import { API_BASE_URL } from "../../config"
 
 // keyword ที่ให้ user เลือกได้
 const KEYWORD_OPTIONS = [
@@ -41,7 +42,7 @@ function Profile() {
     const fetchAll = async () => {
       try {
         // ดึง profile
-        const res = await fetch(`http://localhost:3000/api/users/profile/${userId}`, {
+        const res = await fetch(`${API_BASE_URL}/users/profile/${userId}`, {
           headers: { Authorization: `Bearer ${token}` },
         })
         const data = await res.json()
@@ -75,7 +76,7 @@ function Profile() {
     setSaving(true)
     setSaveMsg("")
     try {
-      const res = await fetch(`http://localhost:3000/api/users/interests/${userId}`, {
+      const res = await fetch(`${API_BASE_URL}/users/interests/${userId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
