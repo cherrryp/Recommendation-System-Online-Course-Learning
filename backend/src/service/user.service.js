@@ -1,5 +1,6 @@
 import prisma from "../lib/prisma.js"
 import bcrypt from "bcrypt"
+import HttpError from "../utils/HttpError.js"
 
 // ดึง profile ของ user
 export const getUserProfile = async (userId) => {
@@ -31,8 +32,10 @@ export const updateUserProfile = async (userId, { fname, lname, username }) => {
 // แก้รหัสผ่าน
 export const updatePassword = async (userId, { oldPassword, newPassword }) => {
   const user = await prisma.user.findUnique({ where: { id: userId } })
+  if (!user) throw new HttpError(404, "User not found")
+
   const valid = await bcrypt.compare(oldPassword, user.password)
-  if (!valid) throw new Error("รหัสผ่านเดิมไม่ถูกต้อง")
+  if (!valid) throw new HttpError(400, "รหัสผ่านเดิมไม่ถูกต้อง")
 
   const hashed = await bcrypt.hash(newPassword, 10)
   await prisma.user.update({

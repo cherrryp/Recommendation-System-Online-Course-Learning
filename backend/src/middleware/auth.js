@@ -1,79 +1,46 @@
 import jwt from "jsonwebtoken"
 import prisma from "../lib/prisma.js"
+import HttpError from "../utils/HttpError.js"
+import asyncHandler from "../utils/asyncHandler.js"
 
-// 🔐 verify + attach user
-export const authMiddleware = async (req, res, next) => {
-  try {
-    const authHeader = req.headers.authorization
-
-    if (!authHeader || !authHeader.startsWith("Bearer ")) {
-      return res.status(401).json({
-        message: "Unauthorized: No token provided"
-      })
-    }
-
-    const token = authHeader.split(" ")[1]
-
-    const decoded = jwt.verify(token, process.env.JWT_SECRET)
-
-    // ✅ เช็ค user ใน DB
-    const user = await prisma.user.findUnique({
-      where: { id: decoded.id }
-    })
-
-    if (!user) {
-      return res.status(401).json({
-        message: "Unauthorized: User not found"
-      })
-    }
-
-    // ✅ แนบ user
-    req.user = {
-      sub: user.id,
-      role: user.role
-    }
-
-    next()
-  } catch (error) {
-    return res.status(401).json({
-      message: "Unauthorized: Invalid token"
-    })
-  }
+const readToken = (req) => {
+  const header = req.headers.authorization
+  return header?.startsWith("Bearer ") ? header.split(" ")[1] : null
 }
 
-// 🔐 optional: แยก verify เฉย ๆ (ไม่ query DB)
-export const verifyToken = (req, res, next) => {
+// Verifies the JWT, then loads the user so role changes and deleted accounts
+// take effect immediately. Sets req.user = { id, role }.
+export const verifyToken = asyncHandler(async (req, res, next) => {
+  const token = readToken(req)
+  if (!token) throw new HttpError(401, "Unauthorized: No token provided")
+
+  let decoded
   try {
-    const authHeader = req.headers.authorization
-
-    if (!authHeader || !authHeader.startsWith("Bearer ")) {
-      return res.status(401).json({
-        message: "No token"
-      })
-    }
-
-    const token = authHeader.split(" ")[1]
-
-    const decoded = jwt.verify(token, process.env.JWT_SECRET)
-
-    req.user = decoded
-
-    next()
-  } catch (error) {
-    return res.status(401).json({
-      message: "Invalid token"
-    })
+    decoded = jwt.verify(token, process.env.JWT_SECRET)
+  } catch {
+    throw new HttpError(401, "Unauthorized: Invalid token")
   }
-}
 
-// check admin role
+  const user = await prisma.user.findUnique({
+    where: { id: decoded.id },
+    select: { id: true, role: true },
+  })
+  if (!user) throw new HttpError(401, "Unauthorized: User not found")
+
+  req.user = user
+  next()
+})
+
 export const verifyAdmin = (req, res, next) => {
+  if (req.user.role !== "admin") return next(new HttpError(403, "Admin only"))
+  next()
+}
 
-  if (req.user.role !== "admin") {
-    return res.status(403).json({
-      message: "Admin only"
-    })
+// For routes with a :userId param — only that user (or an admin) may access it
+export const requireSelfOrAdmin = (req, res, next) => {
+  const isSelf = req.params.userId === req.user.id
+  if (!isSelf && req.user.role !== "admin") {
+    return next(new HttpError(403, "Forbidden"))
   }
-
   next()
 }

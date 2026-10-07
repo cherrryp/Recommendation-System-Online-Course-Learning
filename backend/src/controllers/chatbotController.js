@@ -1,20 +1,16 @@
 import { chat, checkOllamaHealth } from "../service/chatbot.service.js"
+import asyncHandler from "../utils/asyncHandler.js"
+import HttpError from "../utils/HttpError.js"
 
 // POST /api/chatbot
-// body: { userId, message, history: [{role, content}] }
-export const sendMessage = async (req, res) => {
-  try {
-    const { userId, message, page = 1 } = req.body
-    if (!userId || !message) {
-      return res.status(400).json({ success: false, message: "userId และ message required" })
-    }
-    const result = await chat(userId, message, page)
-    res.json({ success: true, ...result })
-  } catch (error) {
-    console.error(error)
-    res.status(500).json({ success: false, message: error.message || "Chatbot error" })
-  }
-}
+// body: { message, page }
+export const sendMessage = asyncHandler(async (req, res) => {
+  const { message, page = 1 } = req.body
+  if (!message) throw new HttpError(400, "message required")
+
+  const result = await chat(req.user.id, message, page)
+  res.json({ success: true, ...result })
+})
 
 // GET /api/chatbot/health
 // เช็คว่า Ollama รันอยู่ไหม

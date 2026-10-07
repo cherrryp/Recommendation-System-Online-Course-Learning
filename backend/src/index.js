@@ -34,14 +34,16 @@ app.get("/", (req, res) => res.send("API running"))
 
 // 404 handler
 app.use((req, res) => {
-  res.status(404).json({ error: "Route not found" })
+  res.status(404).json({ success: false, message: "Route not found" })
 })
 
 // Global error handler
 app.use((err, req, res, next) => {
-  console.error(err.stack)
-  res.status(err.status || 500).json({
-    error: err.message || "Internal Server Error"
+  const status = err.status || 500
+  if (status >= 500) console.error(err.stack)
+  res.status(status).json({
+    success: false,
+    message: status >= 500 ? "Internal Server Error" : err.message,
   })
 })
 

@@ -13,13 +13,15 @@ import {
 
 const router = express.Router()
 
-router.get("/stats", verifyToken, verifyAdmin, getDashboardStats)
-router.get("/users", verifyToken, verifyAdmin, getAllUsers)
-router.get("/users/:id", verifyToken, verifyAdmin, getUserById)
-router.delete("/users/:id", verifyToken, verifyAdmin, deleteUser)
-router.get("/courses", verifyToken, verifyAdmin, getAllCourses)
-router.get("/courses/:id", verifyToken, verifyAdmin, getCourseById)
-router.patch("/courses/:id", verifyToken, verifyAdmin, updateCourse)
-router.delete("/courses/:id", verifyToken, verifyAdmin, deleteCourse)
+router.use(verifyToken, verifyAdmin)
+
+router.get("/stats", getDashboardStats)
+router.get("/users", getAllUsers)
+router.get("/users/:id", getUserById)
+router.delete("/users/:id", deleteUser)
+router.get("/courses", getAllCourses)
+router.get("/courses/:id", getCourseById)
+router.patch("/courses/:id", updateCourse)
+router.delete("/courses/:id", deleteCourse)
 
 export default router
