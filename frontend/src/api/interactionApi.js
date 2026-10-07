@@ -11,7 +11,7 @@ import api from "./api";
 export const recordCourseInteraction = async (userId, courseId, action = "view", keyword) => {
   
   try {
-    // ใช้ api.post ได้เลย BaseURL จะถูกเติมให้เป็น /api/interactions อัตโนมัติ
+    // ใช้ api.post, BaseURL จะถูกเติมให้เป็น /api/interactions อัตโนมัติ
     // และ Token จะถูกแนบไปใน Header ให้เองจาก Interceptor
     const response = await api.post("/interactions", {
       userId,
