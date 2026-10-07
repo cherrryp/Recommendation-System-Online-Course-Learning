@@ -24,7 +24,7 @@ export const recordCourseInteraction = async (userId, courseId, action = "view",
     return response.data; 
 
   } catch (error) {
-    // จัดการ Error ให้อ่านง่ายขึ้นเวลา Debug
+    // จัดการ Error ให้อ่านง่าย เวลา Debug
     console.error(
       "API Error (recordCourseInteraction):", 
       error.response?.data || error.message
