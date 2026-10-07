@@ -1,229 +1,96 @@
-import prisma from "../lib/prisma.js"
+import { classifyIntent } from "./chatbot/intent.js"
+import { generate, checkOllamaHealth } from "./chatbot/ollama.js"
+import { expandTopic, searchCourses, popularFallback } from "./chatbot/courseSearch.js"
+import { updateUserInterest } from "./recommendation.service.js"
 
-const OLLAMA_URL = process.env.OLLAMA_URL || "http://localhost:11434"
-const MODEL = "scb10x/llama3.2-typhoon2-3b-instruct"
+export { checkOllamaHealth }
 
-const CATEGORIES = [
-  "Digital & Technology", "Health & Medicine", "Business & Management",
-  "Arts & Design", "Agriculture", "Science", "Education",
-  "Law", "Language & Communication", "Engineering", "Social Sciences",
-]
+const GREETING_REPLY = "สวัสดีครับ 😊 สนใจเรียนด้านไหน บอกได้เลย เดี๋ยวช่วยแนะนำคอร์สให้ครับ"
+const UNAVAILABLE_REPLY = "ขออภัยครับ ตอบไม่ได้ตอนนี้ 🙏 ลองบอกหัวข้อที่อยากเรียน เดี๋ยวช่วยหาคอร์สให้ครับ"
+const SAFE_REPLY = "สามารถแนะนำคอร์สจากมหาวิทยาลัยต่าง ๆ ได้ครับ ลองบอกหัวข้อที่สนใจ เช่น python, การตลาด, สุขภาพ"
 
-const KEYWORD_CATEGORY_MAP = {
-  "โปรแกรม": "Digital & Technology",
-  "code": "Digital & Technology", 
-  "python": "Digital & Technology",
-  "javascript": "Digital & Technology",
-  "เว็บ": "Digital & Technology",
-  "พยาบาล": "Health & Medicine",
-  "หมอ": "Health & Medicine",
-  "ธุรกิจ": "Business & Management",
-  "การตลาด": "Business & Management",
-  "กฎหมาย": "Law",
-  "ภาษา": "Language & Communication",
-  "อังกฤษ": "Language & Communication",
-}
+// chatbot เป็นแค่ตัวกลางแนะนำคอร์ส ไม่ใช่เจ้าของคอร์ส/แพลตฟอร์ม
+const CLAIMS_OWNERSHIP = /(ของเรา|ระบบของเรา|แพลตฟอร์มของเรา|SCB\s?10X)/i
 
-const keywordClassify = (message) => {
-  const lower = message.toLowerCase()
-  for (const [kw, cat] of Object.entries(KEYWORD_CATEGORY_MAP)) {
-    if (lower.includes(kw)) return cat
-  }
-  return null
-}
-
-// ─── 1. classify intent ────────────────────────────────────────────────────
-
-const classifyIntent = async (message) => {
-  // ลอง keyword ก่อน เร็วกว่าและแม่นกว่า
-  const quickCategory = keywordClassify(message)
-
-  const prompt = `วิเคราะห์ข้อความแล้วตอบเป็น JSON เท่านั้น ห้ามพูดอื่นเด็ดขาด
-  หมวดหมู่: ${CATEGORIES.join(", ")}
-
-  wantCourse = true ถ้าข้อความมีคำว่า แนะนำ/อยากเรียน/หาคอร์ส/ขอคอร์ส/มีคอร์ส/คอร์สไหนดี
-
-  ตัวอย่าง:
-  "อยากเรียน python" → {"wantCourse":true,"category":"Digital & Technology","price":"","reply":""}
-  "แนะนำคอร์สฟรีหน่อย" → {"wantCourse":true,"category":"","price":"free","reply":""}
-  "python คืออะไร" → {"wantCourse":false,"category":"","price":"","reply":""}
-  "สวัสดี" → {"wantCourse":false,"category":"","price":"","reply":""}
-
-  ข้อความ: "${message}"
-  JSON:`
-
-  try {
-    const res = await fetch(`${OLLAMA_URL}/api/generate`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        model: MODEL,
-        prompt,
-        stream: false,
-        options: { temperature: 0.1, num_predict: 80 },
-      }),
-    })
-    if (!res.ok) throw new Error("Ollama error")
-    const data = await res.json()
-    const match = (data.response || "").match(/\{[\s\S]*?\}/)
-    if (match) {
-      const intent = JSON.parse(match[0])
-      // ถ้า Ollama classify category ว่าง แต่ keyword เจอ → ใช้ keyword แทน
-      if (!intent.category && quickCategory) {
-        intent.category = quickCategory
-        intent.wantCourse = true  // ← มี keyword แปลว่าอยากได้คอร์ส
-      }
-      return intent
-    }
-  } catch (e) {
-    console.error("classify error:", e)
-  }
-  // fallback — ถ้า Ollama ล้มเหลวทั้งหมด
-  return {
-    wantCourse: !!quickCategory,
-    category: quickCategory || "",
-    price: "",
-    reply: ""
-  }
-}
-
-// ─── 2. ตอบแบบ AI ทั่วไป ────────────────────────────────────────────────────
+const SYSTEM_PROMPT = `คุณคือผู้ช่วยแนะนำคอร์สเรียนออนไลน์จากหลายมหาวิทยาลัย คุณไม่ใช่เจ้าของคอร์สหรือแพลตฟอร์ม
+กติกา: ตอบภาษาไทยเป็นกันเอง ไม่เกิน 3 ประโยค, ห้ามใช้คำว่า "ของเรา", ห้ามอ้างว่าเป็นเจ้าของคอร์ส`
 
 const generateReply = async (message) => {
-  const prompt = `คุณคือผู้ช่วยแนะนำคอร์สเรียนออนไลน์ (Aggregator) 
-    คุณไม่ใช่เจ้าของคอร์ส และไม่ใช่แพลตฟอร์มการเรียน
-
-    ข้อสำคัญ:
-    - ห้ามพูดว่า "ระบบของเรา", "แพลตฟอร์มของเรา", "คอร์สของเรา", "ของเรา", "แพลตฟอร์มของเรา", "ระบบของเรา"
-    - ให้ใช้คำว่า "มีคอร์สแนะนำ", "แนะนำคอร์ส", "สามารถพาไปยังเว็บไซต์ผู้ให้บริการ"
-    - ตอบสั้น กระชับ ไม่เกิน 3 ประโยค
-    - ห้ามแอบอ้างว่าเป็นเจ้าของคอร์สหรือแพลตฟอร์มเด็ดขาดๆ
-    - ห้ามอ้างว่าเป็นเจ้าของคอร์สหรือผู้ให้บริการ
-
-    แนวทางตอบ:
-    - ตอบกลาง ๆ เช่น "สามารถแนะนำคอร์สได้"
-    - ใช้ภาษาธรรมชาติ เป็นกันเอง
-    - ไม่เกิน 2-3 ประโยค
-
-    คำถาม: ${message}
-    คำตอบ:`
-
-
   try {
-    const res = await fetch(`${OLLAMA_URL}/api/generate`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        model: MODEL,
-        prompt,
-        stream: false,
-        options: { temperature: 0.7, num_predict: 150 },
-      }),
+    const reply = await generate({
+      prompt: `${SYSTEM_PROMPT}\n\nคำถามผู้ใช้: ${JSON.stringify(message.slice(0, 500))}\nคำตอบ:`,
+      options: { temperature: 0.7, num_predict: 150 },
     })
-    if (!res.ok) throw new Error()
-    const data = await res.json()
-    let reply = (data.response || "").trim()
-
-    //sanitize กันหลุด
-    reply = reply
-      .replace(/SCB\s?10X|SCB/gi, "")
-      .replace(/แพลตฟอร์มของเรา|ระบบของเรา|ของเรา/gi, "")
-      .replace(/เว็บไซต์ผู้ให้บริการ/gi, "")
-      .replace(/ยินดีต้อนรับ.*?\n?/gi, "")
-
-    return reply
+    if (!reply) return UNAVAILABLE_REPLY
+    return CLAIMS_OWNERSHIP.test(reply) ? SAFE_REPLY : reply
   } catch {
-    return "ขออภัยครับ ตอบไม่ได้ตอนนี้ 🙏"
+    return UNAVAILABLE_REPLY
   }
 }
 
-// ─── 3. หาคอร์ส ────────────────────────────────────────────────────────────
+const describeTopic = (topic, group) => topic || group?.label || ""
 
-const findCourses = async (category, price, page = 1, limit = 3) => {
-  const skip = (page - 1) * limit
-  const where = {
-    ...(category && { category: { equals: category, mode: "insensitive" } }),
-    ...(price === "free" && { price: 0 }),
-    ...(price === "paid" && { price: { gt: 0 } }),
+const buildReply = ({ mode, topic, group, found }) => {
+  const subject = describeTopic(topic, group)
+  if (!found) {
+    return subject
+      ? `ยังไม่พบคอร์สเกี่ยวกับ "${subject}" ครับ ลองใช้คำอื่นดู หรือดูคอร์สยอดนิยมด้านล่างได้เลย 👇`
+      : "ยังไม่พบคอร์สที่ตรงครับ ลองดูคอร์สยอดนิยมด้านล่างได้เลย 👇"
   }
-  const [courses, total] = await Promise.all([
-    prisma.course.findMany({
-      where,
-      select: { id: true, title: true, category: true, university: true, url: true, price: true, thumbnailUrl: true },
-      skip, take: limit,
-      orderBy: { createdAt: "desc" },
-    }),
-    prisma.course.count({ where }),
-  ])
-  return { courses, total, hasMore: skip + limit < total }
+  if (mode === "personalised") return "คอร์สเหล่านี้น่าจะตรงกับความสนใจของคุณ 👇"
+  return `มีคอร์สแนะนำเกี่ยวกับ "${subject}" 👇`
 }
 
-const findSimilarCourses = async (message, limit = 3) => {
-  const words = message.split(/\s+/).filter((w) => w.length > 1)
-  return prisma.course.findMany({
-    where: {
-      OR: [
-        ...words.map((w) => ({ title: { contains: w, mode: "insensitive" } })),
-        ...words.map((w) => ({ keywords: { some: { keyword: { contains: w, mode: "insensitive" } } } })),
-      ],
-    },
-    select: { id: true, title: true, category: true, university: true, url: true, price: true, thumbnailUrl: true },
-    take: limit,
-  })
+// เก็บหัวข้อที่ถามใน chat เป็นความสนใจของ user ด้วย (ไม่รอ ไม่ให้ error กระทบคำตอบ)
+const rememberInterest = (userId, terms) => {
+  const keyword = terms[terms.length - 1]
+  updateUserInterest(userId, null, "search", keyword).catch((e) =>
+    console.error("remember interest error:", e.message)
+  )
 }
-
-// ─── 4. main chat ───────────────────────────────────────────────────────────
 
 export const chat = async (userId, message, page = 1) => {
   const intent = await classifyIntent(message)
-
-  if (/^(สวัสดี|hello|hi)/i.test(message.trim())) {
-    return {
-      reply: "สวัสดีครับ 😊 สนใจเรียนด้านไหน บอกได้เลย เดี๋ยวช่วยแนะนำคอร์สให้ครับ",
-      courses: [],
-      hasMore: false,
-      intent: { wantCourse: false }
-    }
+  const publicIntent = {
+    wantCourse: intent.wantCourse,
+    topic: intent.topic,
+    price: intent.price,
+    group: intent.group?.id ?? null,
   }
 
-  // ไม่ต้องการคอร์ส → ตอบ AI ทั่วไป
+  if (intent.greeting) {
+    return { reply: GREETING_REPLY, courses: [], hasMore: false, intent: publicIntent }
+  }
+
   if (!intent.wantCourse) {
-    const reply = await generateReply(message)
-    return { reply, courses: [], hasMore: false, intent }
+    return { reply: await generateReply(message), courses: [], hasMore: false, intent: publicIntent }
   }
 
-  // ต้องการคอร์ส → หาคอร์ส
-  const { courses, hasMore } = await findCourses(intent.category, intent.price, page)
-  if (courses.length > 0) {
+  const terms = await expandTopic(intent.topic)
+  const result = await searchCourses({
+    userId,
+    topic: intent.topic,
+    terms,
+    group: intent.group,
+    price: intent.price,
+    page,
+  })
+
+  if (result.courses.length) {
+    if (result.mode === "topic" && page === 1) rememberInterest(userId, terms)
     return {
-      reply: `มีคอร์สแนะนำเลยครับ 👇`,
-      courses, hasMore, intent,
+      reply: buildReply({ ...result, topic: intent.topic, group: intent.group, found: true }),
+      courses: result.courses,
+      hasMore: result.hasMore,
+      intent: publicIntent,
     }
   }
 
-  // หาไม่เจอ → ลอง similar
-  const similar = await findSimilarCourses(message)
-  if (similar.length > 0) {
-    return {
-      reply: `ไม่พบคอร์สที่ตรงเป๊ะครับ แต่มีคอร์สใกล้เคียง 👇`,
-      courses: similar, hasMore: false, intent,
-    }
-  }
-
+  const fallback = page === 1 ? await popularFallback(intent.price) : []
   return {
-    reply: `ไม่พบคอร์สที่ตรงครับ ลองถามใหม่ด้วยคำอื่นได้เลย 🙏`,
-    courses: [], hasMore: false, intent,
+    reply: buildReply({ ...result, topic: intent.topic, group: intent.group, found: false }),
+    courses: fallback,
+    hasMore: false,
+    intent: publicIntent,
   }
 }
-
-export const checkOllamaHealth = async () => {
-  try {
-    const res = await fetch(`${OLLAMA_URL}/api/tags`)
-    const data = await res.json()
-    const hasModel = data.models?.some((m) => m.name.includes("typhoon"))
-    return { running: true, hasModel }
-  } catch {
-    return { running: false, hasModel: false }
-  }
-}
-
