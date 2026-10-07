@@ -66,3 +66,11 @@ python3 -m uvicorn api.main:app --reload --port 8000
 cd frontend
 npm run dev
 ```
+---
+
+## 🧰 Backend notes
+
+- Data import / embedding scripts live in `backend/scripts/` — run them from `backend/`, e.g. `python scripts/import_courses.py`.
+- Run backend tests: `cd backend && npm test`
+- Optional env vars: `PORT` (default 3000), `CORS_ORIGIN` (comma-separated allowed origins; unset = allow all), `JWT_EXPIRES_IN`.
+  `DATABASE_URL` and `JWT_SECRET` are required — the server refuses to start without them.

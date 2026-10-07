@@ -1,6 +1,11 @@
-import app from "./src/index.js"
+import dotenv from "dotenv"
 
-const PORT = 3000
+dotenv.config()
+
+const { assertEnv, PORT } = await import("./src/config/env.js")
+assertEnv()
+
+const { default: app } = await import("./src/index.js")
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)

@@ -1,6 +1,7 @@
 import dotenv from "dotenv"
 import express from "express"
 import cors from "cors"
+import helmet from "helmet"
 
 import authRoutes from "./routes/authRoutes.js"
 import courseRoutes from "./routes/courseRoutes.js"
@@ -10,13 +11,15 @@ import interactionRoutes from "./routes/interactionRoutes.js"
 import bookmarkRoutes from "./routes/bookmarkRoutes.js"
 import chatbotRoutes from "./routes/chatbotRoutes.js"
 import adminRoutes from "./routes/admin.routes.js"
+import { CORS_ORIGINS } from "./config/env.js"
 
 dotenv.config()
 
 const app = express()
 
-app.use(cors())
-app.use(express.json())
+app.use(helmet())
+app.use(cors({ origin: CORS_ORIGINS }))
+app.use(express.json({ limit: "100kb" }))
 
 // routes
 app.use("/api/auth", authRoutes)
