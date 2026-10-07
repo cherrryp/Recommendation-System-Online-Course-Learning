@@ -1,7 +1,8 @@
 import "./Login.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/Logo.png";
 import { useState } from "react";
 import { Link ,useNavigate} from "react-router-dom";
+import { API_BASE_URL } from "../../config"
 
 function Login() {
 
@@ -14,7 +15,7 @@ function Login() {
     e.preventDefault()
 
     try{
-      const res = await fetch("http://localhost:3000/api/auth/login",{
+      const res = await fetch(`${API_BASE_URL}/auth/login`,{
         method:"POST",
         headers:{
           "Content-Type":"application/json"

@@ -1,6 +1,7 @@
 import dotenv from "dotenv"
 import express from "express"
 import cors from "cors"
+import helmet from "helmet"
 
 import authRoutes from "./routes/authRoutes.js"
 import courseRoutes from "./routes/courseRoutes.js"
@@ -10,13 +11,15 @@ import interactionRoutes from "./routes/interactionRoutes.js"
 import bookmarkRoutes from "./routes/bookmarkRoutes.js"
 import chatbotRoutes from "./routes/chatbotRoutes.js"
 import adminRoutes from "./routes/admin.routes.js"
+import { CORS_ORIGINS } from "./config/env.js"
 
 dotenv.config()
 
 const app = express()
 
-app.use(cors())
-app.use(express.json())
+app.use(helmet())
+app.use(cors({ origin: CORS_ORIGINS }))
+app.use(express.json({ limit: "100kb" }))
 
 // routes
 app.use("/api/auth", authRoutes)
@@ -34,14 +37,16 @@ app.get("/", (req, res) => res.send("API running"))
 
 // 404 handler
 app.use((req, res) => {
-  res.status(404).json({ error: "Route not found" })
+  res.status(404).json({ success: false, message: "Route not found" })
 })
 
 // Global error handler
 app.use((err, req, res, next) => {
-  console.error(err.stack)
-  res.status(err.status || 500).json({
-    error: err.message || "Internal Server Error"
+  const status = err.status || 500
+  if (status >= 500) console.error(err.stack)
+  res.status(status).json({
+    success: false,
+    message: status >= 500 ? "Internal Server Error" : err.message,
   })
 })
 

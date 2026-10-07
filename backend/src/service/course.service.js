@@ -1,7 +1,9 @@
 import prisma from "../lib/prisma.js"
+import { COURSE_CARD_SELECT } from "../constants/courseSelect.js"
+import { weightOf } from "../constants/interaction.js"
 
 // ดึงคอร์สทั้งหมด พร้อม filter และ search
-export const getAllCourses = async ({ search, category, university, page = 1, limit = 20 }) => {
+export const getAllCourses = async ({ search, category, university, minPrice, maxPrice, page = 1, limit = 20 }) => {
   const skip = (page - 1) * limit
 
   const where = {
@@ -13,22 +15,21 @@ export const getAllCourses = async ({ search, category, university, page = 1, li
       ],
     }),
     ...(category && { category: { equals: category, mode: "insensitive" } }),
-    ...(university && { university: { equals: university, mode: "insensitive" } })
+    ...(university && { university: { equals: university, mode: "insensitive" } }),
+    ...((minPrice !== undefined || maxPrice !== undefined) && {
+      price: {
+        ...(minPrice !== undefined && { gte: minPrice }),
+        ...(maxPrice !== undefined && { lte: maxPrice }),
+      },
+    }),
   }
 
   const [courses, total] = await Promise.all([
     prisma.course.findMany({
       where,
       select: {
-        id: true,
-        title: true,
-        category: true,
-        university: true,
+        ...COURSE_CARD_SELECT,
         instructor: true,
-        price: true,
-        status: true,
-        thumbnailUrl: true,
-        url: true,
         keywords: { select: { keyword: true } },
       },
       skip,
@@ -54,16 +55,9 @@ export const getCourseById = async (id) => {
   const course = await prisma.course.findUnique({
     where: { id },
     select: {
-      id: true,
-      title: true,
+      ...COURSE_CARD_SELECT,
       description: true,
-      category: true,
-      university: true,
       instructor: true,
-      price: true,
-      status: true,
-      thumbnailUrl: true,
-      url: true,
       keywords: { select: { keyword: true } },
     },
   })
@@ -96,71 +90,58 @@ export const getAllUniversities = async () => {
   return result.map((r) => r.university).filter(Boolean)
 }
 
-// ดึงคอร์ยอดนิยมจาก UserInteraction
-export const getPopularCourses = async (limit = 8) => {
-  const WEIGHT = { click: 1, bookmark: 3, search: 1 }
-
-  // รวม score จาก interaction
+// คะแนน popularity ของแต่ละคอร์สจาก UserInteraction → [courseId เรียงตาม score]
+const rankCourseIdsByInteraction = async (limit) => {
   const interactions = await prisma.userInteraction.groupBy({
     by: ["courseId", "action"],
     _count: { action: true },
+    where: { courseId: { not: null } },
   })
 
-  // คำนวณ score แต่ละคอร์ส
-  const scoreMap = {}
-  interactions.forEach((i) => {
-    const w = WEIGHT[i.action] || 1
-    scoreMap[i.courseId] = (scoreMap[i.courseId] || 0) + i._count.action * w
-  })
-
-  // ถ้ายังไม่มี interaction → fallback ใช้ bookmark
-  if (Object.keys(scoreMap).length === 0) {
-    const bookmarks = await prisma.bookmark.groupBy({
-      by: ["courseId"],
-      _count: { courseId: true },
-      orderBy: { _count: { courseId: "desc" } },
-      take: limit,
-    })
-
-    const courseIds = bookmarks.map((b) => b.courseId)
-    if (courseIds.length === 0) {
-      // fallback สุดท้าย → คอร์สล่าสุด
-      return await prisma.course.findMany({
-        select: {
-          id: true, title: true, category: true,
-          university: true, thumbnailUrl: true,
-          url: true, price: true, status: true,
-        },
-        take: limit,
-        orderBy: { createdAt: "desc" },
-      })
-    }
-
-    return await prisma.course.findMany({
-      where: { id: { in: courseIds } },
-      select: {
-        id: true, title: true, category: true,
-        university: true, thumbnailUrl: true,
-        url: true, price: true, status: true,
-      },
-    })
+  const scores = {}
+  for (const i of interactions) {
+    scores[i.courseId] = (scores[i.courseId] || 0) + i._count.action * weightOf(i.action)
   }
 
-  // เรียง courseId ตาม score
-  const sorted = Object.entries(scoreMap)
+  return Object.entries(scores)
     .sort((a, b) => b[1] - a[1])
     .slice(0, limit)
     .map(([courseId]) => courseId)
+}
 
-  const courses = await prisma.course.findMany({
-    where: { id: { in: sorted } },
-    select: {
-      id: true, title: true, category: true,
-      university: true, thumbnailUrl: true,
-      url: true, price: true, status: true,
-    },
+// fallback เมื่อยังไม่มี interaction → จัดอันดับตามจำนวน bookmark
+const rankCourseIdsByBookmark = async (limit) => {
+  const bookmarks = await prisma.bookmark.groupBy({
+    by: ["courseId"],
+    _count: { courseId: true },
+    orderBy: { _count: { courseId: "desc" } },
+    take: limit,
   })
+  return bookmarks.map((b) => b.courseId)
+}
 
-  // sort ตาม score อีกครั้ง เพราะ findMany ไม่ได้เรียงตาม in
-  return sorted.map((id) => courses.find((c) => c.id === id)).filter(Boolean)
+// ดึงคอร์สตามลำดับ id ที่ให้มา (findMany ไม่รักษาลำดับของ `in`)
+const findCoursesInOrder = async (ids) => {
+  const courses = await prisma.course.findMany({
+    where: { id: { in: ids } },
+    select: COURSE_CARD_SELECT,
+  })
+  const byId = new Map(courses.map((c) => [c.id, c]))
+  return ids.map((id) => byId.get(id)).filter(Boolean)
+}
+
+// ดึงคอร์สยอดนิยม: interaction → bookmark → คอร์สล่าสุด
+export const getPopularCourses = async (limit = 8) => {
+  let ids = await rankCourseIdsByInteraction(limit)
+  if (!ids.length) ids = await rankCourseIdsByBookmark(limit)
+
+  if (!ids.length) {
+    return prisma.course.findMany({
+      select: COURSE_CARD_SELECT,
+      take: limit,
+      orderBy: { createdAt: "desc" },
+    })
+  }
+
+  return findCoursesInOrder(ids)
 }

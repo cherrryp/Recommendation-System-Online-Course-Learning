@@ -1,4 +1,6 @@
 import prisma from "../lib/prisma.js"
+import { COURSE_CARD_SELECT } from "../constants/courseSelect.js"
+import { weightOf } from "../constants/interaction.js"
 
 // แนะนำคอร์สโดยใช้ embedding similarity
 // รับ courseId → หาคอร์สที่ใกล้เคียงที่สุด
@@ -42,10 +44,7 @@ export const getPersonalizedCourses = async (userId, limit = 12) => {
   if (!interests.length) {
     // ถ้าไม่มี interest → แนะนำคอร์สล่าสุด
     return await prisma.course.findMany({
-      select: {
-        id: true, title: true, category: true,
-        university: true, thumbnailUrl: true, url: true, price: true, status: true,
-      },
+      select: COURSE_CARD_SELECT,
       take: limit,
       orderBy: { createdAt: "desc" },
     })
@@ -60,11 +59,7 @@ export const getPersonalizedCourses = async (userId, limit = 12) => {
         some: { keyword: { in: keywords } },
       },
     },
-    select: {
-      id: true, title: true, category: true,
-      university: true, thumbnailUrl: true, url: true, price: true, status: true,
-      keywords: { select: { keyword: true } },
-    },
+    select: { ...COURSE_CARD_SELECT, keywords: { select: { keyword: true } } },
     take: limit * 2, // ดึงมาเยอะกว่าแล้วค่อย sort
   })
 
@@ -82,10 +77,9 @@ export const getPersonalizedCourses = async (userId, limit = 12) => {
 }
 
 // อัปเดต UserInterest เมื่อ user interact กับคอร์ส
-// weight: bookmark = 3, click = 1, search = 1
+// น้ำหนักของแต่ละ action ดู constants/interaction.js
 export const updateUserInterest = async (userId, courseId, action, searchKeyword) => {
-  const WEIGHT = { bookmark: 3, click: 1, search: 1 }
-  const score = WEIGHT[action] || 1
+  const score = weightOf(action)
 
   let keywords = []
 

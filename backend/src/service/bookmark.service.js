@@ -1,4 +1,5 @@
 import prisma from "../lib/prisma.js"
+import { COURSE_CARD_SELECT } from "../constants/courseSelect.js"
 
 // toggle bookmark (เพิ่มถ้าไม่มี ลบถ้ามีแล้ว)
 export const toggleBookmark = async (userId, courseId) => {
@@ -24,13 +25,7 @@ export const getUserBookmarks = async (userId) => {
   const bookmarks = await prisma.bookmark.findMany({
     where: { userId },
     include: {
-      course: {
-        select: {
-          id: true, title: true, category: true,
-          university: true, thumbnailUrl: true,
-          url: true, price: true, status: true,
-        },
-      },
+      course: { select: COURSE_CARD_SELECT },
     },
     orderBy: { createdAt: "desc" },
   })
