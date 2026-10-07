@@ -1,0 +1,4 @@
+# Dependencies for the data import / embedding scripts in this folder
+psycopg2-binary
+python-dotenv
+sentence-transformers

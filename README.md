@@ -37,15 +37,9 @@ npx prisma generate
 npx prisma migrate dev --name init
 ```
 
-### 4. Install Python dependencies
-#### Windows / Linux
+### 4. Install Python dependencies (only for the import / embedding scripts)
 ```bash
-pip install -r requirement.txt
-```
-
-#### macOS
-```bash
-pip3 install -r requirement.txt
+pip install -r backend/scripts/requirements.txt   # use pip3 on macOS
 ```
 
 ## 5. Running the Project
@@ -54,11 +48,6 @@ pip3 install -r requirement.txt
 ```bash
 cd backend
 npm run dev
-```
-
-### AI Model (Python)
-```bash
-python3 -m uvicorn api.main:app --reload --port 8000
 ```
 
 ### Frontend (React)
