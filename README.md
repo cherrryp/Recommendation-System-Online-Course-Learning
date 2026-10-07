@@ -62,4 +62,6 @@ npm run dev
 - Data import / embedding scripts live in `backend/scripts/` — run them from `backend/`, e.g. `python scripts/import_courses.py`.
 - Run backend tests: `cd backend && npm test`
 - Optional env vars: `PORT` (default 3000), `CORS_ORIGIN` (comma-separated allowed origins; unset = allow all), `JWT_EXPIRES_IN`.
+  `SEMANTIC_SEARCH=off` disables the embedding model used by the chatbot (it loads lazily, takes ~20s the first time and ~500MB RAM).
+  `PRISMA_CONNECTION_LIMIT` (default 8) caps DB connections per instance — keep it below your DB pooler's limit.
   `DATABASE_URL` and `JWT_SECRET` are required — the server refuses to start without them.

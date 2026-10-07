@@ -34,7 +34,7 @@ describe("rankPersonalized", () => {
       { ...course("c", "Tech", "Already Seen"), keywords: ["python"] },
     ]
     const out = rankPersonalized({
-      interests, keywordCourses, similarCourses: [], limit: 5, seenTitles: ["already seen"],
+      interests, keywordCourses, similarCourses: [], limit: 5, seenKeys: ["already seen"],
     })
     expect(out.map((c) => c.id)).toEqual(["a"])
   })

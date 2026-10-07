@@ -1,7 +1,10 @@
 import prisma from "../lib/prisma.js"
 import { COURSE_CARD_SELECT } from "../constants/courseSelect.js"
-import { INTERACTION_WEIGHT, weightOf } from "../constants/interaction.js"
+import { weightOf } from "../constants/interaction.js"
+import { dedupeCourses } from "../utils/courseKey.js"
 import { getPopularCourses } from "./course.service.js"
+import { getUserProfile } from "./userProfile.js"
+import { toVectorLiteral } from "./embedding.service.js"
 
 // แนะนำคอร์สโดยใช้ embedding similarity
 // รับ courseId → หาคอร์สที่ใกล้เคียงที่สุด
@@ -43,7 +46,8 @@ export const getRecommendedCourses = async (courseId, limit = 8) => {
 }
 
 // ─── Personalised recommendations ──────────────────────────────────────────
-// ผสม 2 สัญญาณ: (1) keyword ที่ user สนใจ  (2) ความคล้ายของ embedding กับคอร์สที่ user เคยกด/bookmark
+// ผสม 2 สัญญาณ: (1) keyword ที่ user สนใจ  (2) ความคล้ายของ embedding กับโปรไฟล์ของ user
+// ทั้งสองสร้างจากกิจกรรมที่ถ่วงน้ำหนักตามเวลา (ดู userProfile.js)
 
 const KEYWORD_WEIGHT = 0.45
 const SIMILARITY_WEIGHT = 0.55
@@ -77,13 +81,12 @@ const diversify = (ranked, limit) => {
   return [...picked, ...skipped].slice(0, limit)
 }
 
-const titleKey = (title) => title.trim().toLowerCase()
-
 // pure function (ทดสอบง่าย)
 // interests: [{ keyword, score }]
 // keywordCourses: [{ ...course, keywords: string[] }]
 // similarCourses: [{ ...course, similarity }]  (จาก embedding profile ของ user)
-export const rankPersonalized = ({ interests, keywordCourses, similarCourses, limit, seenTitles = [] }) => {
+// seenKeys: courseGroupKey ของคอร์สที่ user เคยเห็นแล้ว (กันแนะนำซ้ำ รวมถึงเวอร์ชันชั่วโมงอื่นของคอร์สเดิม)
+export const rankPersonalized = ({ interests, keywordCourses, similarCourses, limit, seenKeys = [] }) => {
   const interestScore = Object.fromEntries(interests.map((i) => [i.keyword, i.score]))
 
   const candidates = new Map()
@@ -111,64 +114,24 @@ export const rankPersonalized = ({ interests, keywordCourses, similarCourses, li
     }))
     .sort((a, b) => b._score - a._score)
 
-  // ข้อมูลมีคอร์สชื่อซ้ำกันหลาย id → เก็บอันดับแรกเท่านั้น และตัดชื่อที่ user เคยเห็นแล้ว
-  const taken = new Set(seenTitles.map(titleKey))
-  const unique = ranked.filter((c) => {
-    const key = titleKey(c.title)
-    if (taken.has(key)) return false
-    taken.add(key)
-    return true
-  })
-
-  return diversify(unique, limit).map(
+  return diversify(dedupeCourses(ranked, seenKeys), limit).map(
     ({ _score, keywordScore, similarity, ...course }) => course
   )
 }
 
-// embedding เฉลี่ยของคอร์สที่ user เคยกด (x1) และ bookmark (x3) → หาคอร์สที่ใกล้ที่สุด
-// ไม่รวมคอร์สที่ user เคยเห็นแล้ว
-const findSimilarToUserHistory = async (userId, limit) => {
-  const click = INTERACTION_WEIGHT.click
-  const bookmark = INTERACTION_WEIGHT.bookmark
-
+// คอร์สที่ใกล้กับเวกเตอร์ความสนใจของ user ที่สุด (ไม่รวมคอร์สที่เคยเห็น)
+const findSimilarToVector = async (embedding, excludeIds, limit) => {
+  const vector = toVectorLiteral(embedding)
   return prisma.$queryRaw`
-    WITH events AS (
-      SELECT "courseId", ${bookmark}::int AS w FROM "Bookmark" WHERE "userId" = ${userId}
-      UNION ALL
-      SELECT "courseId", ${click}::int AS w FROM "UserInteraction"
-      WHERE "userId" = ${userId} AND "courseId" IS NOT NULL AND action = 'click'
-    ),
-    profile AS (
-      SELECT AVG(ce.embedding) AS v
-      FROM events e
-      JOIN "CourseEmbedding" ce ON ce."courseId" = e."courseId"
-      CROSS JOIN LATERAL generate_series(1, e.w)
-    )
     SELECT c.id, c.title, c.category, c.university, c.price, c.status,
            c."thumbnailUrl", c.url,
-           1 - (ce.embedding <=> profile.v) AS similarity
-    FROM profile
-    JOIN "CourseEmbedding" ce ON profile.v IS NOT NULL
+           1 - (ce.embedding <=> ${vector}::vector) AS similarity
+    FROM "CourseEmbedding" ce
     JOIN "Course" c ON c.id = ce."courseId"
-    WHERE c.id NOT IN (SELECT "courseId" FROM events)
-    ORDER BY ce.embedding <=> profile.v
+    WHERE c.id <> ALL(${excludeIds}::text[])
+    ORDER BY ce.embedding <=> ${vector}::vector
     LIMIT ${limit}
   `
-}
-
-// คอร์สที่ user เคย bookmark / กด → { ids, titles }
-const findSeenCourses = async (userId) => {
-  const course = { select: { id: true, title: true } }
-  const [bookmarks, clicks] = await Promise.all([
-    prisma.bookmark.findMany({ where: { userId }, select: { course } }),
-    prisma.userInteraction.findMany({
-      where: { userId, courseId: { not: null } },
-      select: { course },
-      distinct: ["courseId"],
-    }),
-  ])
-  const seen = [...bookmarks, ...clicks].map((r) => r.course).filter(Boolean)
-  return { ids: seen.map((c) => c.id), titles: seen.map((c) => c.title) }
 }
 
 const findCoursesByKeywords = (keywords, excludeIds) =>
@@ -181,23 +144,15 @@ const findCoursesByKeywords = (keywords, excludeIds) =>
     take: 500,
   })
 
-// แนะนำคอร์สตาม UserInterest + พฤติกรรมของ user
+// แนะนำคอร์สตามพฤติกรรมของ user (ถ่วงน้ำหนักตามเวลา)
 export const getPersonalizedCourses = async (userId, limit = 12) => {
-  const [interests, seen] = await Promise.all([
-    prisma.userInterest.findMany({
-      where: { userId },
-      orderBy: { score: "desc" },
-      take: 10,
-    }),
-    findSeenCourses(userId),
-  ])
-  const seenIds = seen.ids
+  const profile = await getUserProfile(userId)
 
   const [keywordCourses, similarCourses] = await Promise.all([
-    interests.length
-      ? findCoursesByKeywords(interests.map((i) => i.keyword), seenIds)
+    profile.keywordScores.length
+      ? findCoursesByKeywords(profile.keywordScores.map((k) => k.keyword), profile.seenIds)
       : [],
-    seenIds.length ? findSimilarToUserHistory(userId, 50) : [],
+    profile.embedding ? findSimilarToVector(profile.embedding, profile.seenIds, 60) : [],
   ])
 
   // user ใหม่ที่ยังไม่มีสัญญาณอะไรเลย → คอร์สยอดนิยม
@@ -206,11 +161,11 @@ export const getPersonalizedCourses = async (userId, limit = 12) => {
   }
 
   return rankPersonalized({
-    interests,
+    interests: profile.keywordScores,
     keywordCourses: keywordCourses.map((c) => ({ ...c, keywords: c.keywords.map((k) => k.keyword) })),
     similarCourses: similarCourses.map((c) => ({ ...c, similarity: Number(c.similarity) })),
     limit,
-    seenTitles: seen.titles,
+    seenKeys: profile.seenKeys,
   })
 }
 

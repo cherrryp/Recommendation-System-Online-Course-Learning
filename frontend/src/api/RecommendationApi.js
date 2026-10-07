@@ -12,3 +12,8 @@ export const getSimilarCourses = (courseId, limit = 8) => {
     params: { limit }
   })
 }
+
+// แถวหน้าแรกแบบ Netflix: [{ id, title, courses }]
+export const getHomeRows = (userId) => {
+  return api.get(`/recommendations/${userId}/home`)
+}

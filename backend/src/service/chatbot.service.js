@@ -1,7 +1,8 @@
 import { classifyIntent } from "./chatbot/intent.js"
 import { generate, checkOllamaHealth } from "./chatbot/ollama.js"
-import { expandTopic, searchCourses, popularFallback } from "./chatbot/courseSearch.js"
+import { searchCourses, popularFallback } from "./chatbot/courseSearch.js"
 import { updateUserInterest } from "./recommendation.service.js"
+import { invalidateUser } from "../utils/ttlCache.js"
 
 export { checkOllamaHealth }
 
@@ -44,7 +45,9 @@ const buildReply = ({ mode, topic, group, found }) => {
 // เก็บหัวข้อที่ถามใน chat เป็นความสนใจของ user ด้วย (ไม่รอ ไม่ให้ error กระทบคำตอบ)
 const rememberInterest = (userId, terms) => {
   const keyword = terms[terms.length - 1]
-  updateUserInterest(userId, null, "search", keyword).catch((e) =>
+  updateUserInterest(userId, null, "search", keyword)
+    .then(() => invalidateUser(userId))
+    .catch((e) =>
     console.error("remember interest error:", e.message)
   )
 }
@@ -66,18 +69,16 @@ export const chat = async (userId, message, page = 1) => {
     return { reply: await generateReply(message), courses: [], hasMore: false, intent: publicIntent }
   }
 
-  const terms = await expandTopic(intent.topic)
   const result = await searchCourses({
     userId,
     topic: intent.topic,
-    terms,
     group: intent.group,
     price: intent.price,
     page,
   })
 
   if (result.courses.length) {
-    if (result.mode === "topic" && page === 1) rememberInterest(userId, terms)
+    if (result.mode === "topic" && page === 1) rememberInterest(userId, result.terms)
     return {
       reply: buildReply({ ...result, topic: intent.topic, group: intent.group, found: true }),
       courses: result.courses,

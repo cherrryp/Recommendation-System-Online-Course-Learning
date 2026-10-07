@@ -1,4 +1,5 @@
 import { toggleBookmark, getUserBookmarks } from "../service/bookmark.service.js"
+import { invalidateUser } from "../utils/ttlCache.js"
 import asyncHandler from "../utils/asyncHandler.js"
 import HttpError from "../utils/HttpError.js"
 
@@ -8,6 +9,7 @@ export const toggle = asyncHandler(async (req, res) => {
   if (!courseId) throw new HttpError(400, "courseId required")
 
   const result = await toggleBookmark(req.user.id, courseId)
+  invalidateUser(req.user.id)
   res.json({ success: true, bookmarked: result.bookmarked })
 })
 

@@ -4,6 +4,7 @@ import {
   getAllCategories,
   getAllUniversities,
   getPopularCourses,
+  getTrendingCourses,
 } from "../service/course.service.js"
 import asyncHandler from "../utils/asyncHandler.js"
 import HttpError from "../utils/HttpError.js"
@@ -40,6 +41,12 @@ export const getCourseById = asyncHandler(async (req, res) => {
   const course = await fetchCourseById(req.params.id)
   if (!course) throw new HttpError(404, "Course not found")
   res.json({ success: true, data: course })
+})
+
+// GET /api/courses/trending
+export const getTrending = asyncHandler(async (req, res) => {
+  const limit = parseInt(req.query.limit) || 8
+  res.json({ success: true, data: await getTrendingCourses(limit) })
 })
 
 // GET /api/courses/popular

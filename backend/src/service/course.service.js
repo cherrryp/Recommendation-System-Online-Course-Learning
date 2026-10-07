@@ -1,6 +1,8 @@
 import prisma from "../lib/prisma.js"
 import { COURSE_CARD_SELECT } from "../constants/courseSelect.js"
 import { weightOf } from "../constants/interaction.js"
+import { dedupeCourses } from "../utils/courseKey.js"
+import { memo } from "../utils/ttlCache.js"
 
 // ดึงคอร์สทั้งหมด พร้อม filter และ search
 export const getAllCourses = async ({ search, category, university, minPrice, maxPrice, page = 1, limit = 20 }) => {
@@ -144,4 +146,62 @@ export const getPopularCourses = async (limit = 8) => {
   }
 
   return findCoursesInOrder(ids)
+}
+
+// ─── Trending / Explore ────────────────────────────────────────────────────
+
+const TRENDING_DAYS = 14
+const TRENDING_TTL_MS = 5 * 60 * 1000
+
+// กำลังมาแรง: นับเฉพาะกิจกรรมในช่วง N วันล่าสุด (ต่างจาก popular ที่นับตลอดกาล)
+export const getTrendingCourses = (limit = 8) =>
+  memo(`trending:${limit}`, TRENDING_TTL_MS, async () => {
+    const since = new Date(Date.now() - TRENDING_DAYS * 24 * 60 * 60 * 1000)
+
+    const [interactions, bookmarks] = await Promise.all([
+      prisma.userInteraction.groupBy({
+        by: ["courseId", "action"],
+        where: { courseId: { not: null }, createdAt: { gte: since } },
+        _count: { action: true },
+      }),
+      prisma.bookmark.groupBy({
+        by: ["courseId"],
+        where: { createdAt: { gte: since } },
+        _count: { courseId: true },
+      }),
+    ])
+
+    const scores = {}
+    for (const i of interactions) {
+      // bookmark ถูกนับจากตาราง Bookmark แล้ว (กัน toggle ซ้ำ) จึงข้าม action นี้
+      if (i.action === "bookmark") continue
+      scores[i.courseId] = (scores[i.courseId] || 0) + i._count.action * weightOf(i.action)
+    }
+    for (const b of bookmarks) {
+      scores[b.courseId] = (scores[b.courseId] || 0) + b._count.courseId * weightOf("bookmark")
+    }
+
+    const ids = Object.entries(scores)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, limit * 3) // เผื่อตัดคอร์สซ้ำ
+      .map(([id]) => id)
+
+    // ยังไม่มีกิจกรรมในช่วงนี้ → ถอยกลับไปใช้ยอดนิยมตลอดกาล
+    if (!ids.length) return getPopularCourses(limit)
+    return dedupeCourses(await findCoursesInOrder(ids)).slice(0, limit)
+  })
+
+// สำรวจสิ่งใหม่: คอร์สยอดนิยมจากหมวดที่ user ยังไม่เคยแตะ (ลด filter bubble)
+export const getExploreCourses = async (touchedCategories, limit = 8) => {
+  const courses = await prisma.course.findMany({
+    where: { category: { notIn: touchedCategories } },
+    select: COURSE_CARD_SELECT,
+    orderBy: [
+      { bookmarks: { _count: "desc" } },
+      { interactions: { _count: "desc" } },
+      { createdAt: "desc" },
+    ],
+    take: limit * 4,
+  })
+  return dedupeCourses(courses).slice(0, limit)
 }

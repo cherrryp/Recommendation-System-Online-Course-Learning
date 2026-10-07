@@ -4,11 +4,11 @@ import Rating from "../components/Rating.jsx"
 import Footer from "../components/Footer.jsx"
 import Content_1 from "../components/Content_1.jsx"
 import Content_2 from "../components/Content_2.jsx"
-import { getRecommendations } from "../api/RecommendationApi"
+import { getHomeRows } from "../api/RecommendationApi"
 import { getCourses, getPopularCourses } from "../api/courseApi"
 
 function Home() {
-  const [recommended, setRecommended] = useState([])
+  const [rows, setRows] = useState([])
   const [popular, setPopular] = useState([])
   const [latest, setLatest] = useState([])
 
@@ -24,10 +24,10 @@ function Home() {
       .then((r) => setLatest(r.data.courses || []))
       .catch(() => {})
 
-    // recommended เฉพาะตอน login
+    // แถวแนะนำเฉพาะตอน login (แนะนำสำหรับคุณ / เพราะคุณสนใจ / กำลังมาแรง / ลองสิ่งใหม่)
     if (userId) {
-      getRecommendations(userId, 8)
-        .then((r) => setRecommended(r.data.data || []))
+      getHomeRows(userId)
+        .then((r) => setRows(r.data.data || []))
         .catch(() => {})
     }
   }, [userId])
@@ -36,10 +36,9 @@ function Home() {
     <div>
       <Navbar />
       <Content_1 />
-      {userId && recommended.length > 0 && (
-        <Content_2 courses={recommended} title="แนะนำสำหรับคุณ" />
-      )}
-      <Content_2 courses={popular} title="คอร์สยอดนิยม" />
+      {userId && rows.length > 0
+        ? rows.map((row) => <Content_2 key={row.id} courses={row.courses} title={row.title} />)
+        : <Content_2 courses={popular} title="คอร์สยอดนิยม" />}
       <Content_2 courses={latest} title="คอร์สล่าสุด" />
       <Rating />
       <Footer />

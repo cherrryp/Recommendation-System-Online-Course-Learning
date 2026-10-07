@@ -2,6 +2,7 @@ import prisma from "../lib/prisma.js"
 import { trackCourseInteraction } from "../service/interaction.service.js"
 import { updateUserInterest } from "../service/recommendation.service.js"
 import { translateToEng } from "../service/translate.service.js"
+import { invalidateUser } from "../utils/ttlCache.js"
 import asyncHandler from "../utils/asyncHandler.js"
 import HttpError from "../utils/HttpError.js"
 
@@ -23,6 +24,7 @@ export const recordInteraction = asyncHandler(async (req, res) => {
       await updateUserInterest(userId, null, "search", engKeyword)
     }
 
+    invalidateUser(userId)
     return res.json({ success: true, isSpam: false })
   }
 
@@ -33,5 +35,6 @@ export const recordInteraction = asyncHandler(async (req, res) => {
     await updateUserInterest(userId, courseId, action)
   }
 
+  if (!result.isSpam) invalidateUser(userId)
   res.json({ success: true, data: result.data, isSpam: result.isSpam })
 })
