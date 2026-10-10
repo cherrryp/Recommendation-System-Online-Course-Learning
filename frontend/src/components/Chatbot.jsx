@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react"
 import "./Chatbot.css"
 import { UNI_NAMES } from "../constants/universities"
 import { useBookmark } from "../context/BookmarkContext"
-import { API_URL } from "../../api/api.js";
+import { API_URL } from "../api/api.js";
 
 const UNI_HOVER_IMAGES = {
   Chulalongkorn: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248855/563000010687901_iw03ss.jpg",
