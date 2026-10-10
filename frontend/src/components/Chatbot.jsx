@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react"
 import "./Chatbot.css"
 import { UNI_NAMES } from "../constants/universities"
 import { useBookmark } from "../context/BookmarkContext"
+import { API_URL } from "../../api/api.js";
 
 const UNI_HOVER_IMAGES = {
   Chulalongkorn: "https://res.cloudinary.com/dygjtp2be/image/upload/v1774248855/563000010687901_iw03ss.jpg",
@@ -96,13 +97,13 @@ function Chatbot() {
 
   const sendToAPI = async (message, page = 1) => {
     if (!userId) {
-      addMessage("assistant", "กรุณาเข้าสู่ระบบก่อนใช้งานครับ 🙏")
+      addMessage("assistant", "กรุณาเข้าสู่ระบบก่อนใช้งาน")
       return
     }
 
     setLoading(true)
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:3000"}/api/chatbot`, {
+      const res = await fetch(`${API_URL}/api/chatbot`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

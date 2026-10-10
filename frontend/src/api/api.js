@@ -1,8 +1,13 @@
 import axios from "axios"
 // import { api } from "./api"
+import { API_URL } from "../../api/api.js";
+
+//Config deployment URL
+export const API_URL = import.meta.env.VITE_API_URL;
 
 const api = axios.create({
-  baseURL: "http://localhost:3000/api"
+  // URL for deplotment
+  baseURL: `${API_URL}/api`
 })
 
 api.interceptors.request.use((config) => {

@@ -5,6 +5,7 @@ import { getBookmarks } from "../../api/BookmarkApi"
 import { useBookmark } from "../../context/BookmarkContext.jsx"
 import "./Profile.css"
 import { UNI_HOVER_IMAGES, encodeImg } from "../../components/CourseCard"
+import { API_URL } from "../../api/api.js";
 
 import { UNI_NAMES } from "../../constants/universities"
 
@@ -41,7 +42,7 @@ function Profile() {
     const fetchAll = async () => {
       try {
         // ดึง profile
-        const res = await fetch(`http://localhost:3000/api/users/profile/${userId}`, {
+        const res = await fetch(`${API_URL}/api/users/profile/${userId}`, {
           headers: { Authorization: `Bearer ${token}` },
         })
         const data = await res.json()
@@ -75,7 +76,7 @@ function Profile() {
     setSaving(true)
     setSaveMsg("")
     try {
-      const res = await fetch(`http://localhost:3000/api/users/interests/${userId}`, {
+      const res = await fetch(`${API_URL}/api/users/interests/${userId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
